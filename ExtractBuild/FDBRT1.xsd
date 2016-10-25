@@ -1,0 +1,29 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="query">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="row" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:byte" name="REPORT_ID"/>
+              <xs:element type="xs:short" name="FDB_DE5002_STRM"/>
+              <xs:element type="xs:byte" name="FDB_DE5001_COL_NUM"/>
+              <xs:element type="xs:byte" name="FDB_DE5100_SITENUM"/>
+              <xs:element type="xs:string" name="FDB_DE5110_S_NAME"/>
+              <xs:element type="xs:byte" name="FDB_DE5120_S_TYPE"/>
+              <xs:element type="xs:float" name="FDB_DE5130_S_AREA"/>
+              <xs:element type="xs:byte" name="FDB_DE5140_OWNER"/>
+              <xs:element type="xs:byte" name="FDB_DE5150_LEN_HLD"/>
+              <xs:element type="xs:byte" name="FDB_DE5160_AQ_MEAN"/>
+              <xs:element type="xs:int" name="FDB_DE5170_AQDATE"/>
+              <xs:element type="xs:byte" name="FDB_DE5105_COUNTY"/>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="rownumber" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:byte" name="numrows"/>
+      <xs:attribute type="xs:string" name="queryname"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
