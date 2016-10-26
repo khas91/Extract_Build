@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="FDB_Extract_Build"
   DTS:PackageType="5"
-  DTS:VersionBuild="31"
-  DTS:VersionGUID="{DC0056BD-3D99-4B08-8046-F6C03A0C4EA8}">
+  DTS:VersionBuild="40"
+  DTS:VersionGUID="{8FFC2363-E1DE-4A67-BC33-059698B0758F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -35,30 +35,21 @@
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="1"
-              DTS:MaximumWidth="1"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="REPORT_ID"
-              DTS:DTSID="{36968A11-5CBF-49DB-ABBD-4018BD533C6A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="5"
-              DTS:MaximumWidth="5"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="FDB_DE5002_STRM"
-              DTS:DTSID="{DEFDF4D3-D90E-4ECD-BB06-DEA4215BDB0F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
               DTS:ColumnWidth="2"
               DTS:MaximumWidth="2"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5001_COL_NUM"
               DTS:DTSID="{4DE311ED-CF45-4072-88B4-EBB8F2EFC62E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="1"
+              DTS:MaximumWidth="1"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="REPORT_ID"
+              DTS:DTSID="{36968A11-5CBF-49DB-ABBD-4018BD533C6A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -133,6 +124,15 @@
               DTS:DTSID="{404DB603-51A8-4186-ACCE-CBA3AE63B5A6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="5"
+              DTS:MaximumWidth="5"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FDB_DE5002_STRM"
+              DTS:DTSID="{DEFDF4D3-D90E-4ECD-BB06-DEA4215BDB0F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
               DTS:MaximumWidth="2"
@@ -164,12 +164,10 @@
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="1"
-              DTS:MaximumWidth="1"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="REPORT_ID"
-              DTS:DTSID="{12B82835-DEDA-4585-BAFA-556CB524EBF2}"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:ObjectName="FDB_DE5001_COL_NUM"
+              DTS:DTSID="{17C08C4E-6811-42FC-BE2C-6A55C1A1B15F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -177,8 +175,8 @@
               DTS:MaximumWidth="1"
               DTS:DataType="130"
               DTS:TextQualified="True"
-              DTS:ObjectName="FDB_DE5001_COL_NUM"
-              DTS:DTSID="{22FE789D-155C-44AD-83C7-B61C6396C952}"
+              DTS:ObjectName="REPORT_ID"
+              DTS:DTSID="{7227381A-5DA2-4A8D-A392-1D2B94250A37}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -187,7 +185,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5100_SITENUM"
-              DTS:DTSID="{30242BE1-E9D4-4955-9CDF-585511BA31CC}"
+              DTS:DTSID="{41009A6C-E638-4414-9BA6-0855E6B55942}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -196,7 +194,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5200_FCL_NUM"
-              DTS:DTSID="{BCAF7060-BFD1-41F1-A932-C3D563ED779D}"
+              DTS:DTSID="{BA7A57AF-AEF8-4121-B947-655287A5A55E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -205,7 +203,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5210_FCL_NM"
-              DTS:DTSID="{0B93D102-7C6C-4FC0-B61F-B83438651F29}"
+              DTS:DTSID="{543F86F3-5A16-4C08-88FB-BDF981AF0EE6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -214,7 +212,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5220_FCL_TYP"
-              DTS:DTSID="{D6E99E6C-0E2A-4828-B344-B845529D7A8D}"
+              DTS:DTSID="{7B1034C0-4418-4D6B-B91D-3130F3A8CBBC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -223,7 +221,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5230_FCL_STS"
-              DTS:DTSID="{B295AEDC-E20F-4D45-9F3C-19DD1787A79A}"
+              DTS:DTSID="{BD24F1D7-11E9-420A-BAE0-9626FC6A44F9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -232,7 +230,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5240_FCL_CND"
-              DTS:DTSID="{14B202F2-13ED-4761-890E-7CFB08097FAB}"
+              DTS:DTSID="{68165DEF-C10B-487E-A46E-3EA9044EF6E0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -241,7 +239,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5250_AREA"
-              DTS:DTSID="{006EF043-0B79-484D-BC80-EBE258FDE975}"
+              DTS:DTSID="{86B2D5F4-A157-4CCE-B865-D4B6588972A7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -250,7 +248,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5260_FCL_OWN"
-              DTS:DTSID="{DE44A613-76EC-4AF0-B267-FD4B842835D5}"
+              DTS:DTSID="{6A5D5FDB-7473-45A7-83E4-370F497FCC68}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -259,7 +257,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5270_FCL_LEN"
-              DTS:DTSID="{E935C5D2-2BDD-49FF-8D85-F9D4402195B7}"
+              DTS:DTSID="{48C92449-B170-411E-9336-7DC64DCF5FA3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -268,25 +266,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5280_ORIG_DT"
-              DTS:DTSID="{AB92E44A-355B-4777-BA9A-E939F9D079C5}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="6"
-              DTS:MaximumWidth="6"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="FDB_DE5295_LST_DT"
-              DTS:DTSID="{FE629FD4-5498-41E7-9D57-BCB3F9DE7455}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="5"
-              DTS:MaximumWidth="5"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="FDB_DE5290_PARK_SP"
-              DTS:DTSID="{7E4B64F6-131F-4354-AD96-98488A4FC657}"
+              DTS:DTSID="{AB071599-9DDD-4D12-86E4-2FF2F9FB09AF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -295,7 +275,25 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5002_STRM"
-              DTS:DTSID="{AD58D22A-171A-4435-AF25-D5D46B0B4E79}"
+              DTS:DTSID="{813F9A9B-DE21-404A-BB7A-FC221C1B6B7C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="6"
+              DTS:MaximumWidth="6"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FDB_DE5295_LST_DT"
+              DTS:DTSID="{6EA2D58C-0D8C-465B-85BD-12980D8449D6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="5"
+              DTS:MaximumWidth="5"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FDB_DE5290_PARK_SP"
+              DTS:DTSID="{CC0AEDFD-DE59-4E68-BC3E-6884C422A50C}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -304,7 +302,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[RT3Output]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{1F815519-BD4F-481E-9C1A-3348B0D47068}"
+      DTS:DTSID="{E0FBE790-86E3-482D-8790-2F884B6591C1}"
       DTS:ObjectName="RT3Output">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">"Z:\\Stuart\\ConsoleApplications\\ExtractBuild\\ExtractBuild\\facility.t" +  @[User::term] +  @[User::submissionType] +  @[User::stateReportingYear]</DTS:PropertyExpression>
@@ -320,111 +318,125 @@
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="255"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="REPORT_ID"
-              DTS:DTSID="{89D51A2E-A426-4043-8FC3-131A7C04CF53}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="255"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="FDB_DE5002_STRM"
-              DTS:DTSID="{26159A78-EB4C-45DE-8101-E7F83174BF13}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="255"
-              DTS:MaximumWidth="255"
+              DTS:ColumnWidth="2"
+              DTS:MaximumWidth="2"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5001_COL_NUM"
-              DTS:DTSID="{F6EA6CF4-C9EA-4E11-BC6E-AB06D00AAE30}"
+              DTS:DTSID="{EF2E2F32-271A-4906-B9D6-E78DE9B70395}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="255"
-              DTS:MaximumWidth="255"
+              DTS:ColumnWidth="1"
+              DTS:MaximumWidth="1"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="REPORT_ID"
+              DTS:DTSID="{53970D67-A3D1-4CB2-B764-7840A4C430F4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="2"
+              DTS:MaximumWidth="2"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5100_SITENUM"
-              DTS:DTSID="{112D0094-78F7-48A3-80D0-D7E9C470CB59}"
+              DTS:DTSID="{B8B4E34C-FC13-48C0-9C5F-0F1328520F89}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="255"
-              DTS:MaximumWidth="255"
+              DTS:ColumnWidth="4"
+              DTS:MaximumWidth="4"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5200_FCL_NUM"
-              DTS:DTSID="{DCF6F673-83AA-4D6D-83B8-B53ADFD2D9CA}"
+              DTS:DTSID="{117613DB-626A-43DA-B168-4713ACC72106}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="255"
-              DTS:MaximumWidth="255"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:ObjectName="FDB_DE5300_RM_PFX"
+              DTS:DTSID="{4EF547E3-C0E1-4018-AD9D-6D774B013A0F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="4"
+              DTS:MaximumWidth="4"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5300_RM_NUM"
-              DTS:DTSID="{13B31905-60D7-4A9A-9AFA-3B5437A056E1}"
+              DTS:DTSID="{B409B74C-4D12-4169-B839-A11E9D4F009B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="255"
-              DTS:MaximumWidth="255"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:ObjectName="FDB_DE5300_RM_SFX"
+              DTS:DTSID="{9DF23B7D-0E72-46AC-8A90-669A2CEC537C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="20"
+              DTS:MaximumWidth="20"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5310_RM_NAME"
-              DTS:DTSID="{F6152B21-2903-4D7F-8884-BD38BB3AF2DF}"
+              DTS:DTSID="{AC0E5B44-E861-4C4F-85E7-1A7BCC7F5730}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="255"
-              DTS:MaximumWidth="255"
+              DTS:ColumnWidth="3"
+              DTS:MaximumWidth="3"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5320_R_USECD"
-              DTS:DTSID="{4C474911-EB94-4F13-A2CE-72596408D3C4}"
+              DTS:DTSID="{F6582B1C-8947-4259-8FD4-224F46877067}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="255"
-              DTS:MaximumWidth="255"
+              DTS:ColumnWidth="6"
+              DTS:MaximumWidth="6"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5330_R_AREA"
-              DTS:DTSID="{110F5D59-3328-4D93-9B3C-8C8B09535130}"
+              DTS:DTSID="{53238370-29CE-4B48-96A8-556E6FE350B5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="255"
-              DTS:MaximumWidth="255"
+              DTS:ColumnWidth="8"
+              DTS:MaximumWidth="8"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5340_ICS_CD"
-              DTS:DTSID="{6C0ABD64-5510-4F4B-8233-ADB3FB80FB10}"
+              DTS:DTSID="{8CA6AC12-5183-4600-A7E6-EAF95442EFA9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="255"
-              DTS:MaximumWidth="255"
+              DTS:ColumnWidth="1"
+              DTS:MaximumWidth="1"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5350_JNT_CD"
-              DTS:DTSID="{8765B05B-2292-4BDC-996A-8A42297A14DD}"
+              DTS:DTSID="{06F9987A-A787-447D-BBBF-871EE9E48E18}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="255"
+              DTS:MaximumWidth="1"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5360_CND_CD"
-              DTS:DTSID="{33D9B9D1-2EA2-4625-BEF0-ADA47A13E08A}"
+              DTS:DTSID="{C50358D3-7258-4954-B2B3-C8C75B7ED929}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="5"
+              DTS:MaximumWidth="5"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FDB_DE5002_STRM"
+              DTS:DTSID="{D52A072C-40FE-4505-8EC7-52F8EFB70DF0}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -2454,13 +2466,6 @@
                       externalMetadataColumnId="Package\RT2\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[REPORT_ID]"
                       lineageId="Package\RT2\XML Source.Outputs[row].Columns[REPORT_ID]" />
                     <inputColumn
-                      refId="Package\RT2\Flat File Destination.Inputs[Flat File Destination Input].Columns[FDB_DE5001_COL_NUM]"
-                      cachedDataType="wstr"
-                      cachedLength="1"
-                      cachedName="FDB_DE5001_COL_NUM"
-                      externalMetadataColumnId="Package\RT2\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5001_COL_NUM]"
-                      lineageId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5001_COL_NUM]" />
-                    <inputColumn
                       refId="Package\RT2\Flat File Destination.Inputs[Flat File Destination Input].Columns[FDB_DE5100_SITENUM]"
                       cachedDataType="wstr"
                       cachedLength="2"
@@ -2551,6 +2556,13 @@
                       cachedName="FDB_DE5002_STRM"
                       externalMetadataColumnId="Package\RT2\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5002_STRM]"
                       lineageId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5002_STRM]" />
+                    <inputColumn
+                      refId="Package\RT2\Flat File Destination.Inputs[Flat File Destination Input].Columns[FDB_DE5001_COL_NUM]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="FDB_DE5001_COL_NUM"
+                      externalMetadataColumnId="Package\RT2\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5001_COL_NUM]"
+                      lineageId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5001_COL_NUM]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2559,11 +2571,6 @@
                       dataType="wstr"
                       length="1"
                       name="REPORT_ID" />
-                    <externalMetadataColumn
-                      refId="Package\RT2\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5001_COL_NUM]"
-                      dataType="wstr"
-                      length="1"
-                      name="FDB_DE5001_COL_NUM" />
                     <externalMetadataColumn
                       refId="Package\RT2\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5100_SITENUM]"
                       dataType="wstr"
@@ -2629,6 +2636,12 @@
                       dataType="wstr"
                       length="5"
                       name="FDB_DE5002_STRM" />
+                    <externalMetadataColumn
+                      refId="Package\RT2\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5001_COL_NUM]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="FDB_DE5001_COL_NUM" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -3981,6 +3994,101 @@
               </outputs>
             </component>
             <component
+              refId="Package\RT3\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\RT3\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\RT3\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\RT3\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\RT3\Derived Column.Outputs[Derived Column Output].Columns[space_category]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\RT3\Derived Column.Outputs[Derived Column Output].Columns[space_category]"
+                      name="space_category"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">0</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\RT3\Derived Column.Outputs[Derived Column Output].Columns[student_stations]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\RT3\Derived Column.Outputs[Derived Column Output].Columns[student_stations]"
+                      name="student_stations"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">0</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">0</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\RT3\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\RT3\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\RT3\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\RT3\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\RT3\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\RT3\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\RT3\Flat File Destination"
               componentClassID="Microsoft.FlatFileDestination"
               contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
@@ -4095,69 +4203,95 @@
                       cachedName="FDB_DE5360_CND_CD"
                       externalMetadataColumnId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5360_CND_CD]"
                       lineageId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5360_CND_CD]" />
+                    <inputColumn
+                      refId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].Columns[FDB_DE5300_RM_PFX]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="FDB_DE5300_RM_PFX"
+                      externalMetadataColumnId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5300_RM_PFX]"
+                      lineageId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5300_RM_PFX]" />
+                    <inputColumn
+                      refId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].Columns[FDB_DE5300_RM_SFX]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="FDB_DE5300_RM_SFX"
+                      externalMetadataColumnId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5300_RM_SFX]"
+                      lineageId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5300_RM_SFX]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[REPORT_ID]"
                       dataType="wstr"
-                      length="255"
+                      length="1"
                       name="REPORT_ID" />
                     <externalMetadataColumn
                       refId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5002_STRM]"
                       dataType="wstr"
-                      length="255"
+                      length="5"
                       name="FDB_DE5002_STRM" />
                     <externalMetadataColumn
                       refId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5001_COL_NUM]"
                       dataType="wstr"
-                      length="255"
+                      length="2"
                       name="FDB_DE5001_COL_NUM" />
                     <externalMetadataColumn
                       refId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5100_SITENUM]"
                       dataType="wstr"
-                      length="255"
+                      length="2"
                       name="FDB_DE5100_SITENUM" />
                     <externalMetadataColumn
                       refId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5200_FCL_NUM]"
                       dataType="wstr"
-                      length="255"
+                      length="4"
                       name="FDB_DE5200_FCL_NUM" />
                     <externalMetadataColumn
                       refId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5300_RM_NUM]"
                       dataType="wstr"
-                      length="255"
+                      length="4"
                       name="FDB_DE5300_RM_NUM" />
                     <externalMetadataColumn
                       refId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5310_RM_NAME]"
                       dataType="wstr"
-                      length="255"
+                      length="20"
                       name="FDB_DE5310_RM_NAME" />
                     <externalMetadataColumn
                       refId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5320_R_USECD]"
                       dataType="wstr"
-                      length="255"
+                      length="3"
                       name="FDB_DE5320_R_USECD" />
                     <externalMetadataColumn
                       refId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5330_R_AREA]"
                       dataType="wstr"
-                      length="255"
+                      length="6"
                       name="FDB_DE5330_R_AREA" />
                     <externalMetadataColumn
                       refId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5340_ICS_CD]"
                       dataType="wstr"
-                      length="255"
+                      length="8"
                       name="FDB_DE5340_ICS_CD" />
                     <externalMetadataColumn
                       refId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5350_JNT_CD]"
                       dataType="wstr"
-                      length="255"
+                      length="1"
                       name="FDB_DE5350_JNT_CD" />
                     <externalMetadataColumn
                       refId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5360_CND_CD]"
                       dataType="wstr"
-                      length="255"
+                      length="1"
                       name="FDB_DE5360_CND_CD" />
+                    <externalMetadataColumn
+                      refId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5300_RM_PFX]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="FDB_DE5300_RM_PFX" />
+                    <externalMetadataColumn
+                      refId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5300_RM_SFX]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="FDB_DE5300_RM_SFX" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -4177,13 +4311,6 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\RT3\Multicast.Outputs[Multicast Output 1]"
-                  deleteOutputOnPathDetached="true"
-                  name="Multicast Output 1"
-                  synchronousInputId="Package\RT3\Multicast.Inputs[Multicast Input 1]">
-                  <externalMetadataColumns />
-                </output>
-                <output
                   refId="Package\RT3\Multicast.Outputs[Multicast Output 3]"
                   deleteOutputOnPathDetached="true"
                   name="Multicast Output 3"
@@ -4192,9 +4319,16 @@
                 </output>
                 <output
                   refId="Package\RT3\Multicast.Outputs[Multicast Output 2]"
-                  dangling="true"
                   deleteOutputOnPathDetached="true"
                   name="Multicast Output 2"
+                  synchronousInputId="Package\RT3\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\RT3\Multicast.Outputs[Multicast Output 1]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
                   synchronousInputId="Package\RT3\Multicast.Inputs[Multicast Input 1]">
                   <externalMetadataColumns />
                 </output>
@@ -4368,6 +4502,18 @@
                       cachedName="Copy of FDB_DE5002_STRM"
                       externalMetadataColumnId="Package\RT3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TERM]"
                       lineageId="Package\RT3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5002_STRM]" />
+                    <inputColumn
+                      refId="Package\RT3\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[student_stations]"
+                      cachedDataType="i4"
+                      cachedName="student_stations"
+                      externalMetadataColumnId="Package\RT3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[student_stations]"
+                      lineageId="Package\RT3\Derived Column.Outputs[Derived Column Output].Columns[student_stations]" />
+                    <inputColumn
+                      refId="Package\RT3\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[space_category]"
+                      cachedDataType="i4"
+                      cachedName="space_category"
+                      externalMetadataColumnId="Package\RT3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[space_category]"
+                      lineageId="Package\RT3\Derived Column.Outputs[Derived Column Output].Columns[space_category]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -4530,7 +4676,7 @@
                       externalMetadataColumnId="Package\RT3\XML Source.Outputs[row].ExternalColumns[rownumber]"
                       lineageId="Package\RT3\XML Source.Outputs[row].Columns[rownumber]"
                       name="rownumber"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT3\XML Source.Outputs[row].Columns[REPORT_ID]"
                       dataType="wstr"
@@ -4540,7 +4686,7 @@
                       length="1"
                       lineageId="Package\RT3\XML Source.Outputs[row].Columns[REPORT_ID]"
                       name="REPORT_ID"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5002_STRM]"
                       dataType="wstr"
@@ -4550,7 +4696,7 @@
                       length="5"
                       lineageId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5002_STRM]"
                       name="FDB_DE5002_STRM"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5001_COL_NUM]"
                       dataType="wstr"
@@ -4560,7 +4706,7 @@
                       length="2"
                       lineageId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5001_COL_NUM]"
                       name="FDB_DE5001_COL_NUM"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5100_SITENUM]"
                       dataType="wstr"
@@ -4570,7 +4716,7 @@
                       length="2"
                       lineageId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5100_SITENUM]"
                       name="FDB_DE5100_SITENUM"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5200_FCL_NUM]"
                       dataType="wstr"
@@ -4580,7 +4726,17 @@
                       length="4"
                       lineageId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5200_FCL_NUM]"
                       name="FDB_DE5200_FCL_NUM"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5300_RM_PFX]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\RT3\XML Source.Outputs[row].ExternalColumns[FDB_DE5300_RM_PFX]"
+                      length="1"
+                      lineageId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5300_RM_PFX]"
+                      name="FDB_DE5300_RM_PFX"
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5300_RM_NUM]"
                       dataType="wstr"
@@ -4590,7 +4746,17 @@
                       length="4"
                       lineageId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5300_RM_NUM]"
                       name="FDB_DE5300_RM_NUM"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5300_RM_SFX]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\RT3\XML Source.Outputs[row].ExternalColumns[FDB_DE5300_RM_SFX]"
+                      length="1"
+                      lineageId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5300_RM_SFX]"
+                      name="FDB_DE5300_RM_SFX"
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5310_RM_NAME]"
                       dataType="wstr"
@@ -4600,7 +4766,7 @@
                       length="20"
                       lineageId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5310_RM_NAME]"
                       name="FDB_DE5310_RM_NAME"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5320_R_USECD]"
                       dataType="wstr"
@@ -4610,7 +4776,7 @@
                       length="3"
                       lineageId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5320_R_USECD]"
                       name="FDB_DE5320_R_USECD"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5330_R_AREA]"
                       dataType="wstr"
@@ -4620,7 +4786,7 @@
                       length="6"
                       lineageId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5330_R_AREA]"
                       name="FDB_DE5330_R_AREA"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5340_ICS_CD]"
                       dataType="wstr"
@@ -4630,7 +4796,7 @@
                       length="8"
                       lineageId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5340_ICS_CD]"
                       name="FDB_DE5340_ICS_CD"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5350_JNT_CD]"
                       dataType="wstr"
@@ -4640,7 +4806,7 @@
                       length="1"
                       lineageId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5350_JNT_CD]"
                       name="FDB_DE5350_JNT_CD"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5360_CND_CD]"
                       dataType="wstr"
@@ -4650,7 +4816,7 @@
                       length="1"
                       lineageId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5360_CND_CD]"
                       name="FDB_DE5360_CND_CD"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -4720,10 +4886,32 @@
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
+                      refId="Package\RT3\XML Source.Outputs[row].ExternalColumns[FDB_DE5300_RM_PFX]"
+                      dataType="wstr"
+                      length="1"
+                      name="FDB_DE5300_RM_PFX">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
                       refId="Package\RT3\XML Source.Outputs[row].ExternalColumns[FDB_DE5300_RM_NUM]"
                       dataType="wstr"
                       length="4"
                       name="FDB_DE5300_RM_NUM">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\RT3\XML Source.Outputs[row].ExternalColumns[FDB_DE5300_RM_SFX]"
+                      dataType="wstr"
+                      length="1"
+                      name="FDB_DE5300_RM_SFX">
                       <properties>
                         <property
                           dataType="System.String"
@@ -4846,11 +5034,23 @@
                       lineageId="Package\RT3\XML Source.Outputs[row Error Output].Columns[FDB_DE5200_FCL_NUM]"
                       name="FDB_DE5200_FCL_NUM" />
                     <outputColumn
+                      refId="Package\RT3\XML Source.Outputs[row Error Output].Columns[FDB_DE5300_RM_PFX]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\RT3\XML Source.Outputs[row Error Output].ExternalColumns[FDB_DE5300_RM_PFX]"
+                      lineageId="Package\RT3\XML Source.Outputs[row Error Output].Columns[FDB_DE5300_RM_PFX]"
+                      name="FDB_DE5300_RM_PFX" />
+                    <outputColumn
                       refId="Package\RT3\XML Source.Outputs[row Error Output].Columns[FDB_DE5300_RM_NUM]"
                       dataType="nText"
                       externalMetadataColumnId="Package\RT3\XML Source.Outputs[row Error Output].ExternalColumns[FDB_DE5300_RM_NUM]"
                       lineageId="Package\RT3\XML Source.Outputs[row Error Output].Columns[FDB_DE5300_RM_NUM]"
                       name="FDB_DE5300_RM_NUM" />
+                    <outputColumn
+                      refId="Package\RT3\XML Source.Outputs[row Error Output].Columns[FDB_DE5300_RM_SFX]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\RT3\XML Source.Outputs[row Error Output].ExternalColumns[FDB_DE5300_RM_SFX]"
+                      lineageId="Package\RT3\XML Source.Outputs[row Error Output].Columns[FDB_DE5300_RM_SFX]"
+                      name="FDB_DE5300_RM_SFX" />
                     <outputColumn
                       refId="Package\RT3\XML Source.Outputs[row Error Output].Columns[FDB_DE5310_RM_NAME]"
                       dataType="nText"
@@ -4927,9 +5127,17 @@
                       dataType="nText"
                       name="FDB_DE5200_FCL_NUM" />
                     <externalMetadataColumn
+                      refId="Package\RT3\XML Source.Outputs[row Error Output].ExternalColumns[FDB_DE5300_RM_PFX]"
+                      dataType="nText"
+                      name="FDB_DE5300_RM_PFX" />
+                    <externalMetadataColumn
                       refId="Package\RT3\XML Source.Outputs[row Error Output].ExternalColumns[FDB_DE5300_RM_NUM]"
                       dataType="nText"
                       name="FDB_DE5300_RM_NUM" />
+                    <externalMetadataColumn
+                      refId="Package\RT3\XML Source.Outputs[row Error Output].ExternalColumns[FDB_DE5300_RM_SFX]"
+                      dataType="nText"
+                      name="FDB_DE5300_RM_SFX" />
                     <externalMetadataColumn
                       refId="Package\RT3\XML Source.Outputs[row Error Output].ExternalColumns[FDB_DE5310_RM_NAME]"
                       dataType="nText"
@@ -4962,14 +5170,19 @@
           <paths>
             <path
               refId="Package\RT3.Paths[Data Conversion Output]"
-              endId="Package\RT3\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              endId="Package\RT3\Derived Column.Inputs[Derived Column Input]"
               name="Data Conversion Output"
               startId="Package\RT3\Data Conversion.Outputs[Data Conversion Output]" />
             <path
-              refId="Package\RT3.Paths[Multicast Output 1]"
+              refId="Package\RT3.Paths[Derived Column Output]"
+              endId="Package\RT3\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\RT3\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\RT3.Paths[Multicast Output 2]"
               endId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input]"
-              name="Multicast Output 1"
-              startId="Package\RT3\Multicast.Outputs[Multicast Output 1]" />
+              name="Multicast Output 2"
+              startId="Package\RT3\Multicast.Outputs[Multicast Output 2]" />
             <path
               refId="Package\RT3.Paths[Multicast Output 3]"
               endId="Package\RT3\Data Conversion.Inputs[Data Conversion Input]"
@@ -5002,15 +5215,6 @@
           Language="CSharp"
           ReadOnlyVariables="User::outputDirectory"
           ReadWriteVariables="User::r1XML,User::r2XML,User::r3XML">
-          <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -5130,6 +5334,35 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_af060dc173ec43d7ab6661754cbd6fdf.Properties.Settings.get_Default():ST_af060dc173ec43d7ab6661754cbd6fdf.Properties.Sett" +
+    "ings")]
+
+namespace ST_af060dc173ec43d7ab6661754cbd6fdf.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
           <ProjectItem
             Name="ST_90c473b933f44ea79dfa0657c54c3b7a.csproj"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?><Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003"><PropertyGroup><ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><ProductVersion>8.0.30703</ProductVersion><SchemaVersion>2.0</SchemaVersion><ProjectGuid>{9e43f97c-9a42-437c-89fd-3cd03125b84f}</ProjectGuid><OutputType>Library</OutputType><AppDesignerFolder>Properties</AppDesignerFolder><RootNamespace>ST_af060dc173ec43d7ab6661754cbd6fdf</RootNamespace><AssemblyName>ST_90c473b933f44ea79dfa0657c54c3b7a</AssemblyName><TargetFrameworkVersion>v4.0</TargetFrameworkVersion><FileAlignment>512</FileAlignment><ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch></PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Debug' "><DebugSymbols>true</DebugSymbols><DebugType>full</DebugType><Optimize>false</Optimize><OutputPath>.\bin\Debug\</OutputPath><EnableUnmanagedDebugging>false</EnableUnmanagedDebugging><DefineConstants>DEBUG;TRACE</DefineConstants><ErrorReport>prompt</ErrorReport><WarningLevel>4</WarningLevel></PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Release' "><DebugSymbols>false</DebugSymbols><Optimize>true</Optimize><OutputPath>.\bin\Release\</OutputPath><EnableUnmanagedDebugging>false</EnableUnmanagedDebugging><DefineConstants>TRACE</DefineConstants><ErrorReport>prompt</ErrorReport><WarningLevel>4</WarningLevel></PropertyGroup><ItemGroup><Reference Include="System" /><Reference Include="System.Data" /><Reference Include="System.Windows.Forms" /><Reference Include="System.Xml" /><Reference Include="Microsoft.SqlServer.ManagedDTS, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" /><Reference Include="Microsoft.SqlServer.ScriptTask, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" /></ItemGroup><ItemGroup><AppDesigner Include="Properties\" /><Compile Include="Properties\AssemblyInfo.cs"><SubType>Code</SubType></Compile><EmbeddedResource Include="Properties\Resources.resx"><Generator>ResXFileCodeGenerator</Generator><LastGenOutput>Resources.Designer.cs</LastGenOutput></EmbeddedResource><Compile Include="Properties\Resources.Designer.cs"><AutoGen>True</AutoGen><DependentUpon>Resources.resx</DependentUpon></Compile><None Include="Properties\Settings.settings"><Generator>SettingsSingleFileGenerator</Generator><LastGenOutput>Settings.Designer.cs</LastGenOutput></None><Compile Include="Properties\Settings.Designer.cs"><AutoGen>True</AutoGen><DependentUpon>Settings.settings</DependentUpon></Compile><Compile Include="ScriptMain.cs"><SubType>Code</SubType></Compile></ItemGroup><!-- Include the build rules for a C# project.--><Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" /><ProjectExtensions><VisualStudio><FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}"><ProjectProperties HostName="ScriptTask" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="#HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\10.0\InstallDir#\devenv.exe" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" /><Host Name="ScriptTask" GeneratedNamespace="$safeprojectname" IconIndex=""></Host><ProjectClient><HostIdentifier>SSIS_ST120</HostIdentifier></ProjectClient></FlavorProperties></VisualStudio></ProjectExtensions></Project>]]></ProjectItem>
@@ -5305,35 +5538,6 @@ namespace ST_af060dc173ec43d7ab6661754cbd6fdf
 	</msb:ItemGroup>
 </c:Project>]]></ProjectItem>
           <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_af060dc173ec43d7ab6661754cbd6fdf.Properties.Settings.get_Default():ST_af060dc173ec43d7ab6661754cbd6fdf.Properties.Sett" +
-    "ings")]
-
-namespace ST_af060dc173ec43d7ab6661754cbd6fdf.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
-          <ProjectItem
             Name="Properties\AssemblyInfo.cs"
             Encoding="UTF8"><![CDATA[using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -5363,6 +5567,15 @@ using System.Runtime.CompilerServices;
 // by using the '*' as shown below:
 
 [assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -5618,13 +5831,21 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="163,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="184,125" />
+        <NodeLayout
           Size="98,42"
           Id="Package\RT1"
           TopLeft="404,212" />
         <NodeLayout
-          Size="163,42"
-          Id="Package\Execute SQL Task"
-          TopLeft="184,125" />
+          Size="98,42"
+          Id="Package\RT2"
+          TopLeft="407,287" />
+        <NodeLayout
+          Size="98,42"
+          Id="Package\RT3"
+          TopLeft="406,358" />
         <NodeLayout
           Size="131,42"
           Id="Package\Script Task"
@@ -5673,10 +5894,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="98,42"
-          Id="Package\RT2"
-          TopLeft="407,287" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="454.5,254">
@@ -5699,10 +5916,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="98,42"
-          Id="Package\RT3"
-          TopLeft="406,358" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
           TopLeft="455.5,329">
@@ -5887,6 +6100,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="156,42"
+          Id="Package\RT2\Data Conversion"
+          TopLeft="319,306" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\RT2\OLE DB Destination"
+          TopLeft="318,384" />
+        <NodeLayout
           Size="134,42"
           Id="Package\RT2\XML Source"
           TopLeft="211,123" />
@@ -5894,70 +6115,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Size="120,42"
           Id="Package\RT2\Multicast"
           TopLeft="220,207" />
-        <EdgeLayout
-          Id="Package\RT2.Paths[row]"
-          TopLeft="279,165">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,42"
-              Start="0,0"
-              End="0,34.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="172,42"
           Id="Package\RT2\Flat File Destination"
           TopLeft="117,301" />
-        <EdgeLayout
-          Id="Package\RT2.Paths[Multicast Output 1]"
-          TopLeft="280,249">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-77,52"
-              Start="0,0"
-              End="-77,44.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22"
-                    Point2="0,26"
-                    Point3="-4,26" />
-                  <mssgle:LineSegment
-                    End="-73,26" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-73,26"
-                    Point2="-77,26"
-                    Point3="-77,30" />
-                  <mssgle:LineSegment
-                    End="-77,44.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="156,42"
-          Id="Package\RT2\Data Conversion"
-          TopLeft="319,306" />
         <EdgeLayout
           Id="Package\RT2.Paths[Multicast Output 2]"
           TopLeft="298.666666666667,249">
@@ -5992,10 +6153,40 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="171,42"
-          Id="Package\RT2\OLE DB Destination"
-          TopLeft="318,384" />
+        <EdgeLayout
+          Id="Package\RT2.Paths[Multicast Output 1]"
+          TopLeft="280,249">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-77,52"
+              Start="0,0"
+              End="-77,44.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22"
+                    Point2="0,26"
+                    Point3="-4,26" />
+                  <mssgle:LineSegment
+                    End="-73,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-73,26"
+                    Point2="-77,26"
+                    Point3="-77,30" />
+                  <mssgle:LineSegment
+                    End="-77,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\RT2.Paths[Data Conversion Output]"
           TopLeft="400.25,348">
@@ -6010,6 +6201,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,28.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\RT2.Paths[row]"
+          TopLeft="279,165">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42"
+              Start="0,0"
+              End="0,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6040,13 +6253,29 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="120,42"
+          Id="Package\RT3\Multicast"
+          TopLeft="202,163" />
+        <NodeLayout
           Size="134,42"
           Id="Package\RT3\XML Source"
           TopLeft="196,97" />
         <NodeLayout
-          Size="120,42"
-          Id="Package\RT3\Multicast"
-          TopLeft="202,163" />
+          Size="172,42"
+          Id="Package\RT3\Flat File Destination"
+          TopLeft="92,240" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\RT3\Derived Column"
+          TopLeft="310,317" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\RT3\Data Conversion"
+          TopLeft="303,250" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\RT3\OLE DB Destination"
+          TopLeft="302,383" />
         <EdgeLayout
           Id="Package\RT3.Paths[row]"
           TopLeft="262.5,139">
@@ -6069,48 +6298,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="172,42"
-          Id="Package\RT3\Flat File Destination"
-          TopLeft="97,251" />
-        <EdgeLayout
-          Id="Package\RT3.Paths[Multicast Output 1]"
-          TopLeft="262,205">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-79,46"
-              Start="0,0"
-              End="-79,38.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19"
-                    Point2="0,23"
-                    Point3="-4,23" />
-                  <mssgle:LineSegment
-                    End="-75,23" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-75,23"
-                    Point2="-79,23"
-                    Point3="-79,27" />
-                  <mssgle:LineSegment
-                    End="-79,38.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="156,42"
-          Id="Package\RT3\Data Conversion"
-          TopLeft="303,250" />
         <EdgeLayout
           Id="Package\RT3.Paths[Multicast Output 3]"
           TopLeft="280.666666666667,205">
@@ -6145,24 +6332,76 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="171,42"
-          Id="Package\RT3\OLE DB Destination"
-          TopLeft="301,328" />
         <EdgeLayout
-          Id="Package\RT3.Paths[Data Conversion Output]"
-          TopLeft="383.75,292">
+          Id="Package\RT3.Paths[Multicast Output 2]"
+          TopLeft="243.333333333333,205">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,36"
+              EndConnector="-65.3333333333333,35"
               Start="0,0"
-              End="0,28.5">
+              End="-65.3333333333333,27.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.5" />
+                    End="0,10.2763157894737" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.2763157894737"
+                    Point2="0,14.2763157894737"
+                    Point3="-4,14.2763157894737" />
+                  <mssgle:LineSegment
+                    End="-61.3333333333333,14.2763157894737" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-61.3333333333333,14.2763157894737"
+                    Point2="-65.3333333333333,14.2763157894737"
+                    Point3="-65.3333333333333,18.2763157894737" />
+                  <mssgle:LineSegment
+                    End="-65.3333333333333,27.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\RT3.Paths[Derived Column Output]"
+          TopLeft="387.25,359">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,24"
+              Start="0,0"
+              End="0,16.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\RT3.Paths[Data Conversion Output]"
+          TopLeft="384,292">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,25"
+              Start="0,0"
+              End="0,17.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

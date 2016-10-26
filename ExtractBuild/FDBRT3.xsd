@@ -11,7 +11,9 @@
               <xs:element minOccurs="0" name="FDB_DE5001_COL_NUM"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="2" /> </xs:restriction> </xs:simpleType> </xs:element>
               <xs:element minOccurs="0" name="FDB_DE5100_SITENUM"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="2" /> </xs:restriction> </xs:simpleType> </xs:element>
               <xs:element minOccurs="0" name="FDB_DE5200_FCL_NUM"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="4" /> </xs:restriction> </xs:simpleType> </xs:element>
+			  <xs:element minOccurs="0" name="FDB_DE5300_RM_PFX"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
               <xs:element minOccurs="0" name="FDB_DE5300_RM_NUM"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="4" /> </xs:restriction> </xs:simpleType> </xs:element>
+			  <xs:element minOccurs="0" name="FDB_DE5300_RM_SFX"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
               <xs:element minOccurs="0" name="FDB_DE5310_RM_NAME"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="20" /> </xs:restriction> </xs:simpleType> </xs:element>
               <xs:element minOccurs="0" name="FDB_DE5320_R_USECD"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="3" /> </xs:restriction> </xs:simpleType> </xs:element>
               <xs:element minOccurs="0" name="FDB_DE5330_R_AREA"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="6" /> </xs:restriction> </xs:simpleType> </xs:element>
