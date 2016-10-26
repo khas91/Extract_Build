@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="query">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="REPORT_ID" > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="FDB_DE5001_COL_NUM"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="FDB_DE5100_SITENUM" > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="2" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="FDB_DE5200_FCL_NUM"  > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="4" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="FDB_DE5210_FCL_NM" > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="20" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="FDB_DE5220_FCL_TYP" > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="FDB_DE5230_FCL_STS" > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="FDB_DE5240_FCL_CND"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="FDB_DE5250_AREA"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="6" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="FDB_DE5260_FCL_OWN"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="FDB_DE5270_FCL_LEN"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="2" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="FDB_DE5280_ORIG_DT"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="6" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="FDB_DE5295_LST_DT"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="6" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="FDB_DE5290_PARK_SP"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="5" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="FDB_DE5002_STRM"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="5" /> </xs:restriction> </xs:simpleType> </xs:element>
+            </xs:sequence>
+            <xs:attribute name="rownumber" type="xs:unsignedByte" use="optional" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="numrows" type="xs:unsignedByte" use="optional" />
+      <xs:attribute name="queryname" type="xs:string" use="optional" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

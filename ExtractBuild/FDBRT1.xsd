@@ -5,18 +5,18 @@
         <xs:element name="row" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element type="xs:byte" name="REPORT_ID"/>
-              <xs:element type="xs:short" name="FDB_DE5002_STRM"/>
-              <xs:element type="xs:byte" name="FDB_DE5001_COL_NUM"/>
-              <xs:element type="xs:byte" name="FDB_DE5100_SITENUM"/>
-              <xs:element type="xs:string" name="FDB_DE5110_S_NAME"/>
-              <xs:element type="xs:byte" name="FDB_DE5120_S_TYPE"/>
-              <xs:element type="xs:float" name="FDB_DE5130_S_AREA"/>
-              <xs:element type="xs:byte" name="FDB_DE5140_OWNER"/>
-              <xs:element type="xs:byte" name="FDB_DE5150_LEN_HLD"/>
-              <xs:element type="xs:byte" name="FDB_DE5160_AQ_MEAN"/>
-              <xs:element type="xs:int" name="FDB_DE5170_AQDATE"/>
-              <xs:element type="xs:byte" name="FDB_DE5105_COUNTY"/>
+              <xs:element name="REPORT_ID"          > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element name="FDB_DE5002_STRM"   > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="5" /> </xs:restriction> </xs:simpleType> </xs:element> 
+              <xs:element name="FDB_DE5001_COL_NUM" > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="2" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element name="FDB_DE5100_SITENUM" > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="2" /> </xs:restriction> </xs:simpleType> </xs:element> 
+              <xs:element name="FDB_DE5110_S_NAME"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="20"/> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element name="FDB_DE5120_S_TYPE"  > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element name="FDB_DE5130_S_AREA" > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="6" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element name="FDB_DE5140_OWNER"   > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element name="FDB_DE5150_LEN_HLD" > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="2" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element name="FDB_DE5160_AQ_MEAN" > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element name="FDB_DE5170_AQDATE"   > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="6" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element name="FDB_DE5105_COUNTY"  > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="2" /> </xs:restriction> </xs:simpleType> </xs:element> 
             </xs:sequence>
             <xs:attribute type="xs:byte" name="rownumber" use="optional"/>
           </xs:complexType>
