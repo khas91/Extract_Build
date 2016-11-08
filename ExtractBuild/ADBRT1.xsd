@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://java.sun.com/xml/ns/jdbc" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="webRowSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="properties">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="escape-processing" type="xs:boolean" />
+              <xs:element minOccurs="0" name="fetch-direction" type="xs:unsignedShort" />
+              <xs:element minOccurs="0" name="fetch-size" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="isolation-level" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="key-columns" />
+              <xs:element minOccurs="0" name="map" />
+              <xs:element minOccurs="0" name="max-field-size" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="max-rows" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="query-timeout" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="read-only" type="xs:boolean" />
+              <xs:element minOccurs="0" name="show-deleted" type="xs:boolean" />
+              <xs:element minOccurs="0" name="table-name" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="metadata">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="column-count" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="column-definition">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="column-index" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="auto-increment" type="xs:boolean" />
+                    <xs:element minOccurs="0" name="case-sensitive" type="xs:boolean" />
+                    <xs:element minOccurs="0" name="currency" type="xs:boolean" />
+                    <xs:element minOccurs="0" name="nullable" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="signed" type="xs:boolean" />
+                    <xs:element minOccurs="0" name="searchable" type="xs:boolean" />
+                    <xs:element minOccurs="0" name="column-display-size" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="column-label" type="xs:string" />
+                    <xs:element minOccurs="0" name="column-name" type="xs:string" />
+                    <xs:element minOccurs="0" name="schema-name" />
+                    <xs:element minOccurs="0" name="column-precision" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="column-scale" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="table-name" />
+                    <xs:element minOccurs="0" name="catalog-name" />
+                    <xs:element minOccurs="0" name="column-type" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="column-type-name" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="data">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="currentRow">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="columnValue" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

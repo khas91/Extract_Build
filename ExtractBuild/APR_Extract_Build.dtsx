@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="APR_Extract_Build"
   DTS:PackageType="5"
-  DTS:VersionBuild="59"
-  DTS:VersionGUID="{45CB1C7C-1EC4-4609-AA45-42E8469149B4}">
+  DTS:VersionBuild="61"
+  DTS:VersionGUID="{BBE83B82-4678-4929-9D53-51120E65B84E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -679,6 +679,12 @@
                       cachedLength="1"
                       cachedName="APR_DE0275_CRD_CAT"
                       lineageId="Package\Data Flow Task\Script Component.Outputs[Output 0].Columns[APR_DE0275_CRD_CAT]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[EMPLID]"
+                      cachedDataType="wstr"
+                      cachedLength="7"
+                      cachedName="EMPLID"
+                      lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[EMPLID]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -1432,6 +1438,28 @@
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
                           name="SourceInputColumnLineageID">#{Package\Data Flow Task\XML Source.Outputs[row].Columns[FLORIDA_EDUCAT_ID]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of EMPLID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="7"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of EMPLID]"
+                      name="Copy of EMPLID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\XML Source.Outputs[row].Columns[EMPLID]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -2409,6 +2437,14 @@
                       cachedName="Copy of APR_DE0275_CRD_CAT"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[APR_DE0275_CRD_CAT]"
                       lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of APR_DE0275_CRD_CAT]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of EMPLID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="7"
+                      cachedName="Copy of EMPLID"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EMPLID]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of EMPLID]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2622,6 +2658,12 @@
                       dataType="str"
                       length="1"
                       name="APR_DE0275_CRD_CAT" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EMPLID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="7"
+                      name="EMPLID" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -3726,7 +3768,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   dataType="System.String"
                   description="The XML schema definition used by the XML source adapter."
                   expressionType="Notify"
-                  name="XMLSchemaDefinition">Z:\Stuart\Git Repos\APR_Build\APR_Build\APR_RECORDTYPE1.xsd</property>
+                  name="XMLSchemaDefinition">Z:\Stuart\ConsoleApplications\ExtractBuild\ExtractBuild\APRRT1.xsd</property>
                 <property
                   dataType="System.Boolean"
                   description="Identifies whether or not to use inline schema."
@@ -3749,6 +3791,16 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   </properties>
                   <outputColumns>
                     <outputColumn
+                      refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[EMPLID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\XML Source.Outputs[row].ExternalColumns[EMPLID]"
+                      length="7"
+                      lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[EMPLID]"
+                      name="EMPLID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0010_RPRT_ID]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
@@ -3757,7 +3809,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="7"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0010_RPRT_ID]"
                       name="APR_DE0010_RPRT_ID"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0015_TRM_ID]"
                       dataType="wstr"
@@ -3767,7 +3819,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="5"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0015_TRM_ID]"
                       name="APR_DE0015_TRM_ID"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0020_PRSN_ID]"
                       dataType="wstr"
@@ -3777,7 +3829,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="9"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0020_PRSN_ID]"
                       name="APR_DE0020_PRSN_ID"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0030_LAST_NM]"
                       dataType="wstr"
@@ -3787,7 +3839,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="20"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0030_LAST_NM]"
                       name="APR_DE0030_LAST_NM"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0031_FRST_NM]"
                       dataType="wstr"
@@ -3797,7 +3849,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="15"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0031_FRST_NM]"
                       name="APR_DE0031_FRST_NM"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0032_MDL_NM]"
                       dataType="wstr"
@@ -3807,7 +3859,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="20"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0032_MDL_NM]"
                       name="APR_DE0032_MDL_NM"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0035_GENDER]"
                       dataType="wstr"
@@ -3817,7 +3869,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="1"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0035_GENDER]"
                       name="APR_DE0035_GENDER"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0050_CTZNSHP]"
                       dataType="wstr"
@@ -3827,7 +3879,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="1"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0050_CTZNSHP]"
                       name="APR_DE0050_CTZNSHP"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0060_DT_EMPL]"
                       dataType="wstr"
@@ -3837,7 +3889,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="8"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0060_DT_EMPL]"
                       name="APR_DE0060_DT_EMPL"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0080_TEMP]"
                       dataType="wstr"
@@ -3847,7 +3899,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="1"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0080_TEMP]"
                       name="APR_DE0080_TEMP"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0090_FL_PRT]"
                       dataType="wstr"
@@ -3857,7 +3909,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="1"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0090_FL_PRT]"
                       name="APR_DE0090_FL_PRT"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0095_EXEMPT]"
                       dataType="wstr"
@@ -3867,7 +3919,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="1"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0095_EXEMPT]"
                       name="APR_DE0095_EXEMPT"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0100_ANNLSAL]"
                       dataType="wstr"
@@ -3877,7 +3929,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="6"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0100_ANNLSAL]"
                       name="APR_DE0100_ANNLSAL"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0110_BRTH_DT]"
                       dataType="wstr"
@@ -3887,7 +3939,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="8"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0110_BRTH_DT]"
                       name="APR_DE0110_BRTH_DT"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0120_POS_TTL]"
                       dataType="wstr"
@@ -3897,7 +3949,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="25"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0120_POS_TTL]"
                       name="APR_DE0120_POS_TTL"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0130_OAC]"
                       dataType="wstr"
@@ -3907,7 +3959,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="2"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0130_OAC]"
                       name="APR_DE0130_OAC"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0150_RANK]"
                       dataType="wstr"
@@ -3917,7 +3969,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="1"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0150_RANK]"
                       name="APR_DE0150_RANK"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0160_DGHGERN]"
                       dataType="wstr"
@@ -3927,7 +3979,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="1"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0160_DGHGERN]"
                       name="APR_DE0160_DGHGERN"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0170_LEAVETY]"
                       dataType="wstr"
@@ -3937,7 +3989,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="1"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0170_LEAVETY]"
                       name="APR_DE0170_LEAVETY"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0180_TENURE]"
                       dataType="wstr"
@@ -3947,7 +3999,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="1"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0180_TENURE]"
                       name="APR_DE0180_TENURE"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0185_FACULTY]"
                       dataType="wstr"
@@ -3957,7 +4009,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="1"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0185_FACULTY]"
                       name="APR_DE0185_FACULTY"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0190_TEN_DT]"
                       dataType="wstr"
@@ -3967,7 +4019,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="8"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0190_TEN_DT]"
                       name="APR_DE0190_TEN_DT"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0225_EAM_IND]"
                       dataType="wstr"
@@ -3977,7 +4029,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="1"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0225_EAM_IND]"
                       name="APR_DE0225_EAM_IND"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0235_RACE_WH]"
                       dataType="wstr"
@@ -3987,7 +4039,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="1"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0235_RACE_WH]"
                       name="APR_DE0235_RACE_WH"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0240_RACE_BL]"
                       dataType="wstr"
@@ -3997,7 +4049,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="1"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0240_RACE_BL]"
                       name="APR_DE0240_RACE_BL"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0245_RACE_AS]"
                       dataType="wstr"
@@ -4007,7 +4059,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="1"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0245_RACE_AS]"
                       name="APR_DE0245_RACE_AS"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0250_RACE_AI]"
                       dataType="wstr"
@@ -4017,7 +4069,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="1"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0250_RACE_AI]"
                       name="APR_DE0250_RACE_AI"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0255_RACE_HA]"
                       dataType="wstr"
@@ -4027,7 +4079,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="1"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0255_RACE_HA]"
                       name="APR_DE0255_RACE_HA"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0260_ETH_HI]"
                       dataType="wstr"
@@ -4037,7 +4089,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="1"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0260_ETH_HI]"
                       name="APR_DE0260_ETH_HI"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0265_MTH_EMP]"
                       dataType="wstr"
@@ -4047,7 +4099,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="2"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0265_MTH_EMP]"
                       name="APR_DE0265_MTH_EMP"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0270_CON_STA]"
                       dataType="wstr"
@@ -4057,7 +4109,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="1"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0270_CON_STA]"
                       name="APR_DE0270_CON_STA"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0280_NM_SUFF]"
                       dataType="wstr"
@@ -4067,7 +4119,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="10"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[APR_DE0280_NM_SUFF]"
                       name="APR_DE0280_NM_SUFF"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[FLORIDA_EDUCAT_ID]"
                       dataType="wstr"
@@ -4077,7 +4129,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       length="14"
                       lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[FLORIDA_EDUCAT_ID]"
                       name="FLORIDA_EDUCAT_ID"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\XML Source.Outputs[row].Columns[SUBMISSION_TYPE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\XML Source.Outputs[row].ExternalColumns[SUBMISSION_TYPE]"
+                      length="1"
+                      lineageId="Package\Data Flow Task\XML Source.Outputs[row].Columns[SUBMISSION_TYPE]"
+                      name="SUBMISSION_TYPE"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -4104,7 +4166,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\XML Source.Outputs[row].ExternalColumns[EMPLID]"
                       dataType="wstr"
-                      length="255"
+                      length="7"
                       name="EMPLID">
                       <properties>
                         <property
@@ -5024,6 +5086,15 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           ReadOnlyVariables="User::outputDirectory"
           ReadWriteVariables="User::r1XML">
           <ProjectItem
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+          <ProjectItem
             Name="ST_af060dc173ec43d7ab6661754cbd6fdf.csproj"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -5243,35 +5314,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
   </resheader>
 </root>]]></ProjectItem>
           <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_af060dc173ec43d7ab6661754cbd6fdf.Properties.Settings.get_Default():ST_af060dc173ec43d7ab6661754cbd6fdf.Properties.Sett" +
-    "ings")]
-
-namespace ST_af060dc173ec43d7ab6661754cbd6fdf.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
-          <ProjectItem
             Name="ScriptMain.cs"
             Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
 /* The Script Task allows you to perform virtually any operation that can be accomplished in
@@ -5443,6 +5485,35 @@ namespace ST_af060dc173ec43d7ab6661754cbd6fdf
 	</msb:ItemGroup>
 </c:Project>]]></ProjectItem>
           <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_af060dc173ec43d7ab6661754cbd6fdf.Properties.Settings.get_Default():ST_af060dc173ec43d7ab6661754cbd6fdf.Properties.Sett" +
+    "ings")]
+
+namespace ST_af060dc173ec43d7ab6661754cbd6fdf.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <ProjectItem
             Name="Properties\AssemblyInfo.cs"
             Encoding="UTF8"><![CDATA[using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -5472,15 +5543,6 @@ using System.Runtime.CompilerServices;
 // by using the '*' as shown below:
 
 [assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -5784,14 +5846,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="134,42"
-          Id="Package\Data Flow Task\XML Source"
-          TopLeft="169.142859887104,3.68235314709091" />
-        <NodeLayout
-          Size="163,42"
-          Id="Package\Data Flow Task\Script Component"
-          TopLeft="153.142859682745,135.976471737924" />
-        <NodeLayout
           Size="171,42"
           Id="Package\Data Flow Task\Flat File Destination"
           TopLeft="44.5714292623558,291.364709211303" />
@@ -5800,13 +5854,47 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Id="Package\Data Flow Task\Multicast"
           TopLeft="172.571431442183,203.270590328758" />
         <NodeLayout
+          Size="154,42"
+          Id="Package\Data Flow Task\Derived Column"
+          TopLeft="164,69" />
+        <NodeLayout
+          Size="134,42"
+          Id="Package\Data Flow Task\XML Source"
+          TopLeft="169.142859887104,3.68235314709091" />
+        <NodeLayout
           Size="155,42"
           Id="Package\Data Flow Task\Data Conversion"
           TopLeft="266.285718752414,288.917650353455" />
         <NodeLayout
+          Size="163,42"
+          Id="Package\Data Flow Task\Script Component"
+          TopLeft="153.142859682745,135.976471737924" />
+        <NodeLayout
           Size="171,42"
           Id="Package\Data Flow Task\OLE DB Destination"
           TopLeft="257.142861453854,370.282357376918" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[row]"
+          TopLeft="238.571429943552,45.6823531470909">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,23.3176468529091"
+              Start="0,0"
+              End="0,15.8176468529091">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.8176468529091" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Output 0]"
           TopLeft="233.607145562464,177.976471737924">
@@ -5898,54 +5986,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Data Conversion Output]"
-          TopLeft="343.314290103134,330.517650353455">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,39.7647070234626"
-              Start="0,0"
-              End="0,32.2647070234626">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.2647070234626" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Data Flow Task\Derived Column"
-          TopLeft="164,69" />
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[row]"
-          TopLeft="238.571429943552,45.6823531470909">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,23.3176468529091"
-              Start="0,0"
-              End="0,15.8176468529091">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,15.8176468529091" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Data Flow Task.Paths[Derived Column Output]"
           TopLeft="237.821429841372,111">
           <EdgeLayout.Curve>
@@ -5959,6 +5999,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,17.4764717379243" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Data Conversion Output]"
+          TopLeft="343.314290103134,330.517650353455">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39.7647070234626"
+              Start="0,0"
+              End="0,32.2647070234626">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.2647070234626" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
