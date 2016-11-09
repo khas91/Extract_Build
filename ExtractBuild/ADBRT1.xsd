@@ -1,70 +1,59 @@
 <?xml version="1.0"?>
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://java.sun.com/xml/ns/jdbc" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="webRowSet">
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="query">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="properties">
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="row">
           <xs:complexType>
             <xs:sequence>
-              <xs:element minOccurs="0" name="escape-processing" type="xs:boolean" />
-              <xs:element minOccurs="0" name="fetch-direction" type="xs:unsignedShort" />
-              <xs:element minOccurs="0" name="fetch-size" type="xs:unsignedByte" />
-              <xs:element minOccurs="0" name="isolation-level" type="xs:unsignedByte" />
-              <xs:element minOccurs="0" name="key-columns" />
-              <xs:element minOccurs="0" name="map" />
-              <xs:element minOccurs="0" name="max-field-size" type="xs:unsignedByte" />
-              <xs:element minOccurs="0" name="max-rows" type="xs:unsignedByte" />
-              <xs:element minOccurs="0" name="query-timeout" type="xs:unsignedByte" />
-              <xs:element minOccurs="0" name="read-only" type="xs:boolean" />
-              <xs:element minOccurs="0" name="show-deleted" type="xs:boolean" />
-              <xs:element minOccurs="0" name="table-name" />
+              <xs:element minOccurs="0" name="ADB_1010_INSTITUT"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="7" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1012_STU_ID"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="10" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1013_TERM"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="3" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1014_CIP"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="10" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_0000_REC_TYPE"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1008_LAST_NM"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="20" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1007_FIRST_NM"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="15" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_0000_FILLER_1A" type="xs:string"/> 
+              <xs:element minOccurs="0" name="ADB_1005_GENDER"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_0000_FILLER_1B" type="xs:string"/> 
+              <xs:element minOccurs="0" name="ADB_1011_BDAY" > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="8" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_0000_FILLER_1C" type="xs:string"/> 
+              <xs:element minOccurs="0" name="ADB_0000_FILLER_1D" type="xs:string"/> 
+              <xs:element minOccurs="0" name="ADB_1001_CITIZEN" > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1004_STU_TYPE"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1006_CLASS_LVL"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1015_ADMIT"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_0000_FILLER_1E" type="xs:string"/> 
+              <xs:element minOccurs="0" name="ADB_1017_ATTEND_DT"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="6" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1018_STATUS"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1019_COLL_GPA"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="3" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1020_HI_DEGREE"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1021_INST_GRN"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="7" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1022_TFER_LNG"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1023_ADM_TEST"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1024_ADM_SCORE"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="4" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1025_RACE_WHT"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1026_RACE_BLK"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1027_RACE_ASN"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1028_RACE_IND"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1029_RACE_HWN"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1030_RACE_HSP"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1031_TCHR_WAIV"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1032_PREP_WAIV"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1009_MIDDLE_NM"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="20" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_1033_SUFFIX_NM"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="10" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_0000_BLANK_30" type="xs:string"/> 
+              <xs:element minOccurs="0" name="ADB_0000_FLA_ID"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="14" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="ADB_0000_BLANK_10" type="xs:string"/> 
+              <xs:element minOccurs="0" name="PROCESS_INSTANCE" type="xs:unsignedInt" />
+              <xs:element minOccurs="0" name="EMPLID" > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="7" /> </xs:restriction> </xs:simpleType> </xs:element>
             </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element minOccurs="0" name="metadata">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element minOccurs="0" name="column-count" type="xs:unsignedByte" />
-              <xs:element minOccurs="0" maxOccurs="unbounded" name="column-definition">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element minOccurs="0" name="column-index" type="xs:unsignedByte" />
-                    <xs:element minOccurs="0" name="auto-increment" type="xs:boolean" />
-                    <xs:element minOccurs="0" name="case-sensitive" type="xs:boolean" />
-                    <xs:element minOccurs="0" name="currency" type="xs:boolean" />
-                    <xs:element minOccurs="0" name="nullable" type="xs:unsignedByte" />
-                    <xs:element minOccurs="0" name="signed" type="xs:boolean" />
-                    <xs:element minOccurs="0" name="searchable" type="xs:boolean" />
-                    <xs:element minOccurs="0" name="column-display-size" type="xs:unsignedByte" />
-                    <xs:element minOccurs="0" name="column-label" type="xs:string" />
-                    <xs:element minOccurs="0" name="column-name" type="xs:string" />
-                    <xs:element minOccurs="0" name="schema-name" />
-                    <xs:element minOccurs="0" name="column-precision" type="xs:unsignedByte" />
-                    <xs:element minOccurs="0" name="column-scale" type="xs:unsignedByte" />
-                    <xs:element minOccurs="0" name="table-name" />
-                    <xs:element minOccurs="0" name="catalog-name" />
-                    <xs:element minOccurs="0" name="column-type" type="xs:unsignedByte" />
-                    <xs:element minOccurs="0" name="column-type-name" type="xs:string" />
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element minOccurs="0" name="data">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element minOccurs="0" maxOccurs="unbounded" name="currentRow">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="unbounded" name="columnValue" type="xs:string" />
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
+            <xs:attribute name="rownumber" type="xs:unsignedByte" use="optional" />
           </xs:complexType>
         </xs:element>
       </xs:sequence>
+      <xs:attribute name="numrows" type="xs:unsignedByte" use="optional" />
+      <xs:attribute name="queryname" type="xs:string" use="optional" />
     </xs:complexType>
   </xs:element>
 </xs:schema>

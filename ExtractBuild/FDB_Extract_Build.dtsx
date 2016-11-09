@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="FDB_Extract_Build"
   DTS:PackageType="5"
-  DTS:VersionBuild="40"
-  DTS:VersionGUID="{8FFC2363-E1DE-4A67-BC33-059698B0758F}">
+  DTS:VersionBuild="43"
+  DTS:VersionGUID="{BED78734-2D23-4FEA-90FF-86FC6AE665C5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -165,9 +165,9 @@
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
               DTS:MaximumWidth="2"
-              DTS:DataType="129"
+              DTS:DataType="130"
               DTS:ObjectName="FDB_DE5001_COL_NUM"
-              DTS:DTSID="{17C08C4E-6811-42FC-BE2C-6A55C1A1B15F}"
+              DTS:DTSID="{C84DB4AC-882B-493C-8F61-B77A893A5E4A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -176,7 +176,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="REPORT_ID"
-              DTS:DTSID="{7227381A-5DA2-4A8D-A392-1D2B94250A37}"
+              DTS:DTSID="{27D7D771-1915-4825-AB04-D81B8BFC1561}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -185,7 +185,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5100_SITENUM"
-              DTS:DTSID="{41009A6C-E638-4414-9BA6-0855E6B55942}"
+              DTS:DTSID="{77DD9036-5D78-4D45-831D-6FC69A34679E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -194,7 +194,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5200_FCL_NUM"
-              DTS:DTSID="{BA7A57AF-AEF8-4121-B947-655287A5A55E}"
+              DTS:DTSID="{1F3A482A-5E6F-4F8E-8031-F84F8D7CBF48}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -203,7 +203,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5210_FCL_NM"
-              DTS:DTSID="{543F86F3-5A16-4C08-88FB-BDF981AF0EE6}"
+              DTS:DTSID="{FF54E6F2-AB93-4A3D-98C1-1BD01D6F5815}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -212,7 +212,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5220_FCL_TYP"
-              DTS:DTSID="{7B1034C0-4418-4D6B-B91D-3130F3A8CBBC}"
+              DTS:DTSID="{EBA007C1-BE52-4B97-9046-63869EBD309E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -221,7 +221,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5230_FCL_STS"
-              DTS:DTSID="{BD24F1D7-11E9-420A-BAE0-9626FC6A44F9}"
+              DTS:DTSID="{4BD4DFEA-B601-4EAB-A07E-7C33EB4FB642}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -230,7 +230,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5240_FCL_CND"
-              DTS:DTSID="{68165DEF-C10B-487E-A46E-3EA9044EF6E0}"
+              DTS:DTSID="{A16B578F-699C-4AFB-AEB5-F66528166E43}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -239,7 +239,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5250_AREA"
-              DTS:DTSID="{86B2D5F4-A157-4CCE-B865-D4B6588972A7}"
+              DTS:DTSID="{A14C6FCC-8107-4ECD-A00C-B722A5F00A40}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -248,7 +248,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5260_FCL_OWN"
-              DTS:DTSID="{6A5D5FDB-7473-45A7-83E4-370F497FCC68}"
+              DTS:DTSID="{311ABCAA-B13B-4BA2-9B2F-08C4FFB72DF1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -257,7 +257,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5270_FCL_LEN"
-              DTS:DTSID="{48C92449-B170-411E-9336-7DC64DCF5FA3}"
+              DTS:DTSID="{78F73398-AE75-4D67-887A-06607838F481}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -266,7 +266,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5280_ORIG_DT"
-              DTS:DTSID="{AB071599-9DDD-4D12-86E4-2FF2F9FB09AF}"
+              DTS:DTSID="{FF68A2B4-D439-4FDA-ADB0-D98A3E2B853B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -275,7 +275,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5002_STRM"
-              DTS:DTSID="{813F9A9B-DE21-404A-BB7A-FC221C1B6B7C}"
+              DTS:DTSID="{941758A9-79FA-46CA-BD38-80826C51F8BC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -284,7 +284,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5295_LST_DT"
-              DTS:DTSID="{6EA2D58C-0D8C-465B-85BD-12980D8449D6}"
+              DTS:DTSID="{D6C32251-8788-4616-B0AE-9E41BA08E183}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -293,7 +293,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5290_PARK_SP"
-              DTS:DTSID="{CC0AEDFD-DE59-4E68-BC3E-6884C422A50C}"
+              DTS:DTSID="{B252A7B3-0F8C-4C23-B2B7-30EB930584CB}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -1978,7 +1978,7 @@
                     <inputColumn
                       refId="Package\RT2\Data Conversion.Inputs[Data Conversion Input].Columns[FDB_DE5001_COL_NUM]"
                       cachedDataType="wstr"
-                      cachedLength="1"
+                      cachedLength="2"
                       cachedName="FDB_DE5001_COL_NUM"
                       lineageId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5001_COL_NUM]" />
                     <inputColumn
@@ -2559,7 +2559,7 @@
                     <inputColumn
                       refId="Package\RT2\Flat File Destination.Inputs[Flat File Destination Input].Columns[FDB_DE5001_COL_NUM]"
                       cachedDataType="wstr"
-                      cachedLength="1"
+                      cachedLength="2"
                       cachedName="FDB_DE5001_COL_NUM"
                       externalMetadataColumnId="Package\RT2\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5001_COL_NUM]"
                       lineageId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5001_COL_NUM]" />
@@ -2638,8 +2638,7 @@
                       name="FDB_DE5002_STRM" />
                     <externalMetadataColumn
                       refId="Package\RT2\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5001_COL_NUM]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="wstr"
                       length="2"
                       name="FDB_DE5001_COL_NUM" />
                   </externalMetadataColumns>
@@ -3046,7 +3045,7 @@
                       externalMetadataColumnId="Package\RT2\XML Source.Outputs[row].ExternalColumns[rownumber]"
                       lineageId="Package\RT2\XML Source.Outputs[row].Columns[rownumber]"
                       name="rownumber"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT2\XML Source.Outputs[row].Columns[REPORT_ID]"
                       dataType="wstr"
@@ -3056,17 +3055,17 @@
                       length="1"
                       lineageId="Package\RT2\XML Source.Outputs[row].Columns[REPORT_ID]"
                       name="REPORT_ID"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5001_COL_NUM]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\RT2\XML Source.Outputs[row].ExternalColumns[FDB_DE5001_COL_NUM]"
-                      length="1"
+                      length="2"
                       lineageId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5001_COL_NUM]"
                       name="FDB_DE5001_COL_NUM"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5100_SITENUM]"
                       dataType="wstr"
@@ -3076,7 +3075,7 @@
                       length="2"
                       lineageId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5100_SITENUM]"
                       name="FDB_DE5100_SITENUM"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5200_FCL_NUM]"
                       dataType="wstr"
@@ -3086,7 +3085,7 @@
                       length="4"
                       lineageId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5200_FCL_NUM]"
                       name="FDB_DE5200_FCL_NUM"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5210_FCL_NM]"
                       dataType="wstr"
@@ -3096,7 +3095,7 @@
                       length="20"
                       lineageId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5210_FCL_NM]"
                       name="FDB_DE5210_FCL_NM"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5220_FCL_TYP]"
                       dataType="wstr"
@@ -3106,7 +3105,7 @@
                       length="1"
                       lineageId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5220_FCL_TYP]"
                       name="FDB_DE5220_FCL_TYP"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5230_FCL_STS]"
                       dataType="wstr"
@@ -3116,7 +3115,7 @@
                       length="1"
                       lineageId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5230_FCL_STS]"
                       name="FDB_DE5230_FCL_STS"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5240_FCL_CND]"
                       dataType="wstr"
@@ -3126,7 +3125,7 @@
                       length="1"
                       lineageId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5240_FCL_CND]"
                       name="FDB_DE5240_FCL_CND"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5250_AREA]"
                       dataType="wstr"
@@ -3136,7 +3135,7 @@
                       length="6"
                       lineageId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5250_AREA]"
                       name="FDB_DE5250_AREA"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5260_FCL_OWN]"
                       dataType="wstr"
@@ -3146,7 +3145,7 @@
                       length="1"
                       lineageId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5260_FCL_OWN]"
                       name="FDB_DE5260_FCL_OWN"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5270_FCL_LEN]"
                       dataType="wstr"
@@ -3156,7 +3155,7 @@
                       length="2"
                       lineageId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5270_FCL_LEN]"
                       name="FDB_DE5270_FCL_LEN"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5280_ORIG_DT]"
                       dataType="wstr"
@@ -3166,7 +3165,7 @@
                       length="6"
                       lineageId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5280_ORIG_DT]"
                       name="FDB_DE5280_ORIG_DT"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5295_LST_DT]"
                       dataType="wstr"
@@ -3176,7 +3175,7 @@
                       length="6"
                       lineageId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5295_LST_DT]"
                       name="FDB_DE5295_LST_DT"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5290_PARK_SP]"
                       dataType="wstr"
@@ -3186,7 +3185,7 @@
                       length="5"
                       lineageId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5290_PARK_SP]"
                       name="FDB_DE5290_PARK_SP"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5002_STRM]"
                       dataType="wstr"
@@ -3196,7 +3195,7 @@
                       length="5"
                       lineageId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5002_STRM]"
                       name="FDB_DE5002_STRM"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -3224,7 +3223,7 @@
                     <externalMetadataColumn
                       refId="Package\RT2\XML Source.Outputs[row].ExternalColumns[FDB_DE5001_COL_NUM]"
                       dataType="wstr"
-                      length="1"
+                      length="2"
                       name="FDB_DE5001_COL_NUM">
                       <properties>
                         <property
@@ -5216,6 +5215,15 @@
           ReadOnlyVariables="User::outputDirectory"
           ReadWriteVariables="User::r1XML,User::r2XML,User::r3XML">
           <ProjectItem
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+          <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <root>
@@ -5334,35 +5342,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_af060dc173ec43d7ab6661754cbd6fdf.Properties.Settings.get_Default():ST_af060dc173ec43d7ab6661754cbd6fdf.Properties.Sett" +
-    "ings")]
-
-namespace ST_af060dc173ec43d7ab6661754cbd6fdf.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
           <ProjectItem
             Name="ST_90c473b933f44ea79dfa0657c54c3b7a.csproj"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?><Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003"><PropertyGroup><ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><ProductVersion>8.0.30703</ProductVersion><SchemaVersion>2.0</SchemaVersion><ProjectGuid>{9e43f97c-9a42-437c-89fd-3cd03125b84f}</ProjectGuid><OutputType>Library</OutputType><AppDesignerFolder>Properties</AppDesignerFolder><RootNamespace>ST_af060dc173ec43d7ab6661754cbd6fdf</RootNamespace><AssemblyName>ST_90c473b933f44ea79dfa0657c54c3b7a</AssemblyName><TargetFrameworkVersion>v4.0</TargetFrameworkVersion><FileAlignment>512</FileAlignment><ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch></PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Debug' "><DebugSymbols>true</DebugSymbols><DebugType>full</DebugType><Optimize>false</Optimize><OutputPath>.\bin\Debug\</OutputPath><EnableUnmanagedDebugging>false</EnableUnmanagedDebugging><DefineConstants>DEBUG;TRACE</DefineConstants><ErrorReport>prompt</ErrorReport><WarningLevel>4</WarningLevel></PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Release' "><DebugSymbols>false</DebugSymbols><Optimize>true</Optimize><OutputPath>.\bin\Release\</OutputPath><EnableUnmanagedDebugging>false</EnableUnmanagedDebugging><DefineConstants>TRACE</DefineConstants><ErrorReport>prompt</ErrorReport><WarningLevel>4</WarningLevel></PropertyGroup><ItemGroup><Reference Include="System" /><Reference Include="System.Data" /><Reference Include="System.Windows.Forms" /><Reference Include="System.Xml" /><Reference Include="Microsoft.SqlServer.ManagedDTS, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" /><Reference Include="Microsoft.SqlServer.ScriptTask, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" /></ItemGroup><ItemGroup><AppDesigner Include="Properties\" /><Compile Include="Properties\AssemblyInfo.cs"><SubType>Code</SubType></Compile><EmbeddedResource Include="Properties\Resources.resx"><Generator>ResXFileCodeGenerator</Generator><LastGenOutput>Resources.Designer.cs</LastGenOutput></EmbeddedResource><Compile Include="Properties\Resources.Designer.cs"><AutoGen>True</AutoGen><DependentUpon>Resources.resx</DependentUpon></Compile><None Include="Properties\Settings.settings"><Generator>SettingsSingleFileGenerator</Generator><LastGenOutput>Settings.Designer.cs</LastGenOutput></None><Compile Include="Properties\Settings.Designer.cs"><AutoGen>True</AutoGen><DependentUpon>Settings.settings</DependentUpon></Compile><Compile Include="ScriptMain.cs"><SubType>Code</SubType></Compile></ItemGroup><!-- Include the build rules for a C# project.--><Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" /><ProjectExtensions><VisualStudio><FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}"><ProjectProperties HostName="ScriptTask" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="#HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\10.0\InstallDir#\devenv.exe" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" /><Host Name="ScriptTask" GeneratedNamespace="$safeprojectname" IconIndex=""></Host><ProjectClient><HostIdentifier>SSIS_ST120</HostIdentifier></ProjectClient></FlavorProperties></VisualStudio></ProjectExtensions></Project>]]></ProjectItem>
@@ -5538,6 +5517,35 @@ namespace ST_af060dc173ec43d7ab6661754cbd6fdf
 	</msb:ItemGroup>
 </c:Project>]]></ProjectItem>
           <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_af060dc173ec43d7ab6661754cbd6fdf.Properties.Settings.get_Default():ST_af060dc173ec43d7ab6661754cbd6fdf.Properties.Sett" +
+    "ings")]
+
+namespace ST_af060dc173ec43d7ab6661754cbd6fdf.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <ProjectItem
             Name="Properties\AssemblyInfo.cs"
             Encoding="UTF8"><![CDATA[using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -5567,15 +5575,6 @@ using System.Runtime.CompilerServices;
 // by using the '*' as shown below:
 
 [assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -5945,11 +5944,23 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     design-time-name="Package\RT1">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="134,42"
           Id="Package\RT1\XML Source"
           TopLeft="224,70" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\RT1\OLE DB Destination"
+          TopLeft="315,363" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\RT1\Flat File Destination"
+          TopLeft="94,269" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\RT1\Data Conversion"
+          TopLeft="327,273" />
         <NodeLayout
           Size="120,42"
           Id="Package\RT1\Multicast"
@@ -5973,51 +5984,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="172,42"
-          Id="Package\RT1\Flat File Destination"
-          TopLeft="94,269" />
-        <EdgeLayout
-          Id="Package\RT1.Paths[Multicast Output 1]"
-          TopLeft="289,196">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-109,73"
-              Start="0,0"
-              End="-109,65.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,32.5"
-                    Point2="0,36.5"
-                    Point3="-4,36.5" />
-                  <mssgle:LineSegment
-                    End="-105,36.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-105,36.5"
-                    Point2="-109,36.5"
-                    Point3="-109,40.5" />
-                  <mssgle:LineSegment
-                    End="-109,65.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="156,42"
-          Id="Package\RT1\Data Conversion"
-          TopLeft="327,273" />
         <EdgeLayout
           Id="Package\RT1.Paths[Multicast Output 2]"
           TopLeft="307.666666666667,196">
@@ -6049,13 +6020,47 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="171,42"
-          Id="Package\RT1\OLE DB Destination"
-          TopLeft="315,363" />
+        <EdgeLayout
+          Id="Package\RT1.Paths[Multicast Output 1]"
+          TopLeft="289,196">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-109,73"
+              Start="0,0"
+              End="-109,65.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.5"
+                    Point2="0,36.5"
+                    Point3="-4,36.5" />
+                  <mssgle:LineSegment
+                    End="-105,36.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-105,36.5"
+                    Point2="-109,36.5"
+                    Point3="-109,40.5" />
+                  <mssgle:LineSegment
+                    End="-109,65.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\RT1.Paths[Data Conversion Output]"
           TopLeft="402.75,315">
@@ -6075,7 +6080,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6155,30 +6162,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\RT2.Paths[Multicast Output 1]"
-          TopLeft="280,249">
+          TopLeft="261.333333333333,249">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-77,52"
+              EndConnector="-58.3333333333333,52"
               Start="0,0"
-              End="-77,44.5">
+              End="-58.3333333333333,44.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22" />
+                    End="0,17.2105263157895" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,22"
-                    Point2="0,26"
-                    Point3="-4,26" />
+                    Point1="0,17.2105263157895"
+                    Point2="0,21.2105263157895"
+                    Point3="-4,21.2105263157895" />
                   <mssgle:LineSegment
-                    End="-73,26" />
+                    End="-54.3333333333333,21.2105263157895" />
                   <mssgle:CubicBezierSegment
-                    Point1="-73,26"
-                    Point2="-77,26"
-                    Point3="-77,30" />
+                    Point1="-54.3333333333333,21.2105263157895"
+                    Point2="-58.3333333333333,21.2105263157895"
+                    Point3="-58.3333333333333,25.2105263157895" />
                   <mssgle:LineSegment
-                    End="-77,44.5" />
+                    End="-58.3333333333333,44.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6251,7 +6258,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     design-time-name="Package\RT3">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="120,42"
           Id="Package\RT3\Multicast"
@@ -6261,21 +6268,21 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Id="Package\RT3\XML Source"
           TopLeft="196,97" />
         <NodeLayout
-          Size="172,42"
-          Id="Package\RT3\Flat File Destination"
-          TopLeft="92,240" />
-        <NodeLayout
           Size="154,42"
           Id="Package\RT3\Derived Column"
           TopLeft="310,317" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\RT3\OLE DB Destination"
+          TopLeft="302,383" />
         <NodeLayout
           Size="156,42"
           Id="Package\RT3\Data Conversion"
           TopLeft="303,250" />
         <NodeLayout
-          Size="171,42"
-          Id="Package\RT3\OLE DB Destination"
-          TopLeft="302,383" />
+          Size="172,42"
+          Id="Package\RT3\Flat File Destination"
+          TopLeft="92,240" />
         <EdgeLayout
           Id="Package\RT3.Paths[row]"
           TopLeft="262.5,139">
@@ -6295,7 +6302,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6329,7 +6338,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6363,7 +6374,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6385,7 +6398,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6407,7 +6422,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
