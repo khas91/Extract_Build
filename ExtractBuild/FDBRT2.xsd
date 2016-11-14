@@ -10,7 +10,7 @@
               <xs:element minOccurs="0" name="FDB_DE5001_COL_NUM"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="2" /> </xs:restriction> </xs:simpleType> </xs:element>
               <xs:element minOccurs="0" name="FDB_DE5100_SITENUM" > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="2" /> </xs:restriction> </xs:simpleType> </xs:element>
               <xs:element minOccurs="0" name="FDB_DE5200_FCL_NUM"  > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="4" /> </xs:restriction> </xs:simpleType> </xs:element>
-              <xs:element minOccurs="0" name="FDB_DE5210_FCL_NM" > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="20" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="FDB_DE5210_FCL_NM" type="xs:string"/>
               <xs:element minOccurs="0" name="FDB_DE5220_FCL_TYP" > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
               <xs:element minOccurs="0" name="FDB_DE5230_FCL_STS" > <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
               <xs:element minOccurs="0" name="FDB_DE5240_FCL_CND"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>

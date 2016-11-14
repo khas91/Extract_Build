@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">AEC-MNURUZZA-01</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAORK86uXEY0m00sZ7v0ttiQAAAAACAAAAAAADZgAAwAAAABAAAABIdJ9KKDUZGwxczWIy+ZutAAAAAASAAACgAAAAEAAAAEmkUMcR47lGELaYLIyPYkGIAAAArQ10/D9MxyFbwV+zRknMfus4BAIR2oc4uPYRunkPDZoQl45msKya9ez635mvfCAIWmt5oINRbICHkdHmJmCMtRL2Z/VdmtOvfJmP6k2v/aSzFdRbqwSpczjGrzCEdef9X6D74nXt9BQDQYLF6O0D7kiBK7WAK9F7WRhVbvi4V92b1z80cJlKBRQAAABD347M6LX2fB1g9vua0gPpWnzAAg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAORK86uXEY0m00sZ7v0ttiQAAAAACAAAAAAADZgAAwAAAABAAAADD1rzpvFg1chNJFAQbMw/AAAAAAASAAACgAAAAEAAAAC66UIk1PSvEfJnA2+AZ8FSIAAAAPwz3yDbcpt2KgoPubVWjdKkPtg975o6gIFoPZZTQsIBGzvxMTOQyKRfQ3jU2vTD78qalomUfoHOtPPvVIfgwbgHZDz01reDlMYmfsfbWaWd8+QWr3VLNKPgTJYU0OGOKGPPbsWXYRBwUnyyWI/oDydzRJEVajTD0+InqCLaBhVhSVHWGo/GUJRQAAAAPTP4Nuu38DmKd0K73oxkUjIqlqA==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -403,10 +403,10 @@
                 <SSIS:Property SSIS:Name="Name">FDB_Extract_Build</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">43</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">47</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{BED78734-2D23-4FEA-90FF-86FC6AE665C5}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{C4D5967E-91F7-415B-AAD4-720A01BCFA25}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1098,10 +1098,10 @@
                 <SSIS:Property SSIS:Name="Name">ADB_Extract_Build</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">17</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">21</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{E6B15441-B78C-4F5D-869B-2B18BEB541DB}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{19F1D25B-A57A-4C92-B76E-3E617BC0BB7F}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1151,21 +1151,6 @@
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Flat File Output.ConnectionString">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Z:\Stuart\ConsoleApplications\ExtractBuild\ExtractBuild\admiss.t2E2016</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.Flat File Output.DataRowsToSkip">
@@ -1255,8 +1240,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
