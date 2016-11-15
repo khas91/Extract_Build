@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="FDB_Extract_Build"
   DTS:PackageType="5"
-  DTS:VersionBuild="51"
-  DTS:VersionGUID="{A3F704CD-4589-449E-A4AE-AA00ED511D45}">
+  DTS:VersionBuild="63"
+  DTS:VersionGUID="{574F37F1-05C7-40EF-9BBC-F036A37FC640}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -325,7 +325,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5001_COL_NUM"
-              DTS:DTSID="{EF2E2F32-271A-4906-B9D6-E78DE9B70395}"
+              DTS:DTSID="{6C4FF31B-7BE0-422A-A41C-B4FDB3D23B12}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -334,7 +334,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="REPORT_ID"
-              DTS:DTSID="{53970D67-A3D1-4CB2-B764-7840A4C430F4}"
+              DTS:DTSID="{6786405E-5B0B-40BC-BDD1-3254AA589C63}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -343,7 +343,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5100_SITENUM"
-              DTS:DTSID="{B8B4E34C-FC13-48C0-9C5F-0F1328520F89}"
+              DTS:DTSID="{147D786B-9648-462E-BC1D-B7BA597529D8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -352,30 +352,16 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5200_FCL_NUM"
-              DTS:DTSID="{117613DB-626A-43DA-B168-4713ACC72106}"
+              DTS:DTSID="{8F8F236F-F9B8-4D10-82EE-71C79F9B4BEA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
-              DTS:MaximumWidth="1"
-              DTS:DataType="129"
-              DTS:ObjectName="FDB_DE5300_RM_PFX"
-              DTS:DTSID="{4EF547E3-C0E1-4018-AD9D-6D774B013A0F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="4"
-              DTS:MaximumWidth="4"
+              DTS:ColumnWidth="6"
+              DTS:MaximumWidth="6"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5300_RM_NUM"
-              DTS:DTSID="{B409B74C-4D12-4169-B839-A11E9D4F009B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:MaximumWidth="1"
-              DTS:DataType="129"
-              DTS:ObjectName="FDB_DE5300_RM_SFX"
-              DTS:DTSID="{9DF23B7D-0E72-46AC-8A90-669A2CEC537C}"
+              DTS:DTSID="{5FADF0E4-355B-4D85-B9B8-C09B39B4CE45}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -384,7 +370,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5310_RM_NAME"
-              DTS:DTSID="{AC0E5B44-E861-4C4F-85E7-1A7BCC7F5730}"
+              DTS:DTSID="{65CD73AE-16B5-45A0-BFE4-5233860CB39F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -393,7 +379,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5320_R_USECD"
-              DTS:DTSID="{F6582B1C-8947-4259-8FD4-224F46877067}"
+              DTS:DTSID="{465418A8-EEB3-48C5-BD47-FAA2101295A5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -402,7 +388,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5330_R_AREA"
-              DTS:DTSID="{53238370-29CE-4B48-96A8-556E6FE350B5}"
+              DTS:DTSID="{661490BF-E10C-4399-B910-8C65CD198113}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -411,7 +397,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5340_ICS_CD"
-              DTS:DTSID="{8CA6AC12-5183-4600-A7E6-EAF95442EFA9}"
+              DTS:DTSID="{65E225A1-F4A7-4FB2-A94F-48A186AB0EF2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnDelimiter=""
@@ -420,25 +406,26 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5350_JNT_CD"
-              DTS:DTSID="{06F9987A-A787-447D-BBBF-871EE9E48E18}"
+              DTS:DTSID="{84F59EF9-7C1A-4529-AAA9-1F283F5993D0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="1"
               DTS:MaximumWidth="1"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5360_CND_CD"
-              DTS:DTSID="{C50358D3-7258-4954-B2B3-C8C75B7ED929}"
+              DTS:DTSID="{C59CB895-3772-4AFB-8FCD-251AB3A9617C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
               DTS:ColumnWidth="5"
               DTS:MaximumWidth="5"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FDB_DE5002_STRM"
-              DTS:DTSID="{D52A072C-40FE-4505-8EC7-52F8EFB70DF0}"
+              DTS:DTSID="{188EED31-1DC4-45F0-A0DF-877F0D634265}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -1170,6 +1157,44 @@
               </outputs>
             </component>
             <component
+              refId="Package\RT1\Multicast 1"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast 1">
+              <inputs>
+                <input
+                  refId="Package\RT1\Multicast 1.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\RT1\Multicast 1.Outputs[Multicast Output 1]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\RT1\Multicast 1.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\RT1\Multicast 1.Outputs[Multicast Output 2]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 2"
+                  synchronousInputId="Package\RT1\Multicast 1.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\RT1\Multicast 1.Outputs[Multicast Output 3]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 3"
+                  synchronousInputId="Package\RT1\Multicast 1.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\RT1\OLE DB Destination"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
@@ -1425,6 +1450,275 @@
                       refId="Package\RT1\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\RT1\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\RT1\OLE DB Destination 1"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination 1"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[fdb_site_inventory]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\RT1\OLE DB Destination 1.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[vulcan.State_Report_Data]"
+                  connectionManagerRefId="Package.ConnectionManagers[vulcan.State_Report_Data]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5001_COL_NUM]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="Copy of FDB_DE5001_COL_NUM"
+                      externalMetadataColumnId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DE5001]"
+                      lineageId="Package\RT1\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5001_COL_NUM]" />
+                    <inputColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of REPORT_ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="Copy of REPORT_ID"
+                      externalMetadataColumnId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[rec_type]"
+                      lineageId="Package\RT1\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of REPORT_ID]" />
+                    <inputColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5100_SITENUM]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="Copy of FDB_DE5100_SITENUM"
+                      externalMetadataColumnId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[site_num]"
+                      lineageId="Package\RT1\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5100_SITENUM]" />
+                    <inputColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5110_S_NAME]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="Copy of FDB_DE5110_S_NAME"
+                      externalMetadataColumnId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[site_name]"
+                      lineageId="Package\RT1\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5110_S_NAME]" />
+                    <inputColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5120_S_TYPE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="Copy of FDB_DE5120_S_TYPE"
+                      externalMetadataColumnId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[site_type_code]"
+                      lineageId="Package\RT1\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5120_S_TYPE]" />
+                    <inputColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5130_S_AREA]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="Copy of FDB_DE5130_S_AREA"
+                      externalMetadataColumnId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[site_acres]"
+                      lineageId="Package\RT1\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5130_S_AREA]" />
+                    <inputColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5140_OWNER]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="Copy of FDB_DE5140_OWNER"
+                      externalMetadataColumnId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[site_ownership_code]"
+                      lineageId="Package\RT1\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5140_OWNER]" />
+                    <inputColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5150_LEN_HLD]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="Copy of FDB_DE5150_LEN_HLD"
+                      externalMetadataColumnId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[site_ownership_length]"
+                      lineageId="Package\RT1\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5150_LEN_HLD]" />
+                    <inputColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5160_AQ_MEAN]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="Copy of FDB_DE5160_AQ_MEAN"
+                      externalMetadataColumnId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[site_acquired_code]"
+                      lineageId="Package\RT1\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5160_AQ_MEAN]" />
+                    <inputColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5170_AQDATE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="Copy of FDB_DE5170_AQDATE"
+                      externalMetadataColumnId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[site_acquired_date]"
+                      lineageId="Package\RT1\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5170_AQDATE]" />
+                    <inputColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5105_COUNTY]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="Copy of FDB_DE5105_COUNTY"
+                      externalMetadataColumnId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DE5105]"
+                      lineageId="Package\RT1\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5105_COUNTY]" />
+                    <inputColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5002_STRM]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="Copy of FDB_DE5002_STRM"
+                      externalMetadataColumnId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TERM]"
+                      lineageId="Package\RT1\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5002_STRM]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DE5001]"
+                      dataType="i4"
+                      name="DE5001" />
+                    <externalMetadataColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[rec_type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="rec_type" />
+                    <externalMetadataColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[site_num]"
+                      dataType="i4"
+                      name="site_num" />
+                    <externalMetadataColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[site_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="site_name" />
+                    <externalMetadataColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[site_type_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="site_type_code" />
+                    <externalMetadataColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[site_acres]"
+                      dataType="i4"
+                      name="site_acres" />
+                    <externalMetadataColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[site_ownership_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="site_ownership_code" />
+                    <externalMetadataColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[site_ownership_length]"
+                      dataType="i4"
+                      name="site_ownership_length" />
+                    <externalMetadataColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[site_acquired_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="site_acquired_code" />
+                    <externalMetadataColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[site_acquired_date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="site_acquired_date" />
+                    <externalMetadataColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DE5105]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="DE5105" />
+                    <externalMetadataColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TERM]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="TERM" />
+                    <externalMetadataColumn
+                      refId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[site_local_num]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="site_local_num" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\RT1\OLE DB Destination 1.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\RT1\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\RT1\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\RT1\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\RT1\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1923,7 +2217,7 @@
           <paths>
             <path
               refId="Package\RT1.Paths[Data Conversion Output]"
-              endId="Package\RT1\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              endId="Package\RT1\Multicast 1.Inputs[Multicast Input 1]"
               name="Data Conversion Output"
               startId="Package\RT1\Data Conversion.Outputs[Data Conversion Output]" />
             <path
@@ -1932,10 +2226,20 @@
               name="Multicast Output 1"
               startId="Package\RT1\Multicast.Outputs[Multicast Output 1]" />
             <path
+              refId="Package\RT1.Paths[Multicast Output 11]"
+              endId="Package\RT1\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Multicast Output 1"
+              startId="Package\RT1\Multicast 1.Outputs[Multicast Output 1]" />
+            <path
               refId="Package\RT1.Paths[Multicast Output 2]"
               endId="Package\RT1\Data Conversion.Inputs[Data Conversion Input]"
               name="Multicast Output 2"
               startId="Package\RT1\Multicast.Outputs[Multicast Output 2]" />
+            <path
+              refId="Package\RT1.Paths[Multicast Output 21]"
+              endId="Package\RT1\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+              name="Multicast Output 2"
+              startId="Package\RT1\Multicast 1.Outputs[Multicast Output 2]" />
             <path
               refId="Package\RT1.Paths[row]"
               endId="Package\RT1\Multicast.Inputs[Multicast Input 1]"
@@ -2466,6 +2770,78 @@
                           name="FriendlyExpression">LEFT(FDB_DE5210_FCL_NM,20)</property>
                       </properties>
                     </inputColumn>
+                    <inputColumn
+                      refId="Package\RT2\Derived Column.Inputs[Derived Column Input].Columns[FDB_DE5250_AREA]"
+                      cachedDataType="wstr"
+                      cachedLength="6"
+                      cachedName="FDB_DE5250_AREA"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5250_AREA]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLICATE]("0",6 - [LEN](#{Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5250_AREA]})) + #{Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5250_AREA]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLICATE("0",6 - LEN(FDB_DE5250_AREA)) + FDB_DE5250_AREA</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\RT2\Derived Column.Inputs[Derived Column Input].Columns[FDB_DE5270_FCL_LEN]"
+                      cachedDataType="wstr"
+                      cachedLength="2"
+                      cachedName="FDB_DE5270_FCL_LEN"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5270_FCL_LEN]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLICATE]("0",2 - [LEN](#{Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5270_FCL_LEN]})) + #{Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5270_FCL_LEN]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLICATE("0",2 - LEN(FDB_DE5270_FCL_LEN)) + FDB_DE5270_FCL_LEN</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\RT2\Derived Column.Inputs[Derived Column Input].Columns[FDB_DE5290_PARK_SP]"
+                      cachedDataType="wstr"
+                      cachedLength="5"
+                      cachedName="FDB_DE5290_PARK_SP"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5290_PARK_SP]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLICATE]("0",5 - [LEN](#{Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5290_PARK_SP]})) + #{Package\RT2\XML Source.Outputs[row].Columns[FDB_DE5290_PARK_SP]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLICATE("0",5 - LEN(FDB_DE5290_PARK_SP)) + FDB_DE5290_PARK_SP</property>
+                      </properties>
+                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -2756,6 +3132,44 @@
                   deleteOutputOnPathDetached="true"
                   name="Multicast Output 3"
                   synchronousInputId="Package\RT2\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\RT2\Multicast 1"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast 1">
+              <inputs>
+                <input
+                  refId="Package\RT2\Multicast 1.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\RT2\Multicast 1.Outputs[Multicast Output 1]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\RT2\Multicast 1.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\RT2\Multicast 1.Outputs[Multicast Output 2]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 2"
+                  synchronousInputId="Package\RT2\Multicast 1.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\RT2\Multicast 1.Outputs[Multicast Output 3]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 3"
+                  synchronousInputId="Package\RT2\Multicast 1.Inputs[Multicast Input 1]">
                   <externalMetadataColumns />
                 </output>
               </outputs>
@@ -3056,6 +3470,281 @@
                       refId="Package\RT2\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\RT2\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\RT2\OLE DB Destination 1"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination 1"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[fdb_facility_inventory]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\RT2\OLE DB Destination 1.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[vulcan.State_Report_Data]"
+                  connectionManagerRefId="Package.ConnectionManagers[vulcan.State_Report_Data]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5001_COL_NUM]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="Copy of FDB_DE5001_COL_NUM"
+                      externalMetadataColumnId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DE5001]"
+                      lineageId="Package\RT2\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5001_COL_NUM]" />
+                    <inputColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of REPORT_ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="Copy of REPORT_ID"
+                      externalMetadataColumnId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[rec_type]"
+                      lineageId="Package\RT2\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of REPORT_ID]" />
+                    <inputColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5100_SITENUM]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="Copy of FDB_DE5100_SITENUM"
+                      externalMetadataColumnId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[site_num]"
+                      lineageId="Package\RT2\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5100_SITENUM]" />
+                    <inputColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5200_FCL_NUM]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="4"
+                      cachedName="Copy of FDB_DE5200_FCL_NUM"
+                      externalMetadataColumnId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[facility_num]"
+                      lineageId="Package\RT2\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5200_FCL_NUM]" />
+                    <inputColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5210_FCL_NM]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Copy of FDB_DE5210_FCL_NM"
+                      externalMetadataColumnId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[facility_name]"
+                      lineageId="Package\RT2\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5210_FCL_NM]" />
+                    <inputColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5220_FCL_TYP]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="Copy of FDB_DE5220_FCL_TYP"
+                      externalMetadataColumnId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[facility_type_code]"
+                      lineageId="Package\RT2\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5220_FCL_TYP]" />
+                    <inputColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5230_FCL_STS]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="Copy of FDB_DE5230_FCL_STS"
+                      externalMetadataColumnId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[facility_status_code]"
+                      lineageId="Package\RT2\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5230_FCL_STS]" />
+                    <inputColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5240_FCL_CND]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="Copy of FDB_DE5240_FCL_CND"
+                      externalMetadataColumnId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[facility_condition_code]"
+                      lineageId="Package\RT2\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5240_FCL_CND]" />
+                    <inputColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5250_AREA]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="Copy of FDB_DE5250_AREA"
+                      externalMetadataColumnId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[facility_gross_square_feet]"
+                      lineageId="Package\RT2\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5250_AREA]" />
+                    <inputColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5260_FCL_OWN]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="Copy of FDB_DE5260_FCL_OWN"
+                      externalMetadataColumnId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[facility_ownership_code]"
+                      lineageId="Package\RT2\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5260_FCL_OWN]" />
+                    <inputColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5270_FCL_LEN]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="Copy of FDB_DE5270_FCL_LEN"
+                      externalMetadataColumnId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[facility_ownership_length]"
+                      lineageId="Package\RT2\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5270_FCL_LEN]" />
+                    <inputColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5280_ORIG_DT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="Copy of FDB_DE5280_ORIG_DT"
+                      externalMetadataColumnId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[facility_inspect_date]"
+                      lineageId="Package\RT2\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5280_ORIG_DT]" />
+                    <inputColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5002_STRM]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="Copy of FDB_DE5002_STRM"
+                      externalMetadataColumnId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TERM]"
+                      lineageId="Package\RT2\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5002_STRM]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DE5001]"
+                      dataType="i4"
+                      name="DE5001" />
+                    <externalMetadataColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[rec_type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="rec_type" />
+                    <externalMetadataColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[site_num]"
+                      dataType="i4"
+                      name="site_num" />
+                    <externalMetadataColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[facility_num]"
+                      dataType="i4"
+                      name="facility_num" />
+                    <externalMetadataColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[facility_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="facility_name" />
+                    <externalMetadataColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[facility_type_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="facility_type_code" />
+                    <externalMetadataColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[facility_status_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="facility_status_code" />
+                    <externalMetadataColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[facility_condition_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="facility_condition_code" />
+                    <externalMetadataColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[facility_gross_square_feet]"
+                      dataType="i4"
+                      name="facility_gross_square_feet" />
+                    <externalMetadataColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[facility_ownership_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="facility_ownership_code" />
+                    <externalMetadataColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[facility_ownership_length]"
+                      dataType="i4"
+                      name="facility_ownership_length" />
+                    <externalMetadataColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[facility_inspect_date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="facility_inspect_date" />
+                    <externalMetadataColumn
+                      refId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TERM]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="TERM" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\RT2\OLE DB Destination 1.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\RT2\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\RT2\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\RT2\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\RT2\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -3647,7 +4336,7 @@
           <paths>
             <path
               refId="Package\RT2.Paths[Data Conversion Output]"
-              endId="Package\RT2\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              endId="Package\RT2\Multicast 1.Inputs[Multicast Input 1]"
               name="Data Conversion Output"
               startId="Package\RT2\Data Conversion.Outputs[Data Conversion Output]" />
             <path
@@ -3661,10 +4350,20 @@
               name="Multicast Output 1"
               startId="Package\RT2\Multicast.Outputs[Multicast Output 1]" />
             <path
+              refId="Package\RT2.Paths[Multicast Output 11]"
+              endId="Package\RT2\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Multicast Output 1"
+              startId="Package\RT2\Multicast 1.Outputs[Multicast Output 1]" />
+            <path
               refId="Package\RT2.Paths[Multicast Output 2]"
               endId="Package\RT2\Data Conversion.Inputs[Data Conversion Input]"
               name="Multicast Output 2"
               startId="Package\RT2\Multicast.Outputs[Multicast Output 2]" />
+            <path
+              refId="Package\RT2.Paths[Multicast Output 21]"
+              endId="Package\RT2\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+              name="Multicast Output 2"
+              startId="Package\RT2\Multicast 1.Outputs[Multicast Output 2]" />
             <path
               refId="Package\RT2.Paths[row]"
               endId="Package\RT2\Multicast.Inputs[Multicast Input 1]"
@@ -3733,7 +4432,7 @@
                     <inputColumn
                       refId="Package\RT3\Data Conversion.Inputs[Data Conversion Input].Columns[FDB_DE5300_RM_NUM]"
                       cachedDataType="wstr"
-                      cachedLength="4"
+                      cachedLength="6"
                       cachedName="FDB_DE5300_RM_NUM"
                       lineageId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5300_RM_NUM]" />
                     <inputColumn
@@ -3899,7 +4598,7 @@
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      length="4"
+                      length="6"
                       lineageId="Package\RT3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5300_RM_NUM]"
                       name="Copy of FDB_DE5300_RM_NUM"
                       truncationRowDisposition="FailComponent">
@@ -4170,6 +4869,55 @@
               </outputs>
             </component>
             <component
+              refId="Package\RT3\Derived Column 1"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\RT3\Derived Column 1.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\RT3\Derived Column 1.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\RT3\Derived Column 1.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\RT3\Derived Column 1.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\RT3\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\RT3\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\RT3\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\RT3\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\RT3\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\RT3\Flat File Destination"
               componentClassID="Microsoft.FlatFileDestination"
               contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
@@ -4238,7 +4986,7 @@
                     <inputColumn
                       refId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].Columns[FDB_DE5300_RM_NUM]"
                       cachedDataType="wstr"
-                      cachedLength="4"
+                      cachedLength="6"
                       cachedName="FDB_DE5300_RM_NUM"
                       externalMetadataColumnId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5300_RM_NUM]"
                       lineageId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5300_RM_NUM]" />
@@ -4284,20 +5032,6 @@
                       cachedName="FDB_DE5360_CND_CD"
                       externalMetadataColumnId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5360_CND_CD]"
                       lineageId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5360_CND_CD]" />
-                    <inputColumn
-                      refId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].Columns[FDB_DE5300_RM_PFX]"
-                      cachedDataType="wstr"
-                      cachedLength="1"
-                      cachedName="FDB_DE5300_RM_PFX"
-                      externalMetadataColumnId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5300_RM_PFX]"
-                      lineageId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5300_RM_PFX]" />
-                    <inputColumn
-                      refId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].Columns[FDB_DE5300_RM_SFX]"
-                      cachedDataType="wstr"
-                      cachedLength="1"
-                      cachedName="FDB_DE5300_RM_SFX"
-                      externalMetadataColumnId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5300_RM_SFX]"
-                      lineageId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5300_RM_SFX]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -4329,7 +5063,7 @@
                     <externalMetadataColumn
                       refId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5300_RM_NUM]"
                       dataType="wstr"
-                      length="4"
+                      length="6"
                       name="FDB_DE5300_RM_NUM" />
                     <externalMetadataColumn
                       refId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5310_RM_NAME]"
@@ -4361,18 +5095,6 @@
                       dataType="wstr"
                       length="1"
                       name="FDB_DE5360_CND_CD" />
-                    <externalMetadataColumn
-                      refId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5300_RM_PFX]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      name="FDB_DE5300_RM_PFX" />
-                    <externalMetadataColumn
-                      refId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FDB_DE5300_RM_SFX]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      name="FDB_DE5300_RM_SFX" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -4399,18 +5121,56 @@
                   <externalMetadataColumns />
                 </output>
                 <output
+                  refId="Package\RT3\Multicast.Outputs[Multicast Output 1]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\RT3\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
                   refId="Package\RT3\Multicast.Outputs[Multicast Output 2]"
+                  dangling="true"
                   deleteOutputOnPathDetached="true"
                   name="Multicast Output 2"
                   synchronousInputId="Package\RT3\Multicast.Inputs[Multicast Input 1]">
                   <externalMetadataColumns />
                 </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\RT3\Multicast 1"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast 1">
+              <inputs>
+                <input
+                  refId="Package\RT3\Multicast 1.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
                 <output
-                  refId="Package\RT3\Multicast.Outputs[Multicast Output 1]"
-                  dangling="true"
+                  refId="Package\RT3\Multicast 1.Outputs[Multicast Output 1]"
                   deleteOutputOnPathDetached="true"
                   name="Multicast Output 1"
-                  synchronousInputId="Package\RT3\Multicast.Inputs[Multicast Input 1]">
+                  synchronousInputId="Package\RT3\Multicast 1.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\RT3\Multicast 1.Outputs[Multicast Output 2]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 2"
+                  synchronousInputId="Package\RT3\Multicast 1.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\RT3\Multicast 1.Outputs[Multicast Output 3]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 3"
+                  synchronousInputId="Package\RT3\Multicast 1.Inputs[Multicast Input 1]">
                   <externalMetadataColumns />
                 </output>
               </outputs>
@@ -4523,7 +5283,7 @@
                       refId="Package\RT3\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5300_RM_NUM]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="4"
+                      cachedLength="6"
                       cachedName="Copy of FDB_DE5300_RM_NUM"
                       externalMetadataColumnId="Package\RT3\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DE5300]"
                       lineageId="Package\RT3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5300_RM_NUM]" />
@@ -4699,6 +5459,289 @@
               </outputs>
             </component>
             <component
+              refId="Package\RT3\OLE DB Destination 1"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination 1"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[fdb_room_inventory]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\RT3\OLE DB Destination 1.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[vulcan.State_Report_Data]"
+                  connectionManagerRefId="Package.ConnectionManagers[vulcan.State_Report_Data]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[space_category]"
+                      cachedDataType="i4"
+                      cachedName="space_category"
+                      externalMetadataColumnId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[space_category]"
+                      lineageId="Package\RT3\Derived Column.Outputs[Derived Column Output].Columns[space_category]" />
+                    <inputColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[student_stations]"
+                      cachedDataType="i4"
+                      cachedName="student_stations"
+                      externalMetadataColumnId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[student_stations]"
+                      lineageId="Package\RT3\Derived Column.Outputs[Derived Column Output].Columns[student_stations]" />
+                    <inputColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5001_COL_NUM]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="Copy of FDB_DE5001_COL_NUM"
+                      externalMetadataColumnId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DE5001]"
+                      lineageId="Package\RT3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5001_COL_NUM]" />
+                    <inputColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of REPORT_ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="Copy of REPORT_ID"
+                      externalMetadataColumnId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[rec_type]"
+                      lineageId="Package\RT3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of REPORT_ID]" />
+                    <inputColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5100_SITENUM]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="Copy of FDB_DE5100_SITENUM"
+                      externalMetadataColumnId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[site_num]"
+                      lineageId="Package\RT3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5100_SITENUM]" />
+                    <inputColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5200_FCL_NUM]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="4"
+                      cachedName="Copy of FDB_DE5200_FCL_NUM"
+                      externalMetadataColumnId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[facility_num]"
+                      lineageId="Package\RT3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5200_FCL_NUM]" />
+                    <inputColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5300_RM_NUM]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="Copy of FDB_DE5300_RM_NUM"
+                      externalMetadataColumnId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[room_num]"
+                      lineageId="Package\RT3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5300_RM_NUM]" />
+                    <inputColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5310_RM_NAME]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="Copy of FDB_DE5310_RM_NAME"
+                      externalMetadataColumnId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[room_name]"
+                      lineageId="Package\RT3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5310_RM_NAME]" />
+                    <inputColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5320_R_USECD]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="Copy of FDB_DE5320_R_USECD"
+                      externalMetadataColumnId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[room_use_code]"
+                      lineageId="Package\RT3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5320_R_USECD]" />
+                    <inputColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5330_R_AREA]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="Copy of FDB_DE5330_R_AREA"
+                      externalMetadataColumnId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[room_net_square_feet]"
+                      lineageId="Package\RT3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5330_R_AREA]" />
+                    <inputColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5340_ICS_CD]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="8"
+                      cachedName="Copy of FDB_DE5340_ICS_CD"
+                      externalMetadataColumnId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[room_ics_code]"
+                      lineageId="Package\RT3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5340_ICS_CD]" />
+                    <inputColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5350_JNT_CD]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="Copy of FDB_DE5350_JNT_CD"
+                      externalMetadataColumnId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[room_joint_use_code]"
+                      lineageId="Package\RT3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5350_JNT_CD]" />
+                    <inputColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5360_CND_CD]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="Copy of FDB_DE5360_CND_CD"
+                      externalMetadataColumnId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[room_condition_code]"
+                      lineageId="Package\RT3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5360_CND_CD]" />
+                    <inputColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Copy of FDB_DE5002_STRM]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="Copy of FDB_DE5002_STRM"
+                      externalMetadataColumnId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TERM]"
+                      lineageId="Package\RT3\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FDB_DE5002_STRM]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DE5001]"
+                      dataType="i4"
+                      name="DE5001" />
+                    <externalMetadataColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[rec_type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="rec_type" />
+                    <externalMetadataColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[site_num]"
+                      dataType="i4"
+                      name="site_num" />
+                    <externalMetadataColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[facility_num]"
+                      dataType="i4"
+                      name="facility_num" />
+                    <externalMetadataColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[room_num]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="room_num" />
+                    <externalMetadataColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[room_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="room_name" />
+                    <externalMetadataColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[room_use_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="room_use_code" />
+                    <externalMetadataColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[room_net_square_feet]"
+                      dataType="i4"
+                      name="room_net_square_feet" />
+                    <externalMetadataColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[room_ics_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="room_ics_code" />
+                    <externalMetadataColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[room_joint_use_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="room_joint_use_code" />
+                    <externalMetadataColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[room_condition_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="room_condition_code" />
+                    <externalMetadataColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[student_stations]"
+                      dataType="i4"
+                      name="student_stations" />
+                    <externalMetadataColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[space_category]"
+                      dataType="i4"
+                      name="space_category" />
+                    <externalMetadataColumn
+                      refId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TERM]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="TERM" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\RT3\OLE DB Destination 1.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\RT3\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\RT3\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\RT3\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\RT3\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\RT3\XML Source"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Extracts data from an XML file. For example, extract catalog data from an XML file that represents catalogs and catalog items. Before using, specify the schema and generate an output for each XML element.;Microsoft Corporation;Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
@@ -4824,7 +5867,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\RT3\XML Source.Outputs[row].ExternalColumns[FDB_DE5300_RM_NUM]"
-                      length="4"
+                      length="6"
                       lineageId="Package\RT3\XML Source.Outputs[row].Columns[FDB_DE5300_RM_NUM]"
                       name="FDB_DE5300_RM_NUM"
                       truncationRowDisposition="FailComponent" />
@@ -4980,7 +6023,7 @@
                     <externalMetadataColumn
                       refId="Package\RT3\XML Source.Outputs[row].ExternalColumns[FDB_DE5300_RM_NUM]"
                       dataType="wstr"
-                      length="4"
+                      length="6"
                       name="FDB_DE5300_RM_NUM">
                       <properties>
                         <property
@@ -5256,14 +6299,29 @@
               startId="Package\RT3\Data Conversion.Outputs[Data Conversion Output]" />
             <path
               refId="Package\RT3.Paths[Derived Column Output]"
-              endId="Package\RT3\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              endId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Derived Column Output"
+              startId="Package\RT3\Derived Column 1.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\RT3.Paths[Derived Column Output1]"
+              endId="Package\RT3\Multicast 1.Inputs[Multicast Input 1]"
               name="Derived Column Output"
               startId="Package\RT3\Derived Column.Outputs[Derived Column Output]" />
             <path
+              refId="Package\RT3.Paths[Multicast Output 1]"
+              endId="Package\RT3\Derived Column 1.Inputs[Derived Column Input]"
+              name="Multicast Output 1"
+              startId="Package\RT3\Multicast.Outputs[Multicast Output 1]" />
+            <path
+              refId="Package\RT3.Paths[Multicast Output 11]"
+              endId="Package\RT3\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Multicast Output 1"
+              startId="Package\RT3\Multicast 1.Outputs[Multicast Output 1]" />
+            <path
               refId="Package\RT3.Paths[Multicast Output 2]"
-              endId="Package\RT3\Flat File Destination.Inputs[Flat File Destination Input]"
+              endId="Package\RT3\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
               name="Multicast Output 2"
-              startId="Package\RT3\Multicast.Outputs[Multicast Output 2]" />
+              startId="Package\RT3\Multicast 1.Outputs[Multicast Output 2]" />
             <path
               refId="Package\RT3.Paths[Multicast Output 3]"
               endId="Package\RT3\Data Conversion.Inputs[Data Conversion Input]"
@@ -5297,35 +6355,14 @@
           ReadOnlyVariables="User::outputDirectory"
           ReadWriteVariables="User::r1XML,User::r2XML,User::r3XML">
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_af060dc173ec43d7ab6661754cbd6fdf")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_af060dc173ec43d7ab6661754cbd6fdf")]
-[assembly: AssemblyCopyright("Copyright @  2016")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -5649,14 +6686,35 @@ namespace ST_af060dc173ec43d7ab6661754cbd6fdf.Properties {
     }
 }]]></ProjectItem>
           <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_af060dc173ec43d7ab6661754cbd6fdf")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_af060dc173ec43d7ab6661754cbd6fdf")]
+[assembly: AssemblyCopyright("Copyright @  2016")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -5912,23 +6970,23 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="163,42"
+          Size="163.2,41.6"
           Id="Package\Execute SQL Task"
           TopLeft="184,125" />
         <NodeLayout
-          Size="98,42"
+          Size="97.6,41.6"
           Id="Package\RT1"
           TopLeft="404,212" />
         <NodeLayout
-          Size="98,42"
+          Size="97.6,41.6"
           Id="Package\RT2"
           TopLeft="407,287" />
         <NodeLayout
-          Size="98,42"
+          Size="97.6,41.6"
           Id="Package\RT3"
           TopLeft="406,358" />
         <NodeLayout
-          Size="131,42"
+          Size="131.2,41.6"
           Id="Package\Script Task"
           TopLeft="394,126" />
         <EdgeLayout
@@ -6028,23 +7086,23 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="134,42"
+          Size="134.4,41.6"
           Id="Package\RT1\XML Source"
           TopLeft="224,70" />
         <NodeLayout
-          Size="171,42"
+          Size="171.2,41.6"
           Id="Package\RT1\OLE DB Destination"
-          TopLeft="315,363" />
+          TopLeft="206.2,414.2" />
         <NodeLayout
-          Size="172,42"
+          Size="172,41.6"
           Id="Package\RT1\Flat File Destination"
           TopLeft="94,269" />
         <NodeLayout
-          Size="156,42"
+          Size="156,41.6"
           Id="Package\RT1\Data Conversion"
           TopLeft="327,273" />
         <NodeLayout
-          Size="120,42"
+          Size="120,41.6"
           Id="Package\RT1\Multicast"
           TopLeft="229,154" />
         <EdgeLayout
@@ -6137,20 +7195,96 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\RT1\Multicast 1"
+          TopLeft="336.8,348" />
         <EdgeLayout
           Id="Package\RT1.Paths[Data Conversion Output]"
-          TopLeft="402.75,315">
+          TopLeft="403.3,314.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,48"
+              EndConnector="0,33.4"
               Start="0,0"
-              End="0,40.5">
+              End="0,25.9">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,40.5" />
+                    End="0,25.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\RT1.Paths[Multicast Output 11]"
+          TopLeft="401.6,389.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-109.8,24.6"
+              Start="0,0"
+              End="-109.8,17.1">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,8.29999999999998" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.29999999999998"
+                    Point2="0,12.3"
+                    Point3="-4,12.3" />
+                  <mssgle:LineSegment
+                    End="-105.8,12.3" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-105.8,12.3"
+                    Point2="-109.8,12.3"
+                    Point3="-109.8,16.3" />
+                  <mssgle:LineSegment
+                    End="-109.8,17.1" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="179.2,41.6"
+          Id="Package\RT1\OLE DB Destination 1"
+          TopLeft="409.6,416" />
+        <EdgeLayout
+          Id="Package\RT1.Paths[Multicast Output 21]"
+          TopLeft="421.866666666667,389.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="77.3333333333334,26.4"
+              Start="0,0"
+              End="77.3333333333334,18.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,6.75317073170731" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,6.75317073170731"
+                    Point2="0,10.7531707317073"
+                    Point3="4,10.7531707317073" />
+                  <mssgle:LineSegment
+                    End="73.3333333333334,10.7531707317073" />
+                  <mssgle:CubicBezierSegment
+                    Point1="73.3333333333334,10.7531707317073"
+                    Point2="77.3333333333334,10.7531707317073"
+                    Point3="77.3333333333334,14.7531707317073" />
+                  <mssgle:LineSegment
+                    End="77.3333333333334,18.9" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6181,25 +7315,51 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="156,42"
+          Size="156,41.6"
           Id="Package\RT2\Data Conversion"
           TopLeft="319,306" />
         <NodeLayout
-          Size="171,42"
+          Size="171.2,41.6"
           Id="Package\RT2\OLE DB Destination"
-          TopLeft="318,384" />
+          TopLeft="279.6,443.2" />
         <NodeLayout
-          Size="134,42"
+          Size="134.4,41.6"
           Id="Package\RT2\XML Source"
           TopLeft="211,123" />
         <NodeLayout
-          Size="120,42"
+          Size="120,41.6"
           Id="Package\RT2\Multicast"
           TopLeft="220,207" />
         <NodeLayout
-          Size="172,42"
+          Size="172,41.6"
           Id="Package\RT2\Flat File Destination"
           TopLeft="125,385" />
+        <NodeLayout
+          Size="153.6,41.6"
+          Id="Package\RT2\Derived Column"
+          TopLeft="133,306" />
+        <EdgeLayout
+          Id="Package\RT2.Paths[row]"
+          TopLeft="279,165">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42"
+              Start="0,0"
+              End="0,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\RT2.Paths[Multicast Output 2]"
           TopLeft="298.666666666667,249">
@@ -6234,54 +7394,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\RT2.Paths[Data Conversion Output]"
-          TopLeft="400.25,348">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,36"
-              Start="0,0"
-              End="0,28.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\RT2.Paths[row]"
-          TopLeft="279,165">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,42"
-              Start="0,0"
-              End="0,34.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="154,42"
-          Id="Package\RT2\Derived Column"
-          TopLeft="133,306" />
         <EdgeLayout
           Id="Package\RT2.Paths[Multicast Output 1]"
           TopLeft="261.333333333333,249">
@@ -6338,6 +7450,116 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="179.2,41.6"
+          Id="Package\RT2\OLE DB Destination 1"
+          TopLeft="555.2,442.4" />
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\RT2\Multicast 1"
+          TopLeft="429.6,376.8" />
+        <EdgeLayout
+          Id="Package\RT2.Paths[Data Conversion Output]"
+          TopLeft="397,347.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="97.4,29.2"
+              Start="0,0"
+              End="97.4,21.7">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.6" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.6"
+                    Point2="0,14.6"
+                    Point3="4,14.6" />
+                  <mssgle:LineSegment
+                    End="93.4,14.6" />
+                  <mssgle:CubicBezierSegment
+                    Point1="93.4,14.6"
+                    Point2="97.4,14.6"
+                    Point3="97.4,18.6" />
+                  <mssgle:LineSegment
+                    End="97.4,21.7" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\RT2.Paths[Multicast Output 11]"
+          TopLeft="494.4,418.4">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-129.2,24.8"
+              Start="0,0"
+              End="-129.2,17.3">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,8.39999999999998" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.39999999999998"
+                    Point2="0,12.4"
+                    Point3="-4,12.4" />
+                  <mssgle:LineSegment
+                    End="-125.2,12.4" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-125.2,12.4"
+                    Point2="-129.2,12.4"
+                    Point3="-129.2,16.4" />
+                  <mssgle:LineSegment
+                    End="-129.2,17.3" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\RT2.Paths[Multicast Output 21]"
+          TopLeft="514.666666666667,418.4">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="130.133333333333,24"
+              Start="0,0"
+              End="130.133333333333,16.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,5.77560975609756" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,5.77560975609756"
+                    Point2="0,9.77560975609756"
+                    Point3="4,9.77560975609756" />
+                  <mssgle:LineSegment
+                    End="126.133333333333,9.77560975609756" />
+                  <mssgle:CubicBezierSegment
+                    Point1="126.133333333333,9.77560975609756"
+                    Point2="130.133333333333,9.77560975609756"
+                    Point3="130.133333333333,13.7756097560976" />
+                  <mssgle:LineSegment
+                    End="130.133333333333,16.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -6358,31 +7580,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     design-time-name="Package\RT3">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="120,42"
-          Id="Package\RT3\Multicast"
-          TopLeft="202,163" />
+          Size="171.2,41.6"
+          Id="Package\RT3\OLE DB Destination"
+          TopLeft="218.428570005359,457.94117752161" />
         <NodeLayout
-          Size="134,42"
+          Size="134.4,41.6"
           Id="Package\RT3\XML Source"
           TopLeft="196,97" />
         <NodeLayout
-          Size="154,42"
+          Size="172,41.6"
+          Id="Package\RT3\Flat File Destination"
+          TopLeft="96,320" />
+        <NodeLayout
+          Size="153.6,41.6"
           Id="Package\RT3\Derived Column"
           TopLeft="310,317" />
         <NodeLayout
-          Size="171,42"
-          Id="Package\RT3\OLE DB Destination"
-          TopLeft="302,383" />
-        <NodeLayout
-          Size="156,42"
+          Size="156,41.6"
           Id="Package\RT3\Data Conversion"
           TopLeft="303,250" />
         <NodeLayout
-          Size="172,42"
-          Id="Package\RT3\Flat File Destination"
-          TopLeft="92,240" />
+          Size="120,41.6"
+          Id="Package\RT3\Multicast"
+          TopLeft="202,163" />
+        <NodeLayout
+          Size="163.2,41.6"
+          Id="Package\RT3\Derived Column 1"
+          TopLeft="99,245" />
         <EdgeLayout
           Id="Package\RT3.Paths[row]"
           TopLeft="262.5,139">
@@ -6440,31 +7666,31 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\RT3.Paths[Multicast Output 2]"
+          Id="Package\RT3.Paths[Multicast Output 1]"
           TopLeft="243.333333333333,205">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-65.3333333333333,35"
+              EndConnector="-62.8333333333333,40"
               Start="0,0"
-              End="-65.3333333333333,27.5">
+              End="-62.8333333333333,32.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,10.2763157894737" />
+                    End="0,12.3157894736842" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,10.2763157894737"
-                    Point2="0,14.2763157894737"
-                    Point3="-4,14.2763157894737" />
+                    Point1="0,12.3157894736842"
+                    Point2="0,16.3157894736842"
+                    Point3="-4,16.3157894736842" />
                   <mssgle:LineSegment
-                    End="-61.3333333333333,14.2763157894737" />
+                    End="-58.8333333333333,16.3157894736842" />
                   <mssgle:CubicBezierSegment
-                    Point1="-61.3333333333333,14.2763157894737"
-                    Point2="-65.3333333333333,14.2763157894737"
-                    Point3="-65.3333333333333,18.2763157894737" />
+                    Point1="-58.8333333333333,16.3157894736842"
+                    Point2="-62.8333333333333,16.3157894736842"
+                    Point3="-62.8333333333333,20.3157894736842" />
                   <mssgle:LineSegment
-                    End="-65.3333333333333,27.5" />
+                    End="-62.8333333333333,32.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6475,18 +7701,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\RT3.Paths[Derived Column Output]"
-          TopLeft="387.25,359">
+          TopLeft="181.25,287">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,24"
+              EndConnector="0,33"
               Start="0,0"
-              End="0,16.5">
+              End="0,25.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16.5" />
+                    End="0,25.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6517,11 +7743,148 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\RT3\Multicast 1"
+          TopLeft="320.000005449568,389.823534752671" />
+        <EdgeLayout
+          Id="Package\RT3.Paths[Derived Column Output1]"
+          TopLeft="385.800002724784,358.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,31.2235347526708"
+              Start="0,0"
+              End="0,23.7235347526708">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.7235347526708" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\RT3.Paths[Multicast Output 11]"
+          TopLeft="384.800005449568,431.423534752671">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-80.771435444209,26.5176427689391"
+              Start="0,0"
+              End="-80.771435444209,19.0176427689391">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,9.25882138446957" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,9.25882138446957"
+                    Point2="0,13.2588213844696"
+                    Point3="-4,13.2588213844696" />
+                  <mssgle:LineSegment
+                    End="-76.771435444209,13.2588213844696" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-76.771435444209,13.2588213844696"
+                    Point2="-80.771435444209,13.2588213844696"
+                    Point3="-80.771435444209,17.2588213844696" />
+                  <mssgle:LineSegment
+                    End="-80.771435444209,19.0176427689391" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="179.2,41.6"
+          Id="Package\RT3\OLE DB Destination 1"
+          TopLeft="409.285721255809,454.235300488126" />
+        <EdgeLayout
+          Id="Package\RT3.Paths[Multicast Output 2]"
+          TopLeft="405.066672116234,431.423534752671">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="93.8190491395743,22.8117657354549"
+              Start="0,0"
+              End="93.8190491395743,15.3117657354549">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,5.29162165322186" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,5.29162165322186"
+                    Point2="0,9.29162165322186"
+                    Point3="4,9.29162165322186" />
+                  <mssgle:LineSegment
+                    End="89.8190491395743,9.29162165322186" />
+                  <mssgle:CubicBezierSegment
+                    Point1="89.8190491395743,9.29162165322186"
+                    Point2="93.8190491395743,9.29162165322186"
+                    Point3="93.8190491395743,13.2916216532219" />
+                  <mssgle:LineSegment
+                    End="93.8190491395743,15.3117657354549" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\RT3\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\RT1\OLE DB Destination 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\RT2\OLE DB Destination 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\RT3\OLE DB Destination 1">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
