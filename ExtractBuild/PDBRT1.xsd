@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="query">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="PROCESS_INSTANCE" type="xs:unsignedShort" />
+              <xs:element minOccurs="0" name="EMPLID" type="xs:string" />
+              <xs:element minOccurs="0" name="PDB_DE0110_RPRT_ID"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="7" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_RECORD_TYPE"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE0120_TRM_ID"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="5" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE0130_PRSN_ID"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="10" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE1005_LAST_NM"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="20" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE1006_FRST_NM"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="15" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE1010_BRTH_DT"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="8" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE1015_GENDER"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE1025_CTZNSHP"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE1030_DISABIL"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE1035_DGHGERN"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE1040_DT_EMPL"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="8" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE1045_CON_STA"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE1050_DT_CNGR"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="8" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE1055_EMPSTA"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE1060_EXEMPT"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE1065_FACULTY"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE1070_RACE_WH"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE1075_RACE_BL"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE1080_RACE_AS"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE1085_RACE_AI"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE1090_RACE_HA"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE1095_ETH_HI"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE1009_OAC"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="2" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE1096_EAM_IND"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="US_OCC_CD" type="xs:string" />
+              <xs:element minOccurs="0" name="FLORIDA_EDUCAT_ID"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="10" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE1007_MDL_NM"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="20" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="PDB_DE1008_NM_SUFF"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="10" /> </xs:restriction> </xs:simpleType> </xs:element>
+            </xs:sequence>
+            <xs:attribute name="rownumber" type="xs:unsignedShort" use="optional" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="numrows" type="xs:unsignedShort" use="optional" />
+      <xs:attribute name="queryname" type="xs:string" use="optional" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
