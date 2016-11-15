@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="PDB_Extract_Build"
   DTS:PackageType="5"
-  DTS:VersionBuild="20"
-  DTS:VersionGUID="{0F63C209-B4DE-4420-91D2-13F6695117F9}">
+  DTS:VersionBuild="23"
+  DTS:VersionGUID="{6B30A0E6-B53A-4989-A1BB-7B05C400C875}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -305,6 +305,108 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[RT6Output]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{AC673312-FE05-44B1-AE29-6EF5481B750C}"
+      DTS:ObjectName="RT6Output">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">"Z:\\Stuart\\ConsoleApplications\\ExtractBuild\\ExtractBuild\\person.t" +  @[User::term] +  @[User::SubmissionType] +  @[User::StateReportingYear]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="RaggedRight"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="Z:\Stuart\ConsoleApplications\ExtractBuild\ExtractBuild\person.t1E2017">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="7"
+              DTS:MaximumWidth="7"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PDB_DE0110_RPRT_ID"
+              DTS:DTSID="{E35D72F4-D7F7-4AAD-A6D7-C7898F4C9836}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="1"
+              DTS:MaximumWidth="1"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PDB_RECORD_TYPE"
+              DTS:DTSID="{82D97F09-7432-4065-A865-304920C0576D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="5"
+              DTS:MaximumWidth="5"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PDB_DE0120_TRM_ID"
+              DTS:DTSID="{C52900E3-12B7-495F-907F-14528568BC91}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="10"
+              DTS:MaximumWidth="10"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PDB_DE0130_PRSN_ID"
+              DTS:DTSID="{BBCBCEC7-D096-44C5-9211-29D601C5F731}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="13"
+              DTS:MaximumWidth="13"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PDB_DE0140_ORG_GL"
+              DTS:DTSID="{45080832-ADE6-4359-94DA-8D792B9F2F71}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="2"
+              DTS:MaximumWidth="2"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PDB_DE1009_OAC"
+              DTS:DTSID="{362B14BB-4C5D-4A41-80C7-FF563282B31F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="1"
+              DTS:MaximumWidth="1"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PDB_DE6005_SAL_TYP"
+              DTS:DTSID="{EEE11D7E-DB5B-4952-9585-ABD8F5907126}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnDelimiter=""
+              DTS:ColumnWidth="8"
+              DTS:MaximumWidth="8"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PDB_DE6010_SAL_AMT"
+              DTS:DTSID="{D7E2A74D-F954-4A9E-9783-98A2E34AF12C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="14"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FLORIDA_EDUCAT_ID"
+              DTS:DTSID="{3347098C-157F-4AC4-8056-364CDE0E16BF}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[vulcan.State_Report_Data]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{CCAC8887-4319-4F6F-91D1-239AF4E04E3E}"
@@ -340,6 +442,55 @@
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="r2XML">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D6BBB60A-64B6-4E36-86CE-CCC901430F78}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="r3XML">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F567B31B-7930-4AB8-BDDA-4F52FB344D55}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="r4XML">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{BF6593CF-CA8F-4E7B-B8D8-439400927B1C}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="r5XML">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{5BDFE1E1-4644-4B7E-8A5E-03C1AD4C001E}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="r6XML">
+      <DTS:VariableValue
+        DTS:DataType="8">\\fscj.org\ao\ERP State Reporting\outbound\PDB_RECORDTYPE6-69874-20161109104001.xml</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{63722370-791C-41C2-A015-01682CE2C908}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="r7XML">
       <DTS:VariableValue
         DTS:DataType="8"
         xml:space="preserve"></DTS:VariableValue>
@@ -3239,6 +3390,1383 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\RT6"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{5903B159-C92C-49D4-9704-452FB0BCBC9B}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="RT6"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\RT6\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\RT6\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\RT6\Data Conversion.Inputs[Data Conversion Input].Columns[PDB_DE0110_RPRT_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="7"
+                      cachedName="PDB_DE0110_RPRT_ID"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE0110_RPRT_ID]" />
+                    <inputColumn
+                      refId="Package\RT6\Data Conversion.Inputs[Data Conversion Input].Columns[PDB_RECORD_TYPE]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="PDB_RECORD_TYPE"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_RECORD_TYPE]" />
+                    <inputColumn
+                      refId="Package\RT6\Data Conversion.Inputs[Data Conversion Input].Columns[PDB_DE0120_TRM_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="5"
+                      cachedName="PDB_DE0120_TRM_ID"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE0120_TRM_ID]" />
+                    <inputColumn
+                      refId="Package\RT6\Data Conversion.Inputs[Data Conversion Input].Columns[PDB_DE0130_PRSN_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="PDB_DE0130_PRSN_ID"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE0130_PRSN_ID]" />
+                    <inputColumn
+                      refId="Package\RT6\Data Conversion.Inputs[Data Conversion Input].Columns[PDB_DE0140_ORG_GL]"
+                      cachedDataType="wstr"
+                      cachedLength="13"
+                      cachedName="PDB_DE0140_ORG_GL"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE0140_ORG_GL]" />
+                    <inputColumn
+                      refId="Package\RT6\Data Conversion.Inputs[Data Conversion Input].Columns[PDB_DE1009_OAC]"
+                      cachedDataType="wstr"
+                      cachedLength="2"
+                      cachedName="PDB_DE1009_OAC"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE1009_OAC]" />
+                    <inputColumn
+                      refId="Package\RT6\Data Conversion.Inputs[Data Conversion Input].Columns[PDB_DE6005_SAL_TYP]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="PDB_DE6005_SAL_TYP"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE6005_SAL_TYP]" />
+                    <inputColumn
+                      refId="Package\RT6\Data Conversion.Inputs[Data Conversion Input].Columns[PDB_DE6010_SAL_AMT]"
+                      cachedDataType="wstr"
+                      cachedLength="8"
+                      cachedName="PDB_DE6010_SAL_AMT"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE6010_SAL_AMT]" />
+                    <inputColumn
+                      refId="Package\RT6\Data Conversion.Inputs[Data Conversion Input].Columns[FLORIDA_EDUCAT_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="14"
+                      cachedName="FLORIDA_EDUCAT_ID"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[FLORIDA_EDUCAT_ID]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\RT6\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\RT6\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_DE0110_RPRT_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="7"
+                      lineageId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_DE0110_RPRT_ID]"
+                      name="Copy of PDB_DE0110_RPRT_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\RT6\XML Source.Outputs[row].Columns[PDB_DE0110_RPRT_ID]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_RECORD_TYPE]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="1"
+                      lineageId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_RECORD_TYPE]"
+                      name="Copy of PDB_RECORD_TYPE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\RT6\XML Source.Outputs[row].Columns[PDB_RECORD_TYPE]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_DE0120_TRM_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="5"
+                      lineageId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_DE0120_TRM_ID]"
+                      name="Copy of PDB_DE0120_TRM_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\RT6\XML Source.Outputs[row].Columns[PDB_DE0120_TRM_ID]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_DE0130_PRSN_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="10"
+                      lineageId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_DE0130_PRSN_ID]"
+                      name="Copy of PDB_DE0130_PRSN_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\RT6\XML Source.Outputs[row].Columns[PDB_DE0130_PRSN_ID]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_DE0140_ORG_GL]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="13"
+                      lineageId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_DE0140_ORG_GL]"
+                      name="Copy of PDB_DE0140_ORG_GL"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\RT6\XML Source.Outputs[row].Columns[PDB_DE0140_ORG_GL]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_DE1009_OAC]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="2"
+                      lineageId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_DE1009_OAC]"
+                      name="Copy of PDB_DE1009_OAC"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\RT6\XML Source.Outputs[row].Columns[PDB_DE1009_OAC]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_DE6005_SAL_TYP]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="1"
+                      lineageId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_DE6005_SAL_TYP]"
+                      name="Copy of PDB_DE6005_SAL_TYP"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\RT6\XML Source.Outputs[row].Columns[PDB_DE6005_SAL_TYP]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_DE6010_SAL_AMT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="8"
+                      lineageId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_DE6010_SAL_AMT]"
+                      name="Copy of PDB_DE6010_SAL_AMT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\RT6\XML Source.Outputs[row].Columns[PDB_DE6010_SAL_AMT]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FLORIDA_EDUCAT_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="14"
+                      lineageId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FLORIDA_EDUCAT_ID]"
+                      name="Copy of FLORIDA_EDUCAT_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\RT6\XML Source.Outputs[row].Columns[FLORIDA_EDUCAT_ID]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\RT6\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\RT6\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\RT6\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\RT6\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\RT6\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\RT6\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\RT6\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Flat File Destination">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\RT6\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[RT6Output]"
+                  connectionManagerRefId="Package.ConnectionManagers[RT6Output]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].Columns[PDB_DE0110_RPRT_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="7"
+                      cachedName="PDB_DE0110_RPRT_ID"
+                      externalMetadataColumnId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PDB_DE0110_RPRT_ID]"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE0110_RPRT_ID]" />
+                    <inputColumn
+                      refId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].Columns[PDB_RECORD_TYPE]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="PDB_RECORD_TYPE"
+                      externalMetadataColumnId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PDB_RECORD_TYPE]"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_RECORD_TYPE]" />
+                    <inputColumn
+                      refId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].Columns[PDB_DE0120_TRM_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="5"
+                      cachedName="PDB_DE0120_TRM_ID"
+                      externalMetadataColumnId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PDB_DE0120_TRM_ID]"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE0120_TRM_ID]" />
+                    <inputColumn
+                      refId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].Columns[PDB_DE0130_PRSN_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="PDB_DE0130_PRSN_ID"
+                      externalMetadataColumnId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PDB_DE0130_PRSN_ID]"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE0130_PRSN_ID]" />
+                    <inputColumn
+                      refId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].Columns[PDB_DE0140_ORG_GL]"
+                      cachedDataType="wstr"
+                      cachedLength="13"
+                      cachedName="PDB_DE0140_ORG_GL"
+                      externalMetadataColumnId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PDB_DE0140_ORG_GL]"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE0140_ORG_GL]" />
+                    <inputColumn
+                      refId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].Columns[PDB_DE1009_OAC]"
+                      cachedDataType="wstr"
+                      cachedLength="2"
+                      cachedName="PDB_DE1009_OAC"
+                      externalMetadataColumnId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PDB_DE1009_OAC]"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE1009_OAC]" />
+                    <inputColumn
+                      refId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].Columns[PDB_DE6005_SAL_TYP]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="PDB_DE6005_SAL_TYP"
+                      externalMetadataColumnId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PDB_DE6005_SAL_TYP]"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE6005_SAL_TYP]" />
+                    <inputColumn
+                      refId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].Columns[PDB_DE6010_SAL_AMT]"
+                      cachedDataType="wstr"
+                      cachedLength="8"
+                      cachedName="PDB_DE6010_SAL_AMT"
+                      externalMetadataColumnId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PDB_DE6010_SAL_AMT]"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE6010_SAL_AMT]" />
+                    <inputColumn
+                      refId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].Columns[FLORIDA_EDUCAT_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="14"
+                      cachedName="FLORIDA_EDUCAT_ID"
+                      externalMetadataColumnId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FLORIDA_EDUCAT_ID]"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[FLORIDA_EDUCAT_ID]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PDB_DE0110_RPRT_ID]"
+                      dataType="wstr"
+                      length="7"
+                      name="PDB_DE0110_RPRT_ID" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PDB_RECORD_TYPE]"
+                      dataType="wstr"
+                      length="1"
+                      name="PDB_RECORD_TYPE" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PDB_DE0120_TRM_ID]"
+                      dataType="wstr"
+                      length="5"
+                      name="PDB_DE0120_TRM_ID" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PDB_DE0130_PRSN_ID]"
+                      dataType="wstr"
+                      length="10"
+                      name="PDB_DE0130_PRSN_ID" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PDB_DE0140_ORG_GL]"
+                      dataType="wstr"
+                      length="13"
+                      name="PDB_DE0140_ORG_GL" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PDB_DE1009_OAC]"
+                      dataType="wstr"
+                      length="2"
+                      name="PDB_DE1009_OAC" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PDB_DE6005_SAL_TYP]"
+                      dataType="wstr"
+                      length="1"
+                      name="PDB_DE6005_SAL_TYP" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PDB_DE6010_SAL_AMT]"
+                      dataType="wstr"
+                      length="8"
+                      name="PDB_DE6010_SAL_AMT" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FLORIDA_EDUCAT_ID]"
+                      dataType="wstr"
+                      length="14"
+                      name="FLORIDA_EDUCAT_ID" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\RT6\Multicast"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast">
+              <inputs>
+                <input
+                  refId="Package\RT6\Multicast.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\RT6\Multicast.Outputs[Multicast Output 1]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\RT6\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\RT6\Multicast.Outputs[Multicast Output 2]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 2"
+                  synchronousInputId="Package\RT6\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\RT6\Multicast.Outputs[Multicast Output 3]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 3"
+                  synchronousInputId="Package\RT6\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\RT6\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[pdb_rtype6]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\RT6\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[vulcan.State_Report_Data]"
+                  connectionManagerRefId="Package.ConnectionManagers[vulcan.State_Report_Data]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of PDB_DE0110_RPRT_ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="7"
+                      cachedName="Copy of PDB_DE0110_RPRT_ID"
+                      externalMetadataColumnId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of PDB_DE0110_RPRT_ID]"
+                      lineageId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_DE0110_RPRT_ID]" />
+                    <inputColumn
+                      refId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of PDB_RECORD_TYPE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="Copy of PDB_RECORD_TYPE"
+                      externalMetadataColumnId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of PDB_RECORD_TYPE]"
+                      lineageId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_RECORD_TYPE]" />
+                    <inputColumn
+                      refId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of PDB_DE0120_TRM_ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="Copy of PDB_DE0120_TRM_ID"
+                      externalMetadataColumnId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of PDB_DE0120_TRM_ID]"
+                      lineageId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_DE0120_TRM_ID]" />
+                    <inputColumn
+                      refId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of PDB_DE0130_PRSN_ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="Copy of PDB_DE0130_PRSN_ID"
+                      externalMetadataColumnId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of PDB_DE0130_PRSN_ID]"
+                      lineageId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_DE0130_PRSN_ID]" />
+                    <inputColumn
+                      refId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of PDB_DE0140_ORG_GL]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="13"
+                      cachedName="Copy of PDB_DE0140_ORG_GL"
+                      externalMetadataColumnId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of PDB_DE0140_ORG_GL]"
+                      lineageId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_DE0140_ORG_GL]" />
+                    <inputColumn
+                      refId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of PDB_DE1009_OAC]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="Copy of PDB_DE1009_OAC"
+                      externalMetadataColumnId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of PDB_DE1009_OAC]"
+                      lineageId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_DE1009_OAC]" />
+                    <inputColumn
+                      refId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of PDB_DE6005_SAL_TYP]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="Copy of PDB_DE6005_SAL_TYP"
+                      externalMetadataColumnId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of PDB_DE6005_SAL_TYP]"
+                      lineageId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_DE6005_SAL_TYP]" />
+                    <inputColumn
+                      refId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of PDB_DE6010_SAL_AMT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="8"
+                      cachedName="Copy of PDB_DE6010_SAL_AMT"
+                      externalMetadataColumnId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of PDB_DE6010_SAL_AMT]"
+                      lineageId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PDB_DE6010_SAL_AMT]" />
+                    <inputColumn
+                      refId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of FLORIDA_EDUCAT_ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="14"
+                      cachedName="Copy of FLORIDA_EDUCAT_ID"
+                      externalMetadataColumnId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of FLORIDA_EDUCAT_ID]"
+                      lineageId="Package\RT6\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FLORIDA_EDUCAT_ID]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of PDB_DE0110_RPRT_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="7"
+                      name="Copy of PDB_DE0110_RPRT_ID" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of PDB_RECORD_TYPE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="Copy of PDB_RECORD_TYPE" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of PDB_DE0120_TRM_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="Copy of PDB_DE0120_TRM_ID" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of PDB_DE0130_PRSN_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Copy of PDB_DE0130_PRSN_ID" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of PDB_DE0140_ORG_GL]"
+                      codePage="1252"
+                      dataType="str"
+                      length="13"
+                      name="Copy of PDB_DE0140_ORG_GL" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of PDB_DE1009_OAC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="Copy of PDB_DE1009_OAC" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of PDB_DE6005_SAL_TYP]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="Copy of PDB_DE6005_SAL_TYP" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of PDB_DE6010_SAL_AMT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="Copy of PDB_DE6010_SAL_AMT" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Copy of FLORIDA_EDUCAT_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="14"
+                      name="Copy of FLORIDA_EDUCAT_ID" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\RT6\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\RT6\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\RT6\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\RT6\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\RT6\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\RT6\XML Source"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Extracts data from an XML file. For example, extract catalog data from an XML file that represents catalogs and catalog items. Before using, specify the schema and generate an output for each XML element.;Microsoft Corporation;Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Extracts data from an XML file. For example, extract catalog data from an XML file that represents catalogs and catalog items. Before using, specify the schema and generate an output for each XML element."
+              name="XML Source"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.XmlSourceAdapter</property>
+                <property
+                  dataType="System.String"
+                  description="The XML data used by the XML source adapter."
+                  expressionType="Notify"
+                  name="XMLData"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable used by the XML source adapter to specify XML data."
+                  name="XMLDataVariable">User::r6XML</property>
+                <property
+                  dataType="System.Int32"
+                  description="Defines how the XML source adapter gets XML data."
+                  name="AccessMode">1</property>
+                <property
+                  dataType="System.String"
+                  description="The XML schema definition used by the XML source adapter."
+                  expressionType="Notify"
+                  name="XMLSchemaDefinition">Z:\Stuart\ConsoleApplications\ExtractBuild\ExtractBuild\PDBRT6.xsd</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Identifies whether or not to use inline schema."
+                  name="UseInlineSchema">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Defines how XML integer types are mapped."
+                  name="XMLIntegerMapping"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.XmlSourceAdapter+XMLIntegerMappingConverter">0</property>
+              </properties>
+              <outputs>
+                <output
+                  refId="Package\RT6\XML Source.Outputs[row]"
+                  name="row">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">row</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row].Columns[rownumber]"
+                      dataType="ui2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row].ExternalColumns[rownumber]"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[rownumber]"
+                      name="rownumber"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row].Columns[PROCESS_INSTANCE]"
+                      dataType="ui4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row].ExternalColumns[PROCESS_INSTANCE]"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PROCESS_INSTANCE]"
+                      name="PROCESS_INSTANCE"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row].Columns[ROWKEY]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row].ExternalColumns[ROWKEY]"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[ROWKEY]"
+                      name="ROWKEY"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row].Columns[EMPLID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row].ExternalColumns[EMPLID]"
+                      length="255"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[EMPLID]"
+                      name="EMPLID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE0110_RPRT_ID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row].ExternalColumns[PDB_DE0110_RPRT_ID]"
+                      length="7"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE0110_RPRT_ID]"
+                      name="PDB_DE0110_RPRT_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row].Columns[PDB_RECORD_TYPE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row].ExternalColumns[PDB_RECORD_TYPE]"
+                      length="1"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_RECORD_TYPE]"
+                      name="PDB_RECORD_TYPE"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE0120_TRM_ID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row].ExternalColumns[PDB_DE0120_TRM_ID]"
+                      length="5"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE0120_TRM_ID]"
+                      name="PDB_DE0120_TRM_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE0130_PRSN_ID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row].ExternalColumns[PDB_DE0130_PRSN_ID]"
+                      length="10"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE0130_PRSN_ID]"
+                      name="PDB_DE0130_PRSN_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE0140_ORG_GL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row].ExternalColumns[PDB_DE0140_ORG_GL]"
+                      length="13"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE0140_ORG_GL]"
+                      name="PDB_DE0140_ORG_GL"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE1009_OAC]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row].ExternalColumns[PDB_DE1009_OAC]"
+                      length="2"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE1009_OAC]"
+                      name="PDB_DE1009_OAC"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE6005_SAL_TYP]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row].ExternalColumns[PDB_DE6005_SAL_TYP]"
+                      length="1"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE6005_SAL_TYP]"
+                      name="PDB_DE6005_SAL_TYP"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE6010_SAL_AMT]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row].ExternalColumns[PDB_DE6010_SAL_AMT]"
+                      length="8"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[PDB_DE6010_SAL_AMT]"
+                      name="PDB_DE6010_SAL_AMT"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row].Columns[FLORIDA_EDUCAT_ID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row].ExternalColumns[FLORIDA_EDUCAT_ID]"
+                      length="14"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[FLORIDA_EDUCAT_ID]"
+                      name="FLORIDA_EDUCAT_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row].Columns[SUBMISSION_TYPE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row].ExternalColumns[SUBMISSION_TYPE]"
+                      length="255"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[SUBMISSION_TYPE]"
+                      name="SUBMISSION_TYPE"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row].Columns[ACTION_DTTM]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row].ExternalColumns[ACTION_DTTM]"
+                      length="255"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[ACTION_DTTM]"
+                      name="ACTION_DTTM"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row].Columns[ROWSTATUS]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row].ExternalColumns[ROWSTATUS]"
+                      length="255"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[ROWSTATUS]"
+                      name="ROWSTATUS"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row].Columns[INSTCREATEDTTM]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row].ExternalColumns[INSTCREATEDTTM]"
+                      length="255"
+                      lineageId="Package\RT6\XML Source.Outputs[row].Columns[INSTCREATEDTTM]"
+                      name="INSTCREATEDTTM"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row].ExternalColumns[rownumber]"
+                      dataType="ui2"
+                      name="rownumber">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.UInt16</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row].ExternalColumns[PROCESS_INSTANCE]"
+                      dataType="ui4"
+                      name="PROCESS_INSTANCE">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.UInt32</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row].ExternalColumns[ROWKEY]"
+                      dataType="ui1"
+                      name="ROWKEY">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.Byte</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row].ExternalColumns[EMPLID]"
+                      dataType="wstr"
+                      length="255"
+                      name="EMPLID">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row].ExternalColumns[PDB_DE0110_RPRT_ID]"
+                      dataType="wstr"
+                      length="7"
+                      name="PDB_DE0110_RPRT_ID">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row].ExternalColumns[PDB_RECORD_TYPE]"
+                      dataType="wstr"
+                      length="1"
+                      name="PDB_RECORD_TYPE">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row].ExternalColumns[PDB_DE0120_TRM_ID]"
+                      dataType="wstr"
+                      length="5"
+                      name="PDB_DE0120_TRM_ID">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row].ExternalColumns[PDB_DE0130_PRSN_ID]"
+                      dataType="wstr"
+                      length="10"
+                      name="PDB_DE0130_PRSN_ID">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row].ExternalColumns[PDB_DE0140_ORG_GL]"
+                      dataType="wstr"
+                      length="13"
+                      name="PDB_DE0140_ORG_GL">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row].ExternalColumns[PDB_DE1009_OAC]"
+                      dataType="wstr"
+                      length="2"
+                      name="PDB_DE1009_OAC">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row].ExternalColumns[PDB_DE6005_SAL_TYP]"
+                      dataType="wstr"
+                      length="1"
+                      name="PDB_DE6005_SAL_TYP">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row].ExternalColumns[PDB_DE6010_SAL_AMT]"
+                      dataType="wstr"
+                      length="8"
+                      name="PDB_DE6010_SAL_AMT">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row].ExternalColumns[FLORIDA_EDUCAT_ID]"
+                      dataType="wstr"
+                      length="14"
+                      name="FLORIDA_EDUCAT_ID">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row].ExternalColumns[SUBMISSION_TYPE]"
+                      dataType="wstr"
+                      length="255"
+                      name="SUBMISSION_TYPE">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row].ExternalColumns[ACTION_DTTM]"
+                      dataType="wstr"
+                      length="255"
+                      name="ACTION_DTTM">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row].ExternalColumns[ROWSTATUS]"
+                      dataType="wstr"
+                      length="255"
+                      name="ROWSTATUS">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row].ExternalColumns[INSTCREATEDTTM]"
+                      dataType="wstr"
+                      length="255"
+                      name="INSTCREATEDTTM">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\RT6\XML Source.Outputs[row Error Output]"
+                  isErrorOut="true"
+                  name="row Error Output">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">row</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].Columns[rownumber]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[rownumber]"
+                      lineageId="Package\RT6\XML Source.Outputs[row Error Output].Columns[rownumber]"
+                      name="rownumber" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].Columns[PROCESS_INSTANCE]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[PROCESS_INSTANCE]"
+                      lineageId="Package\RT6\XML Source.Outputs[row Error Output].Columns[PROCESS_INSTANCE]"
+                      name="PROCESS_INSTANCE" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].Columns[ROWKEY]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[ROWKEY]"
+                      lineageId="Package\RT6\XML Source.Outputs[row Error Output].Columns[ROWKEY]"
+                      name="ROWKEY" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].Columns[EMPLID]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[EMPLID]"
+                      lineageId="Package\RT6\XML Source.Outputs[row Error Output].Columns[EMPLID]"
+                      name="EMPLID" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].Columns[PDB_DE0110_RPRT_ID]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[PDB_DE0110_RPRT_ID]"
+                      lineageId="Package\RT6\XML Source.Outputs[row Error Output].Columns[PDB_DE0110_RPRT_ID]"
+                      name="PDB_DE0110_RPRT_ID" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].Columns[PDB_RECORD_TYPE]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[PDB_RECORD_TYPE]"
+                      lineageId="Package\RT6\XML Source.Outputs[row Error Output].Columns[PDB_RECORD_TYPE]"
+                      name="PDB_RECORD_TYPE" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].Columns[PDB_DE0120_TRM_ID]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[PDB_DE0120_TRM_ID]"
+                      lineageId="Package\RT6\XML Source.Outputs[row Error Output].Columns[PDB_DE0120_TRM_ID]"
+                      name="PDB_DE0120_TRM_ID" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].Columns[PDB_DE0130_PRSN_ID]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[PDB_DE0130_PRSN_ID]"
+                      lineageId="Package\RT6\XML Source.Outputs[row Error Output].Columns[PDB_DE0130_PRSN_ID]"
+                      name="PDB_DE0130_PRSN_ID" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].Columns[PDB_DE0140_ORG_GL]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[PDB_DE0140_ORG_GL]"
+                      lineageId="Package\RT6\XML Source.Outputs[row Error Output].Columns[PDB_DE0140_ORG_GL]"
+                      name="PDB_DE0140_ORG_GL" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].Columns[PDB_DE1009_OAC]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[PDB_DE1009_OAC]"
+                      lineageId="Package\RT6\XML Source.Outputs[row Error Output].Columns[PDB_DE1009_OAC]"
+                      name="PDB_DE1009_OAC" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].Columns[PDB_DE6005_SAL_TYP]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[PDB_DE6005_SAL_TYP]"
+                      lineageId="Package\RT6\XML Source.Outputs[row Error Output].Columns[PDB_DE6005_SAL_TYP]"
+                      name="PDB_DE6005_SAL_TYP" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].Columns[PDB_DE6010_SAL_AMT]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[PDB_DE6010_SAL_AMT]"
+                      lineageId="Package\RT6\XML Source.Outputs[row Error Output].Columns[PDB_DE6010_SAL_AMT]"
+                      name="PDB_DE6010_SAL_AMT" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].Columns[FLORIDA_EDUCAT_ID]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[FLORIDA_EDUCAT_ID]"
+                      lineageId="Package\RT6\XML Source.Outputs[row Error Output].Columns[FLORIDA_EDUCAT_ID]"
+                      name="FLORIDA_EDUCAT_ID" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].Columns[SUBMISSION_TYPE]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[SUBMISSION_TYPE]"
+                      lineageId="Package\RT6\XML Source.Outputs[row Error Output].Columns[SUBMISSION_TYPE]"
+                      name="SUBMISSION_TYPE" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].Columns[ACTION_DTTM]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[ACTION_DTTM]"
+                      lineageId="Package\RT6\XML Source.Outputs[row Error Output].Columns[ACTION_DTTM]"
+                      name="ACTION_DTTM" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].Columns[ROWSTATUS]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[ROWSTATUS]"
+                      lineageId="Package\RT6\XML Source.Outputs[row Error Output].Columns[ROWSTATUS]"
+                      name="ROWSTATUS" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].Columns[INSTCREATEDTTM]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[INSTCREATEDTTM]"
+                      lineageId="Package\RT6\XML Source.Outputs[row Error Output].Columns[INSTCREATEDTTM]"
+                      name="INSTCREATEDTTM" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\RT6\XML Source.Outputs[row Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\RT6\XML Source.Outputs[row Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[rownumber]"
+                      dataType="nText"
+                      name="rownumber" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[PROCESS_INSTANCE]"
+                      dataType="nText"
+                      name="PROCESS_INSTANCE" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[ROWKEY]"
+                      dataType="nText"
+                      name="ROWKEY" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[EMPLID]"
+                      dataType="nText"
+                      name="EMPLID" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[PDB_DE0110_RPRT_ID]"
+                      dataType="nText"
+                      name="PDB_DE0110_RPRT_ID" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[PDB_RECORD_TYPE]"
+                      dataType="nText"
+                      name="PDB_RECORD_TYPE" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[PDB_DE0120_TRM_ID]"
+                      dataType="nText"
+                      name="PDB_DE0120_TRM_ID" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[PDB_DE0130_PRSN_ID]"
+                      dataType="nText"
+                      name="PDB_DE0130_PRSN_ID" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[PDB_DE0140_ORG_GL]"
+                      dataType="nText"
+                      name="PDB_DE0140_ORG_GL" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[PDB_DE1009_OAC]"
+                      dataType="nText"
+                      name="PDB_DE1009_OAC" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[PDB_DE6005_SAL_TYP]"
+                      dataType="nText"
+                      name="PDB_DE6005_SAL_TYP" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[PDB_DE6010_SAL_AMT]"
+                      dataType="nText"
+                      name="PDB_DE6010_SAL_AMT" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[FLORIDA_EDUCAT_ID]"
+                      dataType="nText"
+                      name="FLORIDA_EDUCAT_ID" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[SUBMISSION_TYPE]"
+                      dataType="nText"
+                      name="SUBMISSION_TYPE" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[ACTION_DTTM]"
+                      dataType="nText"
+                      name="ACTION_DTTM" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[ROWSTATUS]"
+                      dataType="nText"
+                      name="ROWSTATUS" />
+                    <externalMetadataColumn
+                      refId="Package\RT6\XML Source.Outputs[row Error Output].ExternalColumns[INSTCREATEDTTM]"
+                      dataType="nText"
+                      name="INSTCREATEDTTM" />
+                  </externalMetadataColumns>
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\RT6.Paths[Data Conversion Output]"
+              endId="Package\RT6\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\RT6\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\RT6.Paths[Multicast Output 1]"
+              endId="Package\RT6\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Multicast Output 1"
+              startId="Package\RT6\Multicast.Outputs[Multicast Output 1]" />
+            <path
+              refId="Package\RT6.Paths[Multicast Output 2]"
+              endId="Package\RT6\Data Conversion.Inputs[Data Conversion Input]"
+              name="Multicast Output 2"
+              startId="Package\RT6\Multicast.Outputs[Multicast Output 2]" />
+            <path
+              refId="Package\RT6.Paths[row]"
+              endId="Package\RT6\Multicast.Inputs[Multicast Input 1]"
+              name="row"
+              startId="Package\RT6\XML Source.Outputs[row]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\RT7"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{6B6863F6-DC40-4B7B-A7EC-1190447FBFF1}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="RT7"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Script Task"
       DTS:CreationName="Microsoft.ScriptTask"
       DTS:Description="Script Task"
@@ -3255,7 +4783,7 @@
           VSTAMinorVersion="0"
           Language="CSharp"
           ReadOnlyVariables="User::outputDirectory"
-          ReadWriteVariables="User::r1XML,User::r2XML">
+          ReadWriteVariables="User::r1XML,User::r2XML,User::r3XML,User::r4XML,User::r5XML,User::r6XML,User::r7XML">
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -3507,7 +5035,7 @@ namespace ST_af060dc173ec43d7ab6661754cbd6fdf
             List<FileInfo> recordTypeFiles = new List<FileInfo>();
             List<List<FileInfo>> recordTypeFileCandidateLists = new List<List<FileInfo>>();
 
-            for (int i = 1; i < 2; i++)
+            for (int i = 1; i < 8; i++)
             {
                 List<FileInfo> recordTypeFileCandidates = new List<FileInfo>();
                 Regex r = new Regex(@"PDB_RECORDTYPE" + i + @"\-\d{5}\-\d{14}\.xml");
@@ -3533,7 +5061,10 @@ namespace ST_af060dc173ec43d7ab6661754cbd6fdf
                     }
                 }
 
-                Dts.Variables["User::r" + i + "XML"].Value = recordTypeFile.FullName;
+                if (recordTypeFile != null)
+                {
+                    Dts.Variables["User::r" + i + "XML"].Value = recordTypeFile.FullName;
+                }
             }
 
 			Dts.TaskResult = (int)ScriptResults.Success;
@@ -3563,15 +5094,15 @@ namespace ST_af060dc173ec43d7ab6661754cbd6fdf
             Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
 <c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
 	<msb:PropertyGroup>
-		<msb:CodeName>ST_af060dc173ec43d7ab6661754cbd6fdf</msb:CodeName>
 		<msb:Language>msBuild</msb:Language>
+		<msb:CodeName>ST_af060dc173ec43d7ab6661754cbd6fdf</msb:CodeName>
 		<msb:DisplayName>ST_af060dc173ec43d7ab6661754cbd6fdf</msb:DisplayName>
 		<msb:ProjectId>{8418DDD2-BF8D-4740-B5CC-F54E4D91E697}</msb:ProjectId>
 	</msb:PropertyGroup>
 	<msb:ItemGroup>
 		<msb:Project Include="ST_c6aa78e399074f0c9ae92d6ecfd9af02.csproj"/>
-		<msb:File Include="Properties\AssemblyInfo.cs"/>
 		<msb:File Include="Properties\Settings.settings"/>
+		<msb:File Include="Properties\AssemblyInfo.cs"/>
 		<msb:File Include="Properties\Resources.resx"/>
 		<msb:File Include="Properties\Resources.Designer.cs"/>
 		<msb:File Include="Properties\Settings.Designer.cs"/>
@@ -3688,7 +5219,7 @@ namespace ST_af060dc173ec43d7ab6661754cbd6fdf.Properties {
           <BinaryItem
             Name="ST_c6aa78e399074f0c9ae92d6ecfd9af02.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAABQK1gAAAAAAAAAAOAAAiELAQsAABQAAAAIAAAAAAAALjIA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDALF6K1gAAAAAAAAAAOAAAiELAQsAABQAAAAIAAAAAAAALjIA
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAEAAAAAAAAAACAAAAAAgAAAAAAAAMAQIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAOAxAABLAAAAAEAAAAgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -3698,13 +5229,13 @@ LnJlbG9jAAAMAAAAAGAAAAACAAAAHAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAAQ
 MgAAAAAAAEgAAAACAAUA2CIAAAgPAAABAAAAAAAAACAiAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKA4AAAoqEzACAC0AAAABAAARfgEAAAQtIHIBAABw0AIA
 AAIoDwAACm8QAAAKcxEAAAoKBoABAAAEfgEAAAQqGn4CAAAEKh4CgAIAAAQqGn4DAAAEKi5zBgAA
-BoADAAAEKh4CKBQAAAoqABswBAA8AQAAAgAAEQIoFgAACm8XAAAKcnMAAHBvGAAACm8ZAAAKbxoA
-AApzGwAACgoGbxwAAAoLcx0AAAomcx4AAAomFww46QAAAHMdAAAKDXKfAABwCIwhAAABcr0AAHAo
+BoADAAAEKh4CKBQAAAoqABswBABAAQAAAgAAEQIoFgAACm8XAAAKcnMAAHBvGAAACm8ZAAAKbxoA
+AApzGwAACgoGbxwAAAoLcx0AAAomcx4AAAomFww47QAAAHMdAAAKDXKfAABwCIwhAAABcr0AAHAo
 HwAACnMgAAAKEwR+IQAAChMFFBMGBxMKFhMLKy8RChELmhMHEQQRB28iAAAKbyMAAAoTCBEIbyQA
 AAoWMQgJEQdvJQAAChELF1gTCxELEQqOaTLJCW8mAAAKEwwrJhIMKCcAAAoTCREJbygAAAoRBSgp
-AAAKLA0RCW8oAAAKEwURCRMGEgwoKgAACi3R3g4SDP4WAwAAG28rAAAK3AIoFgAACm8XAAAKcucA
-AHAIjCEAAAFy9wAAcCgfAAAKbxgAAAoRBm8sAAAKby0AAAoIF1gMCBg/EP///wIoFgAAChZvLgAA
-CioBEAAAAgCyADPlAA4AAAAAHgIoLwAACioAAAAAtAAAAM7K774BAAAAkQAAAGxTeXN0ZW0uUmVz
+AAAKLA0RCW8oAAAKEwURCRMGEgwoKgAACi3R3g4SDP4WAwAAG28rAAAK3BEGLDECKBYAAApvFwAA
+CnLnAABwCIwhAAABcvcAAHAoHwAACm8YAAAKEQZvLAAACm8tAAAKCBdYDAgePwz///8CKBYAAAoW
+by4AAAoqARAAAAIAsgAz5QAOAAAAAB4CKC8AAAoqtAAAAM7K774BAAAAkQAAAGxTeXN0ZW0uUmVz
 b3VyY2VzLlJlc291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJl
 PW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkjU3lzdGVtLlJlc291cmNl
 cy5SdW50aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQtAAAAEJTSkIBAAEAAAAAAAwA
@@ -3719,7 +5250,7 @@ ANAFugAKAP0F3gUGAAMGugAGABUGfgUKAC0G3gWDAFMGAAAGAKIGugAAAAAAAQAAAAAAAQABAAAA
 EAAyADwABQABAAEAAAEQAGsAPAAJAAMABQABABAAdAB/AA0ABAAIAAMBAACjAAAAEQAEAAoAEQB/
 ARMAEQCsARcAEQD2ATkABgYfAkcAVoAnAkoAVoAvAkoAUCAAAAAAgxi8ARsAAQBYIAAAAACTCMIB
 HwABAJEgAAAAAJMI1gEkAAEAmCAAAAAAkwjiASkAAQCgIAAAAACWCAYCPQACALMgAAAAAIYYvAEb
-AAIApyAAAAAAkRi/BIkAAgC8IAAAAACGABoCGwACABQiAAAAAIYYvAEbAAIAAAABADcCOQC8AVgA
+AAIApyAAAAAAkRi/BIkAAgC8IAAAAACGABoCGwACABgiAAAAAIYYvAEbAAIAAAABADcCOQC8AVgA
 QQC8AVgASQC8AVgAUQC8AVgAWQC8AVgAYQC8AVgAaQC8AVgAcQC8AVgAeQC8AVgAgQC8AVgAiQC8
 AV0AkQC8ARsAmQC8ARsACQC8ARsAoQA4BGIAoQBTBGkAKQC8AW4AuQC8AXoAyQC8ARsAEQC8ARsA
 0QC8ARsAGQD6BI0A2QBLBZIA4QBiBZcA6QBrBZ0ACQB1BaEA8QC8AVgA8QCfBaUADAC8ARsAFAC8
@@ -3727,7 +5258,7 @@ ARsAEQHXBcAAGQG8AVgAIQEMBscAKQEkBqEAGQE9BswAMQFFBtMADABPBtcADABeBt0AHABsBu8A
 KQF4BvQAIQGKBvoAHACZBgQBQQGuBhsAKQG2BqEA6QDDBggB2QDNBl0AGQC8ARsACAAUAE4ACAAY
 AFMAKQCTAIAALgAbAKgBLgAjAKgBLgBjAM4BLgALADcBLgATAH8BLgAzAH8BLgArAKgBLgA7AK4B
 LgBDAKgBLgBbAMUBQwBrAFMASQCTAIAAYQCbAFMAgwCrAFMAdQANAQIAAQADAAMAAABvAS8AAADu
-ATQAAAASAkIAAgACAAMAAgADAAUAAQAEAAUAAgAFAAcAqwCzAOcABIAAAAEAAAATGNhcAAAAAAAA
+ATQAAAASAkIAAgACAAMAAgADAAUAAQAEAAUAAgAFAAcAqwCzAOcABIAAAAEAAAATGDByAAAAAAAA
 zQMAAAQAAAAAAAAAAAAAAAEAsQAAAAAABAAAAAAAAAAAAAAAAQC6AAAAAAAMAAAAAAAAAAAAAAAK
 APUAAAAAAAwAAAAAAAAAAAAAAAoAAgUAAAAAAAAAAAEAAADcBgAABQAEAAAAADxNb2R1bGU+AFNU
 X2M2YWE3OGUzOTkwNzRmMGM5YWU5MmQ2ZWNmZDlhZjAyLmRsbABSZXNvdXJjZXMAU1RfYWYwNjBk
@@ -3766,7 +5297,7 @@ MAA2ADAAZABjADEANwAzAGUAYwA0ADMAZAA3AGEAYgA2ADYANgAxADcANQA0AGMAYgBkADYAZgBk
 AGYALgBQAHIAbwBwAGUAcgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAACtVAHMAZQByADoA
 OgBvAHUAdABwAHUAdABEAGkAcgBlAGMAdABvAHIAeQAAHVAARABCAF8AUgBFAEMATwBSAEQAVABZ
 AFAARQAAKVwALQBcAGQAewA1AH0AXAAtAFwAZAB7ADEANAB9AFwALgB4AG0AbAABD1UAcwBlAHIA
-OgA6AHIAAAdYAE0ATAAAAOzGzNunmB1JpVw/pACxgB4ACLd6XFYZNOCJCImEXc2AgMyRAwYSFQMG
+OgA6AHIAAAdYAE0ATAAAAKxrnjO6sDxEmexiGA5+rTwACLd6XFYZNOCJCImEXc2AgMyRAwYSFQMG
 EhkDIAABBAAAEhUEAAASGQUAAQESGQQIABIVBAgAEhkDBhIMBAAAEgwECAASDAIGCAMGERQEAAAA
 AAQBAAAABCABAQ4EIAEBCAYAARJREVUEIAASWQYgAgEOElkEBwESFQUgAQERYQgBAAIAAAAAAAMA
 AAEEIAASbQQgABJxBSABEnUcAyAAHAMgAA4FIAAdEn0HFRKAgQESfQwVEoCBARUSgIEBEn0GAAMO
@@ -3787,13 +5318,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAA
 SAAAAFhAAACwAwAAAAAAAAAAAACwAzQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAA
-AAAAvQTv/gAAAQAAAAEA2FwTGAAAAQDYXBMYPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQA
+AAAAvQTv/gAAAQAAAAEAMHITGAAAAQAwchMYPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQA
 AAABAFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBu
 AAAAAAAAALAEEAMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAA7AIAAAEAMAAwADAA
 MAAwADQAYgAwAAAAcAAkAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4AAAAAAFMAVABf
 AGEAZgAwADYAMABkAGMAMQA3ADMAZQBjADQAMwBkADcAYQBiADYANgA2ADEANwA1ADQAYwBiAGQA
 NgBmAGQAZgAAAEAADwABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAALgA2ADEANgAz
-AC4AMgAzADcANgA4AAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAVABfAGMA
+AC4AMgA5ADIAMwAyAAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAVABfAGMA
 NgBhAGEANwA4AGUAMwA5ADkAMAA3ADQAZgAwAGMAOQBhAGUAOQAyAGQANgBlAGMAZgBkADkAYQBm
 ADAAMgAuAGQAbABsAAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAQwBvAHAA
 eQByAGkAZwBoAHQAIABAACAAIAAyADAAMQA2AAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBs
@@ -3801,8 +5332,8 @@ AGUAbgBhAG0AZQAAAFMAVABfAGMANgBhAGEANwA4AGUAMwA5ADkAMAA3ADQAZgAwAGMAOQBhAGUA
 OQAyAGQANgBlAGMAZgBkADkAYQBmADAAMgAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABO
 AGEAbQBlAAAAAABTAFQAXwBhAGYAMAA2ADAAZABjADEANwAzAGUAYwA0ADMAZAA3AGEAYgA2ADYA
 NgAxADcANQA0AGMAYgBkADYAZgBkAGYAAABEAA8AAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBv
-AG4AAAAxAC4AMAAuADYAMQA2ADMALgAyADMANwA2ADgAAAAAAEgADwABAEEAcwBzAGUAbQBiAGwA
-eQAgAFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADYAMQA2ADMALgAyADMANwA2ADgAAAAAAAAAAAAA
+AG4AAAAxAC4AMAAuADYAMQA2ADMALgAyADkAMgAzADIAAAAAAEgADwABAEEAcwBzAGUAbQBiAGwA
+eQAgAFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADYAMQA2ADMALgAyADkAMgAzADIAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -3850,6 +5381,22 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
       DTS:To="Package\RT2" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{865C490B-1E9A-4F14-98F4-C945D48BAC19}"
+      DTS:From="Package\RT2"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\RT6" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{51B1D425-7AAF-4110-AC32-5361CFF45D4C}"
+      DTS:From="Package\RT6"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\RT7" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -3862,15 +5409,23 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="131.2,41.6"
-          Id="Package\Script Task"
-          TopLeft="152.444446018764,141.500654737787" />
+          Size="163.2,41.6"
+          Id="Package\Execute SQL Task"
+          TopLeft="131.8730181188,70.488889877469" />
         <NodeLayout
           Size="97.6,41.6"
           Id="Package\RT1"
           TopLeft="166.730161569557,209.971244774833" />
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\RT2"
+          TopLeft="169.714288604503,280.188239223652" />
+        <NodeLayout
+          Size="131.2,41.6"
+          Id="Package\Script Task"
+          TopLeft="152.444446018764,141.500654737787" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="216.78730379416,183.100654737787">
@@ -3893,10 +5448,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="163.2,41.6"
-          Id="Package\Execute SQL Task"
-          TopLeft="131.8730181188,70.488889877469" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="215.758732068782,112.088889877469">
@@ -3919,10 +5470,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\RT2"
-          TopLeft="169.714288604503,280.188239223652" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="217.02222508703,251.571244774833">
@@ -3945,6 +5492,58 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\RT6"
+          TopLeft="305.142862339409,278.352945080265" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="267.314288604503,300.070592151959">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="37.8285737349061,0"
+              Start="0,0"
+              End="30.3285737349061,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="30.3285737349061,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\RT7"
+          TopLeft="308.571433826369,209.223532346046" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="355.657148082889,278.352945080265">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,-27.5294127342198"
+              Start="0,0"
+              End="0,-20.0294127342198">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-20.0294127342198" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -3954,77 +5553,25 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="134.4,41.6"
-          Id="Package\RT1\XML Source"
-          TopLeft="131.428573666787,56.8941184449774" />
+          Size="171.2,41.6"
+          Id="Package\RT1\OLE DB Destination"
+          TopLeft="225.600003882817,349.12941608891" />
         <NodeLayout
           Size="120,41.6"
           Id="Package\RT1\Multicast"
           TopLeft="138.857145221866,135.811766610591" />
-        <EdgeLayout
-          Id="Package\RT1.Paths[row]"
-          TopLeft="198.742859444326,98.4941184449773">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,37.3176481656137"
-              Start="0,0"
-              End="0,29.8176481656137">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.8176481656137" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\RT1\Flat File Destination"
-          TopLeft="31.4285719637968,239.20000335469" />
-        <EdgeLayout
-          Id="Package\RT1.Paths[Multicast Output 2]"
-          TopLeft="198.857145221866,177.411766610591">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-81.8285732580691,61.7882367440987"
-              Start="0,0"
-              End="-81.8285732580691,54.2882367440987">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.8941183720494" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26.8941183720494"
-                    Point2="0,30.8941183720494"
-                    Point3="-4,30.8941183720494" />
-                  <mssgle:LineSegment
-                    End="-77.8285732580691,30.8941183720494" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-77.8285732580691,30.8941183720494"
-                    Point2="-81.8285732580691,30.8941183720494"
-                    Point3="-81.8285732580691,34.8941183720494" />
-                  <mssgle:LineSegment
-                    End="-81.8285732580691,54.2882367440987" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="134.4,41.6"
+          Id="Package\RT1\XML Source"
+          TopLeft="131.428573666787,56.8941184449774" />
         <NodeLayout
           Size="155.2,41.6"
           Id="Package\RT1\Data Conversion"
           TopLeft="235.428575437896,241.035297498076" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\RT1\Flat File Destination"
+          TopLeft="31.4285719637968,239.20000335469" />
         <EdgeLayout
           Id="Package\RT1.Paths[Multicast Output 1]"
           TopLeft="217.523811888533,177.411766610591">
@@ -4059,24 +5606,76 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\RT1\OLE DB Destination"
-          TopLeft="228.000003882817,308.32941608891" />
         <EdgeLayout
           Id="Package\RT1.Paths[Data Conversion Output]"
-          TopLeft="313.314289660357,282.635297498076">
+          TopLeft="312.114289660356,282.635297498076">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,25.6941185908334"
+              EndConnector="0,66.4941185908341"
               Start="0,0"
-              End="0,18.1941185908334">
+              End="0,58.9941185908341">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18.1941185908334" />
+                    End="0,58.9941185908341" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\RT1.Paths[row]"
+          TopLeft="198.742859444326,98.4941184449773">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37.3176481656137"
+              Start="0,0"
+              End="0,29.8176481656137">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.8176481656137" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\RT1.Paths[Multicast Output 2]"
+          TopLeft="198.857145221866,177.411766610591">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-81.8285732580691,61.7882367440987"
+              Start="0,0"
+              End="-81.8285732580691,54.2882367440987">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.8941183720494" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.8941183720494"
+                    Point2="0,30.8941183720494"
+                    Point3="-4,30.8941183720494" />
+                  <mssgle:LineSegment
+                    End="-77.8285732580691,30.8941183720494" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-77.8285732580691,30.8941183720494"
+                    Point2="-81.8285732580691,30.8941183720494"
+                    Point3="-81.8285732580691,34.8941183720494" />
+                  <mssgle:LineSegment
+                    End="-81.8285732580691,54.2882367440987" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4090,6 +5689,159 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\RT1\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\RT6">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="134.4,41.6"
+          Id="Package\RT6\XML Source"
+          TopLeft="242.4,77.6" />
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\RT6\Multicast"
+          TopLeft="248,152.8" />
+        <EdgeLayout
+          Id="Package\RT6.Paths[row]"
+          TopLeft="308.8,119.2">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33.6"
+              Start="0,0"
+              End="0,26.1">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.1" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\RT6\Flat File Destination"
+          TopLeft="92,242.4" />
+        <EdgeLayout
+          Id="Package\RT6.Paths[Multicast Output 1]"
+          TopLeft="308,194.4">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-130.4,48"
+              Start="0,0"
+              End="-130.4,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20"
+                    Point2="0,24"
+                    Point3="-4,24" />
+                  <mssgle:LineSegment
+                    End="-126.4,24" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-126.4,24"
+                    Point2="-130.4,24"
+                    Point3="-130.4,28" />
+                  <mssgle:LineSegment
+                    End="-130.4,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\RT6\Data Conversion"
+          TopLeft="339.2,247.2" />
+        <EdgeLayout
+          Id="Package\RT6.Paths[Multicast Output 2]"
+          TopLeft="326.666666666667,194.4">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="90.1333333333333,52.8"
+              Start="0,0"
+              End="90.1333333333333,45.3">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.5368421052632" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.5368421052632"
+                    Point2="0,21.5368421052632"
+                    Point3="4,21.5368421052632" />
+                  <mssgle:LineSegment
+                    End="86.1333333333333,21.5368421052632" />
+                  <mssgle:CubicBezierSegment
+                    Point1="86.1333333333333,21.5368421052632"
+                    Point2="90.1333333333333,21.5368421052632"
+                    Point3="90.1333333333333,25.5368421052632" />
+                  <mssgle:LineSegment
+                    End="90.1333333333333,45.3" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\RT6\OLE DB Destination"
+          TopLeft="330.4,322.4" />
+        <EdgeLayout
+          Id="Package\RT6.Paths[Data Conversion Output]"
+          TopLeft="416.4,288.8">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33.6"
+              Start="0,0"
+              End="0,26.1">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.1" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\RT6\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
