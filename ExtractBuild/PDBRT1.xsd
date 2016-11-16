@@ -34,7 +34,7 @@
               <xs:element minOccurs="0" name="PDB_DE1009_OAC"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="2" /> </xs:restriction> </xs:simpleType> </xs:element>
               <xs:element minOccurs="0" name="PDB_DE1096_EAM_IND"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
               <xs:element minOccurs="0" name="US_OCC_CD" type="xs:string" />
-              <xs:element minOccurs="0" name="FLORIDA_EDUCAT_ID"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="10" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="FLORIDA_EDUCAT_ID"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="14" /> </xs:restriction> </xs:simpleType> </xs:element>
               <xs:element minOccurs="0" name="PDB_DE1007_MDL_NM"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="20" /> </xs:restriction> </xs:simpleType> </xs:element>
               <xs:element minOccurs="0" name="PDB_DE1008_NM_SUFF"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="10" /> </xs:restriction> </xs:simpleType> </xs:element>
             </xs:sequence>
