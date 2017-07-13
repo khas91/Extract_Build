@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="query">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="SDB_1017_RPTG_INST"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="7" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_1021_STDNT_ID"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="10" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_1028_TERM_ID"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="3" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_101A_REC_TYPE"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_2002_PROG_CIP"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="10" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_2001_AWARDTYPE"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_2003_HOURTYPE"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_2004_PROGHOURS"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="5" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_2005_PROGLEVEL"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_2006_PROGTITLE"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="30" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_2007_PROGCLOCK"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="6" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_2008_CREDITHRS"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="6" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_2009_PROGFLAG"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_2010_TEACHCERT"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="3" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_2011_TEACHBNCH"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="5" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_2012_TEACHTERM"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="5" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_2013_BAENRLFLG"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_2014_BAPOI"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="6" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_2015_BAINSTINT"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="7" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_2016_EPICERT1"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="3" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_2017_EPICERT2"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="3" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_2018_EPICERT3"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="3" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_2019_EPICERT4"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="3" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_2020_EPICERT5"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="3" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_0000_FLA_ID"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="14" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_102A_ACTION_CD"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+            </xs:sequence>
+            <xs:attribute name="rownumber" type="xs:unsignedByte" use="optional" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="numrows" type="xs:unsignedByte" use="optional" />
+      <xs:attribute name="queryname" type="xs:string" use="optional" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -7,12 +7,12 @@
   DTS:CreatorName="FSCJ\spierson"
   DTS:DTSID="{EC70679B-45EB-4D99-9B17-AA09C0D31D09}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="12.0.2430.0"
+  DTS:LastModifiedProductVersion="14.0.0500.272"
   DTS:LocaleID="1033"
   DTS:ObjectName="FDB_Extract_Build"
   DTS:PackageType="5"
-  DTS:VersionBuild="64"
-  DTS:VersionGUID="{BFAD5A93-EA2B-4A95-A627-ADDA64F26249}">
+  DTS:VersionBuild="68"
+  DTS:VersionGUID="{7681F40A-5AD7-4560-945D-EA9026CF576E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1219,7 +1219,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1482,7 +1482,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1733,6 +1733,7 @@
               description="Extracts data from an XML file. For example, extract catalog data from an XML file that represents catalogs and catalog items. Before using, specify the schema and generate an output for each XML element."
               name="XML Source"
               usesDispositions="true"
+              validateExternalMetadata="False"
               version="2">
               <properties>
                 <property
@@ -1755,7 +1756,7 @@
                   dataType="System.String"
                   description="The XML schema definition used by the XML source adapter."
                   expressionType="Notify"
-                  name="XMLSchemaDefinition">Z:\Stuart\ConsoleApplications\ExtractBuild\ExtractBuild\FDBRT1.xsd</property>
+                  name="XMLSchemaDefinition">Z:\Stuart\Git Repos\ExtractBuild\ExtractBuild\FDBRT1.xsd</property>
                 <property
                   dataType="System.Boolean"
                   description="Identifies whether or not to use inline schema."
@@ -1785,7 +1786,7 @@
                       externalMetadataColumnId="Package\RT1\XML Source.Outputs[row].ExternalColumns[rownumber]"
                       lineageId="Package\RT1\XML Source.Outputs[row].Columns[rownumber]"
                       name="rownumber"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT1\XML Source.Outputs[row].Columns[REPORT_ID]"
                       dataType="wstr"
@@ -1795,7 +1796,7 @@
                       length="1"
                       lineageId="Package\RT1\XML Source.Outputs[row].Columns[REPORT_ID]"
                       name="REPORT_ID"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT1\XML Source.Outputs[row].Columns[FDB_DE5002_STRM]"
                       dataType="wstr"
@@ -1805,7 +1806,7 @@
                       length="5"
                       lineageId="Package\RT1\XML Source.Outputs[row].Columns[FDB_DE5002_STRM]"
                       name="FDB_DE5002_STRM"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT1\XML Source.Outputs[row].Columns[FDB_DE5001_COL_NUM]"
                       dataType="wstr"
@@ -1815,7 +1816,7 @@
                       length="2"
                       lineageId="Package\RT1\XML Source.Outputs[row].Columns[FDB_DE5001_COL_NUM]"
                       name="FDB_DE5001_COL_NUM"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT1\XML Source.Outputs[row].Columns[FDB_DE5100_SITENUM]"
                       dataType="wstr"
@@ -1825,7 +1826,7 @@
                       length="2"
                       lineageId="Package\RT1\XML Source.Outputs[row].Columns[FDB_DE5100_SITENUM]"
                       name="FDB_DE5100_SITENUM"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT1\XML Source.Outputs[row].Columns[FDB_DE5110_S_NAME]"
                       dataType="wstr"
@@ -1835,7 +1836,7 @@
                       length="20"
                       lineageId="Package\RT1\XML Source.Outputs[row].Columns[FDB_DE5110_S_NAME]"
                       name="FDB_DE5110_S_NAME"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT1\XML Source.Outputs[row].Columns[FDB_DE5120_S_TYPE]"
                       dataType="wstr"
@@ -1845,7 +1846,7 @@
                       length="1"
                       lineageId="Package\RT1\XML Source.Outputs[row].Columns[FDB_DE5120_S_TYPE]"
                       name="FDB_DE5120_S_TYPE"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT1\XML Source.Outputs[row].Columns[FDB_DE5130_S_AREA]"
                       dataType="wstr"
@@ -1855,7 +1856,7 @@
                       length="6"
                       lineageId="Package\RT1\XML Source.Outputs[row].Columns[FDB_DE5130_S_AREA]"
                       name="FDB_DE5130_S_AREA"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT1\XML Source.Outputs[row].Columns[FDB_DE5140_OWNER]"
                       dataType="wstr"
@@ -1865,7 +1866,7 @@
                       length="1"
                       lineageId="Package\RT1\XML Source.Outputs[row].Columns[FDB_DE5140_OWNER]"
                       name="FDB_DE5140_OWNER"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT1\XML Source.Outputs[row].Columns[FDB_DE5150_LEN_HLD]"
                       dataType="wstr"
@@ -1875,7 +1876,7 @@
                       length="2"
                       lineageId="Package\RT1\XML Source.Outputs[row].Columns[FDB_DE5150_LEN_HLD]"
                       name="FDB_DE5150_LEN_HLD"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT1\XML Source.Outputs[row].Columns[FDB_DE5160_AQ_MEAN]"
                       dataType="wstr"
@@ -1885,7 +1886,7 @@
                       length="1"
                       lineageId="Package\RT1\XML Source.Outputs[row].Columns[FDB_DE5160_AQ_MEAN]"
                       name="FDB_DE5160_AQ_MEAN"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT1\XML Source.Outputs[row].Columns[FDB_DE5170_AQDATE]"
                       dataType="wstr"
@@ -1895,7 +1896,7 @@
                       length="6"
                       lineageId="Package\RT1\XML Source.Outputs[row].Columns[FDB_DE5170_AQDATE]"
                       name="FDB_DE5170_AQDATE"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\RT1\XML Source.Outputs[row].Columns[FDB_DE5105_COUNTY]"
                       dataType="wstr"
@@ -1905,7 +1906,7 @@
                       length="2"
                       lineageId="Package\RT1\XML Source.Outputs[row].Columns[FDB_DE5105_COUNTY]"
                       name="FDB_DE5105_COUNTY"
-                      truncationRowDisposition="IgnoreFailure" />
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -3199,7 +3200,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3502,7 +3503,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3759,6 +3760,7 @@
               description="Extracts data from an XML file. For example, extract catalog data from an XML file that represents catalogs and catalog items. Before using, specify the schema and generate an output for each XML element."
               name="XML Source"
               usesDispositions="true"
+              validateExternalMetadata="False"
               version="2">
               <properties>
                 <property
@@ -3781,7 +3783,7 @@
                   dataType="System.String"
                   description="The XML schema definition used by the XML source adapter."
                   expressionType="Notify"
-                  name="XMLSchemaDefinition">Z:\Stuart\ConsoleApplications\ExtractBuild\ExtractBuild\FDBRT2.xsd</property>
+                  name="XMLSchemaDefinition">Z:\Stuart\Git Repos\ExtractBuild\ExtractBuild\FDBRT2.xsd</property>
                 <property
                   dataType="System.Boolean"
                   description="Identifies whether or not to use inline schema."
@@ -5200,7 +5202,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -5483,7 +5485,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -5748,6 +5750,7 @@
               description="Extracts data from an XML file. For example, extract catalog data from an XML file that represents catalogs and catalog items. Before using, specify the schema and generate an output for each XML element."
               name="XML Source"
               usesDispositions="true"
+              validateExternalMetadata="False"
               version="2">
               <properties>
                 <property
@@ -5770,7 +5773,7 @@
                   dataType="System.String"
                   description="The XML schema definition used by the XML source adapter."
                   expressionType="Notify"
-                  name="XMLSchemaDefinition">Z:\Stuart\ConsoleApplications\ExtractBuild\ExtractBuild\FDBRT3.xsd</property>
+                  name="XMLSchemaDefinition">Z:\Stuart\Git Repos\ExtractBuild\ExtractBuild\FDBRT3.xsd</property>
                 <property
                   dataType="System.Boolean"
                   description="Identifies whether or not to use inline schema."
@@ -6355,36 +6358,6 @@
           ReadOnlyVariables="User::outputDirectory"
           ReadWriteVariables="User::r1XML,User::r2XML,User::r3XML">
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_af060dc173ec43d7ab6661754cbd6fdf")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_af060dc173ec43d7ab6661754cbd6fdf")]
-[assembly: AssemblyCopyright("Copyright @  2016")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
-          <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <root>
@@ -6504,8 +6477,37 @@ using System.Runtime.CompilerServices;
   </resheader>
 </root>]]></ProjectItem>
           <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_af060dc173ec43d7ab6661754cbd6fdf.Properties.Settings.get_Default():ST_af060dc173ec43d7ab6661754cbd6fdf.Properties.Sett" +
+    "ings")]
+
+namespace ST_af060dc173ec43d7ab6661754cbd6fdf.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <ProjectItem
             Name="ST_90c473b933f44ea79dfa0657c54c3b7a.csproj"
-            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?><Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003"><PropertyGroup><ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><ProductVersion>8.0.30703</ProductVersion><SchemaVersion>2.0</SchemaVersion><ProjectGuid>{9e43f97c-9a42-437c-89fd-3cd03125b84f}</ProjectGuid><OutputType>Library</OutputType><AppDesignerFolder>Properties</AppDesignerFolder><RootNamespace>ST_af060dc173ec43d7ab6661754cbd6fdf</RootNamespace><AssemblyName>ST_90c473b933f44ea79dfa0657c54c3b7a</AssemblyName><TargetFrameworkVersion>v4.0</TargetFrameworkVersion><FileAlignment>512</FileAlignment><ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch></PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Debug' "><DebugSymbols>true</DebugSymbols><DebugType>full</DebugType><Optimize>false</Optimize><OutputPath>.\bin\Debug\</OutputPath><EnableUnmanagedDebugging>false</EnableUnmanagedDebugging><DefineConstants>DEBUG;TRACE</DefineConstants><ErrorReport>prompt</ErrorReport><WarningLevel>4</WarningLevel></PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Release' "><DebugSymbols>false</DebugSymbols><Optimize>true</Optimize><OutputPath>.\bin\Release\</OutputPath><EnableUnmanagedDebugging>false</EnableUnmanagedDebugging><DefineConstants>TRACE</DefineConstants><ErrorReport>prompt</ErrorReport><WarningLevel>4</WarningLevel></PropertyGroup><ItemGroup><Reference Include="System" /><Reference Include="System.Data" /><Reference Include="System.Windows.Forms" /><Reference Include="System.Xml" /><Reference Include="Microsoft.SqlServer.ManagedDTS, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" /><Reference Include="Microsoft.SqlServer.ScriptTask, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" /></ItemGroup><ItemGroup><AppDesigner Include="Properties\" /><Compile Include="Properties\AssemblyInfo.cs"><SubType>Code</SubType></Compile><EmbeddedResource Include="Properties\Resources.resx"><Generator>ResXFileCodeGenerator</Generator><LastGenOutput>Resources.Designer.cs</LastGenOutput></EmbeddedResource><Compile Include="Properties\Resources.Designer.cs"><AutoGen>True</AutoGen><DependentUpon>Resources.resx</DependentUpon></Compile><None Include="Properties\Settings.settings"><Generator>SettingsSingleFileGenerator</Generator><LastGenOutput>Settings.Designer.cs</LastGenOutput></None><Compile Include="Properties\Settings.Designer.cs"><AutoGen>True</AutoGen><DependentUpon>Settings.settings</DependentUpon></Compile><Compile Include="ScriptMain.cs"><SubType>Code</SubType></Compile></ItemGroup><!-- Include the build rules for a C# project.--><Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" /><ProjectExtensions><VisualStudio><FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}"><ProjectProperties HostName="ScriptTask" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="#HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\10.0\InstallDir#\devenv.exe" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" /><Host Name="ScriptTask" GeneratedNamespace="$safeprojectname" IconIndex=""></Host><ProjectClient><HostIdentifier>SSIS_ST120</HostIdentifier></ProjectClient></FlavorProperties></VisualStudio></ProjectExtensions></Project>]]></ProjectItem>
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?><Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003"><PropertyGroup><ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><ProductVersion>8.0.30703</ProductVersion><SchemaVersion>2.0</SchemaVersion><ProjectGuid>{9e43f97c-9a42-437c-89fd-3cd03125b84f}</ProjectGuid><OutputType>Library</OutputType><AppDesignerFolder>Properties</AppDesignerFolder><RootNamespace>ST_af060dc173ec43d7ab6661754cbd6fdf</RootNamespace><AssemblyName>ST_90c473b933f44ea79dfa0657c54c3b7a</AssemblyName><TargetFrameworkVersion>v4.0</TargetFrameworkVersion><FileAlignment>512</FileAlignment><ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch></PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Debug' "><DebugSymbols>true</DebugSymbols><DebugType>full</DebugType><Optimize>false</Optimize><OutputPath>.\bin\Debug\</OutputPath><EnableUnmanagedDebugging>false</EnableUnmanagedDebugging><DefineConstants>DEBUG;TRACE</DefineConstants><ErrorReport>prompt</ErrorReport><WarningLevel>4</WarningLevel></PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Release' "><DebugSymbols>false</DebugSymbols><Optimize>true</Optimize><OutputPath>.\bin\Release\</OutputPath><EnableUnmanagedDebugging>false</EnableUnmanagedDebugging><DefineConstants>TRACE</DefineConstants><ErrorReport>prompt</ErrorReport><WarningLevel>4</WarningLevel></PropertyGroup><ItemGroup><Reference Include="System" /><Reference Include="System.Data" /><Reference Include="System.Windows.Forms" /><Reference Include="System.Xml" /><Reference Include="Microsoft.SqlServer.ManagedDTS, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" /><Reference Include="Microsoft.SqlServer.ScriptTask, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" /></ItemGroup><ItemGroup><AppDesigner Include="Properties\" /><Compile Include="Properties\AssemblyInfo.cs"><SubType>Code</SubType></Compile><EmbeddedResource Include="Properties\Resources.resx"><Generator>ResXFileCodeGenerator</Generator><LastGenOutput>Resources.Designer.cs</LastGenOutput></EmbeddedResource><Compile Include="Properties\Resources.Designer.cs"><AutoGen>True</AutoGen><DependentUpon>Resources.resx</DependentUpon></Compile><None Include="Properties\Settings.settings"><Generator>SettingsSingleFileGenerator</Generator><LastGenOutput>Settings.Designer.cs</LastGenOutput></None><Compile Include="Properties\Settings.Designer.cs"><AutoGen>True</AutoGen><DependentUpon>Settings.settings</DependentUpon></Compile><Compile Include="ScriptMain.cs"><SubType>Code</SubType></Compile></ItemGroup><!-- Include the build rules for a C# project.--><Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" /><ProjectExtensions><VisualStudio><FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}"><ProjectProperties HostName="ScriptTask" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" /><Host Name="ScriptTask" GeneratedNamespace="$safeprojectname" IconIndex=""></Host><ProjectClient><HostIdentifier>SSIS_ST120</HostIdentifier></ProjectClient></FlavorProperties></VisualStudio></ProjectExtensions></Project>]]></ProjectItem>
           <ProjectItem
             Name="ScriptMain.cs"
             Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -6678,34 +6680,35 @@ namespace ST_af060dc173ec43d7ab6661754cbd6fdf
 	</msb:ItemGroup>
 </c:Project>]]></ProjectItem>
           <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
 //
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_af060dc173ec43d7ab6661754cbd6fdf")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_af060dc173ec43d7ab6661754cbd6fdf")]
+[assembly: AssemblyCopyright("Copyright @  2016")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
 
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_af060dc173ec43d7ab6661754cbd6fdf.Properties.Settings.get_Default():ST_af060dc173ec43d7ab6661754cbd6fdf.Properties.Sett" +
-    "ings")]
-
-namespace ST_af060dc173ec43d7ab6661754cbd6fdf.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Settings.settings"
             Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
@@ -6970,23 +6973,23 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="163.2,41.6"
+          Size="163,42"
           Id="Package\Execute SQL Task"
           TopLeft="184,125" />
         <NodeLayout
-          Size="97.6,41.6"
+          Size="98,42"
           Id="Package\RT1"
           TopLeft="404,212" />
         <NodeLayout
-          Size="97.6,41.6"
+          Size="98,42"
           Id="Package\RT2"
           TopLeft="407,287" />
         <NodeLayout
-          Size="97.6,41.6"
+          Size="98,42"
           Id="Package\RT3"
           TopLeft="406,358" />
         <NodeLayout
-          Size="131.2,41.6"
+          Size="131,42"
           Id="Package\Script Task"
           TopLeft="394,126" />
         <EdgeLayout
@@ -7086,31 +7089,31 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="134.4,41.6"
+          Size="134,42"
           Id="Package\RT1\XML Source"
           TopLeft="224,70" />
         <NodeLayout
-          Size="171.2,41.6"
+          Size="171,42"
           Id="Package\RT1\OLE DB Destination"
           TopLeft="206.2,414.2" />
         <NodeLayout
-          Size="179.2,41.6"
+          Size="179,42"
           Id="Package\RT1\OLE DB Destination 1"
           TopLeft="409.6,416" />
         <NodeLayout
-          Size="129.6,41.6"
+          Size="130,42"
           Id="Package\RT1\Multicast 1"
           TopLeft="336.8,348" />
         <NodeLayout
-          Size="172,41.6"
+          Size="172,42"
           Id="Package\RT1\Flat File Destination"
           TopLeft="94,269" />
         <NodeLayout
-          Size="156,41.6"
+          Size="156,42"
           Id="Package\RT1\Data Conversion"
           TopLeft="327,273" />
         <NodeLayout
-          Size="120,41.6"
+          Size="120,42"
           Id="Package\RT1\Multicast"
           TopLeft="229,154" />
         <EdgeLayout
@@ -7326,37 +7329,37 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     design-time-name="Package\RT2">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="156,41.6"
+          Size="156,42"
           Id="Package\RT2\Data Conversion"
           TopLeft="319,306" />
         <NodeLayout
-          Size="171.2,41.6"
+          Size="171,42"
           Id="Package\RT2\OLE DB Destination"
           TopLeft="279.6,443.2" />
         <NodeLayout
-          Size="179.2,41.6"
+          Size="179,42"
           Id="Package\RT2\OLE DB Destination 1"
           TopLeft="555.2,442.4" />
         <NodeLayout
-          Size="129.6,41.6"
+          Size="130,42"
           Id="Package\RT2\Multicast 1"
           TopLeft="429.6,376.8" />
         <NodeLayout
-          Size="134.4,41.6"
+          Size="134,42"
           Id="Package\RT2\XML Source"
           TopLeft="211,123" />
         <NodeLayout
-          Size="120,41.6"
+          Size="120,42"
           Id="Package\RT2\Multicast"
           TopLeft="220,207" />
         <NodeLayout
-          Size="172,41.6"
+          Size="172,42"
           Id="Package\RT2\Flat File Destination"
           TopLeft="125,385" />
         <NodeLayout
-          Size="153.6,41.6"
+          Size="154,42"
           Id="Package\RT2\Derived Column"
           TopLeft="133,306" />
         <EdgeLayout
@@ -7378,9 +7381,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7414,9 +7415,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7450,9 +7449,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7486,9 +7483,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7522,9 +7517,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7546,9 +7539,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7582,9 +7573,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7620,41 +7609,41 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     design-time-name="Package\RT3">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="134.4,41.6"
+          Size="134,42"
           Id="Package\RT3\XML Source"
           TopLeft="196,97" />
         <NodeLayout
-          Size="129.6,41.6"
+          Size="130,42"
           Id="Package\RT3\Multicast 1"
           TopLeft="320.000005449568,389.823534752671" />
         <NodeLayout
-          Size="179.2,41.6"
+          Size="179,42"
           Id="Package\RT3\OLE DB Destination 1"
           TopLeft="409.285721255809,454.235300488126" />
         <NodeLayout
-          Size="171.2,41.6"
+          Size="171,42"
           Id="Package\RT3\OLE DB Destination"
           TopLeft="218.428570005359,457.94117752161" />
         <NodeLayout
-          Size="172,41.6"
+          Size="172,42"
           Id="Package\RT3\Flat File Destination"
           TopLeft="96,320" />
         <NodeLayout
-          Size="153.6,41.6"
+          Size="154,42"
           Id="Package\RT3\Derived Column"
           TopLeft="310,317" />
         <NodeLayout
-          Size="156,41.6"
+          Size="156,42"
           Id="Package\RT3\Data Conversion"
           TopLeft="303,250" />
         <NodeLayout
-          Size="120,41.6"
+          Size="120,42"
           Id="Package\RT3\Multicast"
           TopLeft="202,163" />
         <NodeLayout
-          Size="163.2,41.6"
+          Size="163,42"
           Id="Package\RT3\Derived Column 1"
           TopLeft="99,245" />
         <EdgeLayout
@@ -7676,9 +7665,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7712,9 +7699,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7748,9 +7733,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7784,9 +7767,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7820,9 +7801,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7844,9 +7823,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7868,9 +7845,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7892,9 +7867,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

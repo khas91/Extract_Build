@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="query">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="SDB_1017_RPTG_INST"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="7" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_1021_STDNT_ID"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="10" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_1028_TERM_ID"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="3" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_101A_REC_TYPE"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_1015_LAST_NM"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="20" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_1014_FIRST_NM"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="15" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_FILLER_1A" />
+              <xs:element minOccurs="0" name="SDB_1006_GENDER"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_FILLER_1B" />
+              <xs:element minOccurs="0" name="SDB_1019_DOB"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="8" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_FILLER_1C" />
+              <xs:element minOccurs="0" name="SDB_1004_RES_FEE"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_1001_CITIZEN"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_1002_DISABLED"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_1013_LTD_ENGL"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_1007_HS_CD"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="6" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_1008_HS_GRADCD"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_1009_HS_GRADDT"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="6" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_1011_INCARCER"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_1005_FTIC_FLG"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_1032_TFER_FLG"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_1018_ADM_ST_CD"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="2" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_FILLER_7A" />
+              <xs:element minOccurs="0" name="SDB_1029_TRM_P_F"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="1" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_FILLER_1D" />
+              <xs:element minOccurs="0" name="SDB_1055_SUFFIX_NM"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="10" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_FILLER_5A" />
+              <xs:element minOccurs="0" name="SDB_1026_GPAGRDTRM"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="4" /> </xs:restriction> </xs:simpleType> </xs:element>
+              <xs:element minOccurs="0" name="SDB_1027_GRDHRSTRM"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="3" /> </xs:restriction> </xs:simpleType> </xs:element>
+			  <xs:element minOccurs="0" name="SDB_1016_MID_NM"> <xs:simpleType> <xs:restriction base="xs:string"> <xs:maxLength value="20" /> </xs:restriction> </xs:simpleType> </xs:element>
+            </xs:sequence>
+            <xs:attribute name="rownumber" type="xs:unsignedShort" use="optional" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="numrows" type="xs:unsignedShort" use="optional" />
+      <xs:attribute name="queryname" type="xs:string" use="optional" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
